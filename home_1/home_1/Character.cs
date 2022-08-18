@@ -8,25 +8,27 @@ namespace home_1
 {
     public class Character
     {
-        private string name;
-        private int hp = 100;
-        private int maxHP = 100;
-        private int strenth = 10;
-        private int dexterity = 5;
-        private int intellegence = 7;
+        //private으로 변수들을 생성함
+        private string name;            //이름
+        private int hp = 100;           //체력
+        private int maxHP = 100;        //max체력
+        private int strenth = 10;       //힘
+        private int dexterity = 5;      //민첩
+        private int intellegence = 7;   //지능
 
         //nameArry에 기본값 설정 (선언과 할당을 동시에 함)
         string[] nameArry = { "전사", "마법사", "궁수", "도적", "해적" };
 
+        //랜덤 함수 rand를 선언
         Random rand;
 
         public int HP
         {
-            get
+            get //출력
             {
                 return hp;
             }
-            private set
+            private set //출력
             {
                 hp = value;
                 if (hp > maxHP)
@@ -43,6 +45,7 @@ namespace home_1
 
         public Character()
         {
+            //rand에 새로운 랜덤값을 넣음
             rand = new Random();
             int randomNumber = rand.Next();
             randomNumber %= 5;

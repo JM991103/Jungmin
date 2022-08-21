@@ -11,10 +11,11 @@ namespace home_1
         static void Main(string[] args)
         {
             Human human1 = new Human();
-            Human human2 = new Human();
+            Orc enmay = new Orc("오크");
 
-            human1.Attack(human2);
-
+            human1.Attack(enmay);
+            enmay.Attack(human1);
+           
 
             Console.ReadLine();
         }

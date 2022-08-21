@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace home_1
 {
@@ -15,6 +16,9 @@ namespace home_1
         public int strenth = 10;       //힘
         public int dexterity = 5;      //민첩
         public int intellegence = 7;   //지능
+        public string newName;
+
+        public string Name => name;
 
         //nameArry에 기본값 설정 (선언과 할당을 동시에 함)
         string[] nameArry = { "전사", "마법사", "궁수", "도적", "해적" };

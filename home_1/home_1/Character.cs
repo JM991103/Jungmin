@@ -9,18 +9,18 @@ namespace home_1
     public class Character
     {
         //private으로 변수들을 생성함
-        private string name;            //이름
-        private int hp = 100;           //체력
-        private int maxHP = 100;        //max체력
-        private int strenth = 10;       //힘
-        private int dexterity = 5;      //민첩
-        private int intellegence = 7;   //지능
+        public string name;            //이름
+        public int hp = 100;           //체력
+        public int maxHP = 100;        //max체력
+        public int strenth = 10;       //힘
+        public int dexterity = 5;      //민첩
+        public int intellegence = 7;   //지능
 
         //nameArry에 기본값 설정 (선언과 할당을 동시에 함)
         string[] nameArry = { "전사", "마법사", "궁수", "도적", "해적" };
 
         //랜덤 함수 rand를 선언
-        Random rand;
+        public Random rand;
 
         public int HP
         {
@@ -60,11 +60,11 @@ namespace home_1
             rand = new Random();
             name = newName;
 
-            GenerateStatus();
-            TestPrintStatus();
+            //GenerateStatus();
+           // TestPrintStatus();
         }
 
-        private void GenerateStatus()
+        public virtual void GenerateStatus()
         {
             maxHP = rand.Next(100, 201);
             hp = maxHP;
@@ -74,12 +74,10 @@ namespace home_1
             intellegence = rand.Next(20)+1;
         }
 
-        public void Attack(Character target)
+        public virtual void Attack(Character target)
         {
-            int damage = strenth;
-            Console.WriteLine($"{name}이 {target.name}에게 공격을 합니다. (공격력 {damage})");
-            target.TakeDamage(damage);
-         }
+
+        }
 
         public void TakeDamage(int damage)
         {
@@ -87,7 +85,7 @@ namespace home_1
             Console.WriteLine($"{name}이 {damage}만큼의 피해를 입었습니다.");
         }
 
-        public void TestPrintStatus()
+        public virtual void TestPrintStatus()
         {
             Console.WriteLine("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓");
             Console.WriteLine($"┃ 이름\t: {name}");

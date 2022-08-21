@@ -10,15 +10,10 @@ namespace home_1
     {
         static void Main(string[] args)
         {
-            Character human1 = new Character();
-            Character human2 = new Character("새한얀");
+            Human human1 = new Human();
+            Human human2 = new Human();
 
             human1.Attack(human2);
-            human1.TestPrintStatus();
-            human2.TestPrintStatus();
-            human2.Attack(human1);
-            human2.TestPrintStatus();
-            human1.TestPrintStatus();
 
 
             Console.ReadLine();

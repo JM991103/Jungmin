@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace home_1
 {
-    internal class Orc : Human
+    internal class Orc : Character
     {
 
         public Orc(string newName) : base(newName)

@@ -12,11 +12,11 @@ namespace home_1
         int mp, maxMP;
         bool Skill = false;
 
-
-        public Human()
+        public Human() : base()
         {
 
         }
+
 
 
         public override void GenerateStatus()

@@ -11,6 +11,7 @@ namespace home_1
     {
         int mp, maxMP;
         bool Skill = false;
+        
 
         public Human() : base()
         {
@@ -22,7 +23,7 @@ namespace home_1
         public override void GenerateStatus()
         {
             base.GenerateStatus();
-            mp = rand.Next()%100;
+            mp = rand.Next() % 100;
             maxMP = mp;
         }
 
@@ -41,12 +42,12 @@ namespace home_1
         public override void Attack(Character target)
         {
             base.Attack(target);
-                int damage = strenth;
+            int damage = strenth;
 
-                if (Skill == true)
-                    damage = damage * 2;
-                    Skill = false;
-                {
+            if (Skill == true)
+                damage = damage * 2;
+            Skill = false;
+            {
 
                 if (rand.NextDouble() < 0.3f)
                 {
@@ -67,11 +68,6 @@ namespace home_1
             Console.WriteLine($"{name}이(가) 데미지가 2배가 됩니다.");
             Attack(target);
         }
-
-
-
-
-
-
+        
     }
 }

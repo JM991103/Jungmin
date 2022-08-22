@@ -17,6 +17,7 @@ namespace home_1
         public int dexterity = 5;      //민첩
         public int intellegence = 7;   //지능
         public string newName;
+        bool br = false;
 
         public string Name => name;
 
@@ -64,8 +65,8 @@ namespace home_1
             rand = new Random();
             name = newName;
 
-            //GenerateStatus();
-           // TestPrintStatus();
+            GenerateStatus();
+            TestPrintStatus();
         }
 
         public virtual void GenerateStatus()
@@ -86,7 +87,7 @@ namespace home_1
         public void TakeDamage(int damage)
         {
             HP -= damage;
-            Console.WriteLine($"{name}이 {damage}만큼의 피해를 입었습니다.");
+            Console.WriteLine($"{name}이(가) {damage}만큼의 피해를 입었습니다.");
         }
 
         public virtual void TestPrintStatus()
@@ -99,5 +100,14 @@ namespace home_1
             Console.WriteLine($"┃ 지능\t: {intellegence,2}");
             Console.WriteLine("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
         }
+
+
+        public void brr()
+        {
+            br = true;
+            
+
+        }
+
     }
 }

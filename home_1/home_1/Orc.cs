@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace home_1
 {
     internal class Orc : Character
     {
+        bool OrcSkill = false;
 
         public Orc(string newName) : base(newName)
         {
@@ -16,12 +18,14 @@ namespace home_1
 
         public override void GenerateStatus()
         {
-            base.GenerateStatus();
+            
+            
         }
 
         public override void TestPrintStatus()
         {
-            base.TestPrintStatus();
+            
+            
         }
 
 
@@ -29,6 +33,16 @@ namespace home_1
         {
             base.Attack(target);
             int damage = strenth;
+
+            if (OrcSkill == true)
+            {
+                damage *= 2;
+                Console.WriteLine("스킬을 사용하여 공격합니다.");
+
+                OrcSkill = false;
+            }
+
+
             if (rand.NextDouble() < 0.3f)
             {
 

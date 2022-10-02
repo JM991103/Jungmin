@@ -9,7 +9,8 @@ public class JumpMove : MonoBehaviour
     PlayerInput player;     // 유니티에서 만든 인풋 액션을 player로 선언
     Rigidbody2D rigid;      // 리지드바디를 선언
 
-    float jumpPower = 5.0f;
+    [Range(1,10)]
+    public float jumpPower = 5.0f;
     public float pitchMaxAngle = 45.0f;
 
     bool isDead = false;

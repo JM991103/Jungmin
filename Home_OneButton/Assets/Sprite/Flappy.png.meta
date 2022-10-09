@@ -1112,7 +1112,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy_53
+      name: Pipe_Top
       rect:
         serializedVersion: 2
         x: 56
@@ -1133,7 +1133,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flappy_54
+      name: Pipe_Bottom
       rect:
         serializedVersion: 2
         x: 84
@@ -1761,32 +1761,32 @@ TextureImporter:
       Flappy_47: 1476911066
       Flappy_12: -855017980
       Flappy_14: 454006491
-      Flappy_53: -1439340223
       Flappy_7: -1736798118
       Flappy_50: -1504487328
       Flappy_30: 916499121
       Flappy_38: -2121081322
       Flappy_13: -1850369845
-      Flappy_29: -223874823
-      Flappy_31: -1785750216
       Bird_Player_1: 69594289
+      Flappy_31: -1785750216
+      Flappy_48: -1857473365
       Flappy_24: -1457672123
       Flappy_25: -1419378947
-      Flappy_48: -1857473365
+      Flappy_29: -223874823
       Flappy_52: 1950371111
       Flappy_37: -1595345621
-      Flappy_64: 1463139283
       Flappy_44: 784908962
+      Flappy_64: 1463139283
       Flappy_46: -1643674804
-      Flappy_78: -548131439
       Flappy_77: -1935760780
       Flappy_32: -657120820
+      Flappy_78: -548131439
       BackGround_Night: 659266694
       Flappy_5: 1218076126
       Flappy_41: 1435935329
-      Flappy_51: 1797032488
       Flappy_39: -793780427
       Flappy_26: 825336838
+      Pipe_Bottom: -1930855702
+      Flappy_51: 1797032488
       Flappy_18: 1600737574
       Flappy_36: 1522681539
       Flappy_10: -263441641
@@ -1808,7 +1808,7 @@ TextureImporter:
       Flappy_3: -794322648
       Flappy_19: 1287945119
       Flappy_27: -2084636564
-      Flappy_54: -1930855702
+      Pipe_Top: -1439340223
       Flappy_28: -2130328140
       Flappy_45: 2062476454
       Flappy_72: 1333785229

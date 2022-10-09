@@ -9,11 +9,15 @@ public class JumpMove : MonoBehaviour
     PlayerInput player;     // 유니티에서 만든 인풋 액션을 player로 선언
     Rigidbody2D rigid;      // 리지드바디를 선언
 
-    [Range(1,10)]
+    [Range(1, 10)]
     public float jumpPower = 5.0f;
     public float pitchMaxAngle = 45.0f;
 
+    public Action OnDead;
+
     bool isDead = false;
+
+    public bool IsDead { get => isDead; }
 
     private void Awake()
     {
@@ -60,5 +64,27 @@ public class JumpMove : MonoBehaviour
         player.BirdPlayer.Disable();        // 인풋 액션으로 입력을 받을 수 없게 종료 함
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Die(collision.GetContact(0));
+    }
 
+    private void Die(ContactPoint2D contact)
+    {
+        Vector2 dir = (contact.point - (Vector2)transform.position).normalized;
+        // 새가 충돌한 지점으로 가는 방향
+        Vector2 reflect = Vector2.Reflect(dir, contact.normal);
+        // dir이 반사된 벡터
+        rigid.velocity = reflect * 10.0f + Vector2.left * 5.0f;
+        // 반사되는 방향에 왼쪽으로 가는 힘 추가
+        rigid.angularVelocity = 1000.0f;
+        // 회전 추가 (초당 1000도)
+
+        if (!isDead)
+        {
+            OnDead?.Invoke();               // 델리게이트 연결
+            player.BirdPlayer.Enable();     // 입력 시스템 막기
+            isDead = true;                  // 죽었다고 표시
+        }
+    }
 }

@@ -37,6 +37,7 @@ public class BackgroundScorller : MonoBehaviour
             if (slot.position.x < edgPoint)
             {
                 slot.Translate(width * bgSlots.Length * transform.right);
+
             }
         }
 

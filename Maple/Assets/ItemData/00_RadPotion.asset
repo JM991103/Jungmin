@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d98f9585d1e5846a692b7b03b3015d, type: 3}
-  m_Name: OrangePotion
+  m_Name: 00_RadPotion
   m_EditorClassIdentifier: 
-  id: 2
-  itemName: "\uC8FC\uD669\uD3EC\uC158"
-  modelPrefab: {fileID: 142219129522680440, guid: aefd723c9f42cae4c8b3501784099b28, type: 3}
-  value: 100
+  id: 0
+  itemName: "\uBE68\uAC04\uD3EC\uC158"
+  modelPrefab: {fileID: 9122784537389108061, guid: bf6d92b8d49619a428cdd04ba0b37f7a, type: 3}
+  value: 50

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42d98f9585d1e5846a692b7b03b3015d, type: 3}
-  m_Name: BluePotion
+  m_Name: 05_PowerElixir
   m_EditorClassIdentifier: 
-  id: 1
-  itemName: "\uD30C\uB780\uD3EC\uC158"
-  modelPrefab: {fileID: 6536602357026170382, guid: 6988c1faa4a766742aa1e21c0eb975b2, type: 3}
-  value: 50
+  id: 5
+  itemName: "\uD30C\uC6CC\uC5D8\uB9AD\uC11C"
+  modelPrefab: {fileID: 3794411500961230272, guid: bfb81f3cb50ce514a8f89ad9d53c2ed3, type: 3}
+  value: 2500

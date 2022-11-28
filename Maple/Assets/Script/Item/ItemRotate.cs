@@ -31,8 +31,9 @@ public class ItemRotate : MonoBehaviour
     {
         //transform.Rotate(0, rotateSpeed * Time.deltaTime, 0);
         // 시간은 계속 누적 시킴
-        timeElapsed += Time.deltaTime * 3.0f;   
-
+        timeElapsed += Time.deltaTime * 3.0f;
+        newPosition.x = transform.parent.position.x;    // 부모의 x,z 위치는 계속 적용
+        newPosition.z = transform.parent.position.z;
         // 높이 값을 위 아래로 움직일 수 있도록 cos 그래프를 이용해 계산
         newPosition.y = minHeight + (1 - Mathf.Cos(timeElapsed)) * halfdiff;
         // 계산이 끝난 newPosition으로 위치 옮기기

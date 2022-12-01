@@ -82,6 +82,17 @@ public class Cell : MonoBehaviour
 
     // 함수 ----------------------------------------------------------------------------------------------------------------------------------------------
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("들어왔음");
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        Debug.Log("나갔음");
+    }
+
+
     /// <summary>
     /// 셀에 빈것 -> 깃발 -> 물음표 -> 빈것 ->  순서대로 표시하는 함수
     /// </summary>
@@ -120,7 +131,7 @@ public class Cell : MonoBehaviour
     /// </summary>
     public void SetMine()
     {
-
+        hasMine = true;
     }
 
 }

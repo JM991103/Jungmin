@@ -171,6 +171,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""id"": ""541618dc-ef0e-4e07-809c-c17131147083"",
                     ""path"": ""<Mouse>/position"",
                     ""interactions"": """",
+                    ""processors"": """",
                     ""groups"": ""KeyBoard&Mouse"",
                     ""action"": ""MouseMove"",
                     ""isComposite"": false,

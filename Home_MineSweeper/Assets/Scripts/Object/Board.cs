@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -30,6 +29,19 @@ public class Board : MonoBehaviour
     /// </summary>
     Cell[] cells;
 
+    /// <summary>
+    /// 열린 셀에서 표시될 이미지
+    /// </summary>
+    public Sprite[] openCellImages;
+
+    /// <summary>
+    /// OpenCellType으로 이미지를 받아오는 인덱서 (enum)
+    /// </summary>
+    /// <param name="type">필요한 이미지의 enum타입</param>
+    /// <returns>enum타입에 맞는 이미지</returns>
+    public Sprite this[OpenCellType type] => openCellImages[(int)type];
+
+
     //private void Start()
     //{
     //    Initialize(width, height, 10);
@@ -56,11 +68,46 @@ public class Board : MonoBehaviour
             {
                 GameObject cellObj = Instantiate(cellPrefab, transform);    // 이 보드를 부모로 삼고 프리팹을 생성한다.
                 Cell cell = cellObj.GetComponent<Cell>();                   // 생성한 오브젝트에서 Cell 컴포넌트 찾기
+                cell.ID = y * width + x;                                    // ID 설정 (ID를 통해 위치도 확인 가능)
+                cell.Board = this;                                          // 보드 설정
                 cell.name = $"Cell_{cell.ID}_{x}_{y}";                      // 오브젝트 이름 지정
                 cell.transform.position = basePos + offset + new Vector3(x * Distance, -y * Distance);  // 적절한 위치에 배치
                 cells[cell.ID] = cell;                                      // cells 배열에 저장
             }
+        }
+
+        // 만들어진 셀에 지뢰를 minCount만큼 설치하기
+        int[] ids = new int[cells.Length];
+        for (int i = 0; i < cells.Length; i++)
+        {
+            ids[i] = i;
+        }
+        Shuffl1e(ids);
+        for (int i = 0; i < mineCount; i++)
+        {
+            cells[ids[i]].SetMine();
         }        
+    }
+
+    /// <summary>
+    /// 파라메터로 받은 배열 내부의 데이터 순서를 섞는 함수
+    /// </summary>
+    /// <param name="source">내부 데이터를 섞을 배열</param>
+    public void Shuffl1e(int[] source)
+    {
+        // 피셔 예이츠 알고리즘 적용 하기
+        // - 1을 하는 이유 : 배열은 0부터 시작하고 Length는 1부터 숫자를 세기 때문
+        int count = source.Length - 1;
+
+        for (int i = 0; i < count; i++) // 배열의 길이 - 1만큼 for문을 돌린다.
+        {
+            // 배열이 5일때 4개중에 3개중에 2개중에 순차적으로 랜덤으로 한개를 뽑아야 하는데
+            // 0 부터 4 + 1 - i를 해서 랜덤으로 숫자를 추출한다.
+            int randomIndex = Random.Range(0, count + 1 - i);
+            // 마지막인덱스는 5번째 4번째 3번째 순차적으로 줄어 들어야 한다.
+            int lastIndex = count - i;
+            (source[randomIndex], source[lastIndex]) = (source[lastIndex], source[randomIndex]);    // swap 처리
+        }
     }
 
     /// <summary>

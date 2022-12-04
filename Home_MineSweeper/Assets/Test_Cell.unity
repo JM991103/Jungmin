@@ -726,5 +726,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cell
       objectReference: {fileID: 0}
+    - target: {fileID: 7749899438804044763, guid: 2bdd67b6da5697b4e86b2f35a45d8ad4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bdd67b6da5697b4e86b2f35a45d8ad4, type: 3}

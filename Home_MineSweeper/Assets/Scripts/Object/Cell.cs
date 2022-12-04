@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Cell : MonoBehaviour
@@ -19,7 +20,7 @@ public class Cell : MonoBehaviour
     /// <summary>
     /// ID가 잘못되었다고 알려주는 const
     /// </summary>
-    const int ID_NOT_VALID = -1;
+    public const int ID_NOT_VALID = -1;
 
     /// <summary>
     /// 셀의 ID이면서 위치를 표시하는 역할
@@ -156,7 +157,13 @@ public class Cell : MonoBehaviour
     /// </summary>
     public void IncreaseAroundMineCount()
     {
-        aroundMineCount++;
+        if (!hasMine)   // 지뢰가 없을 때만
+        {
+            aroundMineCount++;
+            // aroundMineCount가 증가하면 inside의 스프라이트 이미지도
+            // aroundMineCount의 숫자에 맞게 OpenCellType으로 캐스팅 해서 넣어준다.
+            inside.sprite = Board[(OpenCellType)aroundMineCount];   // 주변 지뢰 숫자에 맞게 이미지 설정
+        }
     }
 
     /// <summary>
@@ -164,7 +171,14 @@ public class Cell : MonoBehaviour
     /// </summary>
     public void SetMine()
     {
-        hasMine = true;
-        inside.sprite = Board[OpenCellType.Mine_NotFound];
+        hasMine = true;     // 지뢰가 설치 되었다고 표시
+        inside.sprite = Board[OpenCellType.Mine_NotFound];  // 지뢰 이미지로 변경
+
+        // 이 셀 주변 셀들의 IncreaseAroundMineCount함수 실행 (aroundMineCount를 1씩 증가)
+        List<Cell> cellList = Board.GetNeighbors(ID); 
+        foreach (var cell in cellList)
+        {
+            cell.IncreaseAroundMineCount();
+        }
     }
 }

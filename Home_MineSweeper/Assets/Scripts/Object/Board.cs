@@ -52,6 +52,7 @@ public class Board : MonoBehaviour
     /// </summary>
     public void Initialize(int newWidth, int newHeight, int mineCount)
     {
+        // 기존에 존재하던 셀 다 지우기
         ClearCells();
 
         width = newWidth;
@@ -61,6 +62,8 @@ public class Board : MonoBehaviour
 
         // 보드의 피봇을 중심으로 셀이 생성되게 하기 위해 설이 생성될 시작점 계산 용도로 구하기
         Vector3 offset = new(-(width - 1) * Distance * 0.5f, (height - 1) * Distance * 0.5f);
+
+        cells = new Cell[width * height];
 
         for (int y = 0; y < height; y++)
         {
@@ -109,6 +112,44 @@ public class Board : MonoBehaviour
             (source[randomIndex], source[lastIndex]) = (source[lastIndex], source[randomIndex]);    // swap 처리
         }
     }
+
+    /// <summary>
+    /// 파라메터로 받은 ID를 가진 셀 주변의 셀들을 리턴하는 함수
+    /// </summary>
+    /// <param name="id">찾을 중심 셀</param>
+    /// <returns>id주변에 있는 셀들</returns>
+    public List<Cell> GetNeighbors(int id)
+    {
+        List<Cell> result = new List<Cell>(8);
+        Vector2Int grid = IdToGrid(id);
+
+        for (int i = -1; i < 2; i++)
+        {
+            for (int j = -1; j < 2; j++)
+            {
+                int index = GridToID(j + grid.x, i + grid.y);
+                if (index != Cell.ID_NOT_VALID && !(i == 0 && j == 0))
+                {
+                    result.Add(cells[index]);
+                }
+            }
+        }
+        return null;
+    }
+
+    Vector2Int IdToGrid(int id)
+    {
+        return new Vector2Int(id % width, id / width);
+    }
+
+    int GridToID(int x, int y)
+    {
+        if (x >= 0 && x < width && y >= 0 && y < height)        
+            return x + y * width;
+
+        return Cell.ID_NOT_VALID;
+    }
+
 
     /// <summary>
     /// 보드의 모든 셀을 제거하는 함수

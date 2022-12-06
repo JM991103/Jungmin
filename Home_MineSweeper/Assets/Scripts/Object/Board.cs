@@ -64,23 +64,20 @@ public class Board : MonoBehaviour
     private void OnEnable()
     {
         inputActions.Player.Enable();
-        inputActions.Player.LeftClick.performed += OnLeftClick;
         inputActions.Player.RightClick.performed += OnRightClick;
+        inputActions.Player.LeftClick.performed += OnLeftPress;
+        inputActions.Player.LeftClick.canceled += OnLeftRelese;
+
     }
 
     private void OnDisable()
     {
-        inputActions.Player.RightClick.performed += OnRightClick;
-        inputActions.Player.LeftClick.performed += OnLeftClick;
+        inputActions.Player.LeftClick.canceled -= OnLeftRelese;
+        inputActions.Player.LeftClick.performed -= OnLeftPress;
+        inputActions.Player.RightClick.performed -= OnRightClick;
         inputActions.Player.Disable();
     }
 
-
-
-    //private void Start()
-    //{
-    //    Initialize(width, height, 10);
-    //}
 
     /// <summary>
     /// 이 보드가 가질 모든 셀을 생성하고 배치하는 함수 
@@ -198,11 +195,14 @@ public class Board : MonoBehaviour
     /// <returns>스크린 좌표와 매칭되는 보드 위의 그리드 좌표</returns>
     Vector2Int ScreenToGird(Vector2 screenPos)
     {
+        // 스크린 좌표를 월드 좌표로 변경하기
+        Vector2 worldPos = (Vector2)Camera.main.ScreenToWorldPoint(screenPos);
+
         // 보드의 중심점에서 왼쪽 위(시작 좌표) 구하기
         Vector2 startPos = new Vector2(-width * Distance * 0.5f, height * Distance * 0.5f) + (Vector2)transform.position;
 
         // 보드의 왼쪽 위에서 마우스가 얼마만큼 떨어져 있는지 확인 
-        Vector2 Diff = (Vector2)Camera.main.ScreenToWorldPoint(screenPos) - startPos;
+        Vector2 Diff = worldPos - startPos;
 
         return new((int)(Diff.x / Distance), (int)(-Diff.y / Distance));
     }
@@ -240,9 +240,28 @@ public class Board : MonoBehaviour
         }
     }
 
-    private void OnLeftClick(InputAction.CallbackContext _)
+    private void OnLeftPress(InputAction.CallbackContext _)
     {
-        Debug.Log("왼쪽 클릭");
+        Debug.Log("왼쪽 눌렀다.");
+        Vector2 screenPos = Mouse.current.position.ReadValue(); // 마우스 커서의 스크린 좌표 읽기
+        Vector2Int grid = ScreenToGird(screenPos);              // 스크린 좌표를 Grid로 변환
+        if (IsValidGrid(grid))                                  // 결과 그리드 좌표가 적합한지 확인 => 적합하지 않으면 보드 밖이라는 의미
+        {
+            Cell target = cells[GridToID(grid.x, grid.y)];      // 해당 셀 가져오기
+            target.CellPress();
+        }
+    }
+
+    private void OnLeftRelese(InputAction.CallbackContext _)
+    {
+        Debug.Log("왼쪽 땠다.");
+        Vector2 screenPos = Mouse.current.position.ReadValue(); // 마우스 커서의 스크린 좌표 읽기
+        Vector2Int grid = ScreenToGird(screenPos);              // 스크린 좌표를 Grid로 변환
+        if (IsValidGrid(grid))                                  // 결과 그리드 좌표가 적합한지 확인 => 적합하지 않으면 보드 밖이라는 의미
+        {
+            Cell target = cells[GridToID(grid.x, grid.y)];      // 해당 셀 가져오기
+            target.CellRelease();
+        }
     }
 
     private void OnRightClick(InputAction.CallbackContext _)

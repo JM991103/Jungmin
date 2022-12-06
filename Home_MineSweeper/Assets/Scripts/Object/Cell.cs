@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Cell : MonoBehaviour
 {
@@ -127,11 +128,21 @@ public class Cell : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("들어왔음");
+        if (Mouse.current.leftButton.ReadValue() > 0)
+        {
+            Debug.Log($"마우스 왼쪽버튼을 누른채로 들어왔음\n{this.gameObject.name}");
+            PressCover();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         //Debug.Log("나갔음");
+        if (Mouse.current.leftButton.ReadValue() > 0)
+        {
+            Debug.Log($"마우스 왼쪽버튼을 누른채로 들어왔음\n{this.gameObject.name}");
+            RestoreCover();
+        }
     }
 
 
@@ -149,6 +160,7 @@ public class Cell : MonoBehaviour
     public void CellPress()
     {
         // 눌러진 이미지로 변경
+        PressCover();
     }
 
     /// <summary>
@@ -158,7 +170,41 @@ public class Cell : MonoBehaviour
     {
         // 여는 경우 : Open();
         // 복구되는 경우
+        RestoreCover();
     }
+
+    void PressCover()
+    {
+        switch (markState)
+        {
+            case CellMarkState.None:
+                cover.sprite = Board[CloseCellType.Close_Press];
+                break;                
+            case CellMarkState.Question:
+                cover.sprite = Board[CloseCellType.Question_Press];
+                break;
+            case CellMarkState.Flag:
+            default:
+                break;
+        }
+    }
+
+    void RestoreCover()
+    {
+        switch (markState)
+        {
+            case CellMarkState.None:
+                cover.sprite = Board[CloseCellType.Close];
+                break;
+            case CellMarkState.Question:
+                cover.sprite = Board[CloseCellType.Question];
+                break;
+            case CellMarkState.Flag:
+            default:
+                break;
+        }
+    }
+
 
     /// <summary>
     /// 주변8칸에 지뢰가 추가될때 실행되는 함수 

@@ -81,7 +81,7 @@ public class ImageNumber : MonoBehaviour
 
         for (int i = index; i < numberImages.Length; i++)   // 숫자 적용하고 남은 자리수들의 숫자를 빈칸으로 채우기
         {
-            numberImages[i].sprite = EmptySprite;
+            numberImages[i].sprite = zeroSprite;
         }
 
         if (number < 0) // 숫자가 음수였을 경우

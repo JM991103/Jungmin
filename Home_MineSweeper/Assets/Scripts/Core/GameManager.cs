@@ -52,8 +52,20 @@ public class GameManager : Singleton<GameManager>
         base.Initialize();
         timer = GetComponent<Timer>();
 
+        FlagCount = mineCount;
+
         board = FindObjectOfType<Board>();
         board.Initialize(boardWidth, boardHeight, mineCount);
+    }
+
+    public void IncreaseFlagCount()
+    {
+        FlagCount++;
+    }
+
+    public void DecreaseFlagCount()
+    {
+        FlagCount--;
     }
 
     private void Update()

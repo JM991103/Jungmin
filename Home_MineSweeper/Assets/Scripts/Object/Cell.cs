@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -105,6 +106,13 @@ public class Cell : MonoBehaviour
     /// </summary>
     public bool IsQuestion => markState == CellMarkState.Question;
 
+    // 델리게이트------------------------------------------------------------------------------------------------------------------------------------------
+
+    public Action onFlagUes;
+    public Action onFlagReturn;
+
+
+
     // 함수 ----------------------------------------------------------------------------------------------------------------------------------------------
 
     private void Awake()
@@ -179,6 +187,39 @@ public class Cell : MonoBehaviour
         foreach (var cell in cellList)
         {
             cell.IncreaseAroundMineCount();
+        }
+    }
+
+    /// <summary>
+    /// 셀을 오른쪽 클릭했을 때 실행될 함수
+    /// </summary>
+    public void CellRightPress()
+    {
+        if (!isOpen)    
+        {
+            switch (markState)
+            {
+                case CellMarkState.None:
+                    // markState가 none이면 flag가 된다 -> 깃발 갯수가 줄어든다. 셀 이미지 변경된다.
+                    markState = CellMarkState.Flag;
+                    cover.sprite = Board[CloseCellType.Flag];
+                    onFlagUes?.Invoke();
+                    break;
+                case CellMarkState.Flag:
+                    // markState가 flag이면 Question가 된다 -> 깃발 갯수가 늘어난다. 셀 이미지 변경된다.
+                    markState = CellMarkState.Question;
+                    cover.sprite = Board[CloseCellType.Question];
+                    onFlagReturn?.Invoke();
+                    break;
+                case CellMarkState.Question:
+                    // markState가 Question이면 none가 된다 -> 셀 이미지 변경된다.
+                    markState = CellMarkState.None;
+                    cover.sprite = Board[CloseCellType.Close];
+                    break;
+                default:
+                    break;
+            }
+
         }
     }
 }

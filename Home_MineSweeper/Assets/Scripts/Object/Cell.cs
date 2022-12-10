@@ -54,9 +54,22 @@ public class Cell : MonoBehaviour
     /// </summary>
     Board parentBoard;
 
+    /// <summary>
+    /// 닫혔을 때 보일 스프라이트 렌더러
+    /// </summary>
     SpriteRenderer cover;
 
+    /// <summary>
+    /// 열렸을 때 보일 스프라이트 렌더러
+    /// </summary>
     SpriteRenderer inside;
+
+    /// <summary>
+    /// 이 셀에 의해 눌려진 셀의 목록(자기 자신 or 자기 주변에 닫혀있던 셀)
+    /// </summary>
+    List<Cell> pressedcells;
+
+    List<Cell> neighbors;
 
     // 프로퍼티 ----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -112,12 +125,12 @@ public class Cell : MonoBehaviour
     public Action onFlagUes;
     public Action onFlagReturn;
 
-
-
     // 함수 ----------------------------------------------------------------------------------------------------------------------------------------------
 
     private void Awake()
     {
+        pressedcells = new List<Cell>(8);               // 새로운 메모리 할당
+
         Transform child = transform.GetChild(0);
         cover = child.GetComponent<SpriteRenderer>();
 
@@ -145,32 +158,89 @@ public class Cell : MonoBehaviour
         }
     }
 
-
     /// <summary>
-    /// 셀에 빈것 -> 깃발 -> 물음표 -> 빈것 ->  순서대로 표시하는 함수
+    /// 셀을 여는 함수
     /// </summary>
-    void SetMark()
+    void Open()
     {
+        if (! isOpen && !IsFlaged)      // 셀이 닫혀있고 깃발 표시가 안되어있을 때만 연다
+        {
+            isOpen = true;              // 열렸다고 표시하기
 
+            if (hasMine)   // 지뢰가 있으면
+            {
+                inside.sprite = Board[OpenCellType.Mine_Explosion]; // 터지는 이미지로 변경
+            }
+            cover.gameObject.SetActive(false);  // 셀이 열릴 때 커버를 비활성화
+
+            if (aroundMineCount == 0 && ! hasMine)  // 주변 지뢰 갯수가 0이면
+            {
+                foreach (var cell in neighbors) // 주변 셀들을
+                {
+                    cell.Open();                // 모두 연다. (재귀 호출)
+                }
+            }
+        }
     }
 
     /// <summary>
-    /// 셀이 눌러졌을 때 실행될 함수
+    /// 마우스 왼쪽 버튼이 이 셀을 눌렀을 때 실행될 함수
     /// </summary>
     public void CellPress()
     {
         // 눌러진 이미지로 변경
-        PressCover();
+        pressedcells.Clear();   // 새롭게 눌러졌으니 기존에 눌려져 있던 셀에 대한 기록은 제거
+        if (IsOpen)
+        {
+            // 이 셀이 열려져 있으면, 자신 주변의 닫힌 셀을 모두 느른 표시로 한다.
+            foreach (var cell in neighbors)
+            {
+                if (!cell.IsOpen)       // 주변 셀 중에 닫혀있는셀만
+                {
+                    pressedcells.Add(cell); // 누르고 있는 셀이라고 표시하고
+                    cell.CellPress();       // 누르고 있는 표시 진행
+                }
+            }
+        }
+        else
+        {
+            // 이 셀이 닫힌 셀일 때 자신을 누른 표시를 한다.
+            PressCover();
+        }
     }
 
     /// <summary>
-    /// 누른 셀을 뗐을 때 실행될 함수
+    /// 마우스 왼쪽 버튼이 이 셀 위에서 떨어졌을 때 실행될 함수
     /// </summary>
     public void CellRelease()
     {
-        // 여는 경우 : Open();
-        // 복구되는 경우
-        RestoreCover();
+        if (pressedcells.Count != 1)    // 1개가 아닐 때 (2개 이상일 때는 다 처리)
+        {
+            int flagCount = 0;
+            foreach (var cell in neighbors) // 주변에 있는 깃발 갯수 세기
+            {
+                if (cell.IsFlaged)
+                {
+                    flagCount++;
+                }
+            }
+            if (flagCount == aroundMineCount)   // 주변의 깃발 갯수와 주변 지뢰 갯수가 같을 때만 눌려진 것들 다 열기
+            {
+                foreach (var cell in pressedcells)
+                {
+                    cell.Open();
+                }
+            }
+            else
+            {
+                RestoreCovers();        // 갯수가 다르면 눌러져있던 셀들 복구
+            }
+        }
+        else
+        {
+            // 1개 일때는 자기 자신만 열고 끝내기
+            pressedcells[0].Open();
+        }
     }
 
     void PressCover()
@@ -187,11 +257,24 @@ public class Cell : MonoBehaviour
             default:
                 break;
         }
+        pressedcells.Add(this); // 눌러진 셀이라고 표시
     }
+
+    /// <summary>
+    /// 이 셀과 관련해서 눌려져 있던 셀들이 복구 될 때 해야할 일을 모아놓은 함수
+    /// </summary>
+    void RestoreCovers()
+    {
+        foreach (var cell in pressedcells)  // 전부 순회하면서 복구
+        {
+            cell.RestoreCover();
+        }
+        pressedcells.Clear();               // 리스트 비우기
+    }    
 
     void RestoreCover()
     {
-        switch (markState)
+        switch (markState)  // 표시 상태에 따라 이미지 변경
         {
             case CellMarkState.None:
                 cover.sprite = Board[CloseCellType.Close];
@@ -204,7 +287,6 @@ public class Cell : MonoBehaviour
                 break;
         }
     }
-
 
     /// <summary>
     /// 주변8칸에 지뢰가 추가될때 실행되는 함수 

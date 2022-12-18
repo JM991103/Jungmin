@@ -4,6 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 // 길을 그리기 위한 타일 클래스(자동으로 적절한 스프라이트로 변경해주는 클래스)
 public class RoadTile : Tile
 {
@@ -58,6 +62,104 @@ public class RoadTile : Tile
         // mask에 주변 타일의 상황을 기록하기
         // ex) 북쪽에 RoadTile이 있으면 mask에는 AdjTilePosition.North가 들어가야 한다.
         // 북동쪽에 RoadTile이 있으면 mask에는 (AdjTilePosition.North | AdjTilePosition.East)가 들어가야 한다.
+
+        //if(HasThisTile(tilemap, position + new Vector3Int(0,1,0)))
+        //{
+        //    //mask = mask | AdjTilePosition.North;
+        //    mask |= AdjTilePosition.North;
+        //}
+
+        mask |= HasThisTile(tilemap, position + new Vector3Int(0, 1, 0)) ? AdjTilePosition.North : 0;
+        mask |= HasThisTile(tilemap, position + new Vector3Int(1, 0, 0)) ? AdjTilePosition.East : 0;
+        mask |= HasThisTile(tilemap, position + new Vector3Int(0, -1, 0)) ? AdjTilePosition.South : 0;
+        mask |= HasThisTile(tilemap, position + new Vector3Int(-1, 0, 0)) ? AdjTilePosition.West : 0;
+
+        // mask값에 따라 어떤 스프라이트를 보여줄 것인지 결정
+        int index = GetIndex(mask);
+        if (index > -1)
+        {
+            tileData.sprite = sprites[index];               // index번째의 스프라이트로 변경
+            tileData.color = Color.white;                   // 생상은 기본 흰색
+            Matrix4x4 m = tileData.transform;               // transform 매트릭스 받아와서
+            // mask 값에 따라 얼마만큼 회전 시킬 것인지를 결정
+            m.SetTRS(Vector3.zero, GetRotation(mask), Vector3.one); // 계산한 회전대로 매트릭스 설정
+
+            tileData.transform = m;                         // 매트릭스 변경한 것으로 적용
+            tileData.flags = TileFlags.LockTransform;       // 다른 타일이 회전을 변경 못하도록
+            tileData.colliderType = ColliderType.None;      // 길이니깐 컬라이더 없음
+
+        }
+        else
+        {
+            Debug.Log("에러 : 잘못된 인덱스");
+        }
+
+    }
+
+    /// <summary>
+    /// mask 설정에 따라 어떤 스프라이트를 사용할 것인지를 결정해서 돌려주는 함수
+    /// </summary>
+    /// <param name="mask">주변 타일 상황 확인용 마스크</param>
+    /// <returns>그려질 스프라이트의 인덱스</returns>
+    int GetIndex(AdjTilePosition mask)
+    {
+        int index = -1;
+        switch(mask)
+        {
+            case AdjTilePosition.None:
+                index = 0;
+                break;
+            case AdjTilePosition.South | AdjTilePosition.West:
+            case AdjTilePosition.West | AdjTilePosition.North:
+            case AdjTilePosition.North | AdjTilePosition.East:
+            case AdjTilePosition.East | AdjTilePosition.South:
+                index = 1;  // ㄱ자 모양의 스프라이트
+                break;
+            case AdjTilePosition.North:
+            case AdjTilePosition.East:
+            case AdjTilePosition.South:
+            case AdjTilePosition.West:
+            case AdjTilePosition.North | AdjTilePosition.South:
+            case AdjTilePosition.East | AdjTilePosition.West:
+                index = 2;  // |자 모양의 스프라이트
+                break;
+
+            case AdjTilePosition.All & ~AdjTilePosition.North:  // 0000 1111 & 1111 1110 = 0000 1110
+            case AdjTilePosition.All & ~AdjTilePosition.East:
+            case AdjTilePosition.All & ~AdjTilePosition.South:
+            case AdjTilePosition.All & ~AdjTilePosition.West:
+                index = 3;  // ㅗ자 모양의 스프라이트
+                break;
+            case AdjTilePosition.All:
+                index = 4;
+                break;
+        }
+        return index;
+    }
+
+    Quaternion GetRotation(AdjTilePosition mask)
+    {
+        Quaternion rotate = Quaternion.identity;
+        switch(mask)
+        {
+            case AdjTilePosition.North | AdjTilePosition.West:  // ㄱ자 돌리기
+            case AdjTilePosition.East:                          // |자 돌리기
+            case AdjTilePosition.West:
+            case AdjTilePosition.East | AdjTilePosition.West:
+            case AdjTilePosition.All & ~AdjTilePosition.West:   // ㅗ자 돌리기
+                rotate = Quaternion.Euler(0, 0, -90);
+                break;
+            case AdjTilePosition.North | AdjTilePosition.East:  // ㄱ자 돌리기
+            case AdjTilePosition.All & ~AdjTilePosition.North:  // ㅗ자 돌리기
+                rotate = Quaternion.Euler(0, 0, -180);
+                break;
+            case AdjTilePosition.East | AdjTilePosition.South:  // ㄱ자 돌리기
+            case AdjTilePosition.All & ~AdjTilePosition.East:   // ㅗ자 돌리기
+                rotate = Quaternion.Euler(0, 0, -270);
+                break;
+        }
+
+        return rotate;
     }
 
 
@@ -72,4 +174,22 @@ public class RoadTile : Tile
         // 타일맵에서 타일을 가져온 후 나와 같은지 확인
         return tilemap.GetTile(position) == this;
     }
+
+#if UNITY_EDITOR
+    [MenuItem("Assets/Create/2D/Tiles/RoadTile")]
+    public static void CreateRoadTile()
+    {
+        string path = EditorUtility.SaveFilePanelInProject( // 파일 저장용 찰 열기
+            "Save Road Tile",   // 제목
+            "New Road Tile",    // 파일의 기본 이름
+            "Asset",            // 파일의 확장자
+            "Save Road Tile",   // 출력용 메세지
+            "Assets");          // 기본으로 지정된 폴더
+
+        if (path != "")
+        {
+            AssetDatabase.CreateAsset(CreateInstance<RoadTile>(), path);    // 위에서 지정한 경로에 RoadTile 에셋을 하나 만듬
+        }
+    }
+#endif
 }

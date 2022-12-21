@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Dessolve
-  m_Shader: {fileID: -6465566751694194690, guid: 80aead163c690de4ea96f261cb806417, type: 3}
+  m_Name: Shader Graphs_Slime
+  m_Shader: {fileID: -6465566751694194690, guid: b921c64c493dc004182edf175e12a22c, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -38,8 +38,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fade: 1
-    - _Scale: 40
+    - _Dissolve_Fade: 1
+    - _OutLine_Thickness: 0.005
+    - _Phase_Split: 1
+    - _Phase_Thickness: 0.1
     m_Colors:
-    - _Color: {r: 16, g: 0.1882353, b: 0, a: 0}
+    - _Dissolve_Color: {r: 4, g: 1.631373, b: 0, a: 0}
+    - _OutLine_Color: {r: 0, g: 16.76025, b: 0.695446, a: 0}
+    - _Phase_Color: {r: 0, g: 2.27451, b: 4, a: 0}
   m_BuildTextureStacks: []

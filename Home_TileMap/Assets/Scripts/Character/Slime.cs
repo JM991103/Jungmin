@@ -6,7 +6,7 @@ using UnityEngine;
 public class Slime : MonoBehaviour
 {
     public float phaseDuration = 0.5f;
-    public float dissolveDuration = 0.5f;
+    public float dissolveDuration = 1.0f;
     const float Outline_Thickness = 0.005f;
 
     Material mainMaterial;
@@ -14,6 +14,7 @@ public class Slime : MonoBehaviour
     public Action onPhaseEnd;
     public Action onDie;
     public Action onDisable;
+
     private void Awake()
     {
         Renderer renderer = GetComponent<Renderer>();
@@ -25,15 +26,21 @@ public class Slime : MonoBehaviour
         StartCoroutine(StartPhase());
     }
 
+    private void OnDisable()
+    {
+        onDisable?.Invoke();
+    }
+
     private void Start()
     {
         ShowOutline(false);
         mainMaterial.SetFloat("_Dissolve_Fade", 1.0f);
     }
 
-    private void OnDisable()
+    public void Die()
     {
-        onDisable?.Invoke();
+        StartCoroutine(StartDissolve());
+        onDie?.Invoke();
     }
 
     IEnumerator StartPhase()
@@ -57,29 +64,22 @@ public class Slime : MonoBehaviour
         onPhaseEnd?.Invoke();
     }
 
-
     IEnumerator StartDissolve()
     {
         mainMaterial.SetFloat("_Dissolve_Fade", 1.0f);
 
         float timeElipsed = 0.0f;
-        float dissolveDurationNormalize = 1 / dissolveDuration;
+        float dessolveDurationNormalize = 1 / dissolveDuration;
 
         while (timeElipsed < dissolveDuration)
         {
             timeElipsed += Time.deltaTime;
 
-            mainMaterial.SetFloat("_Dissolve_Fade", 1 - timeElipsed * dissolveDurationNormalize);
+            mainMaterial.SetFloat("_Dissolve_Fade", 1 - timeElipsed * dessolveDurationNormalize);
 
             yield return null;
         }
         this.gameObject.SetActive(false);
-    }
-
-    public void Die()
-    {
-        StartCoroutine(StartDissolve());
-        onDie?.Invoke();
     }
 
     public void ShowOutline(bool isShow)

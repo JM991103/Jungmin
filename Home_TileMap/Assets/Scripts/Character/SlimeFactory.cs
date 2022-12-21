@@ -59,8 +59,8 @@ public class SlimeFactory : Singleton<SlimeFactory>
                 newpool[i] = slime;
                 obj.SetActive(false);
             }
-        }
-        return GetSlime();
-    }
 
+            return GetSlime();
+        }
+    }
 }

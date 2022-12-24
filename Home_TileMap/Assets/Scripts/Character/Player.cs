@@ -68,10 +68,6 @@ public class Player : MonoBehaviour
         inputActions.Player.Move.canceled -= OnStop;
         inputActions.Player.Disable();
     }
-    private void Update()
-    {
-
-    }
 
     private void FixedUpdate()
     {

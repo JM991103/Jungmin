@@ -82,11 +82,11 @@ public class Slime : MonoBehaviour
     {
         if (isShow)
         {
-            mainMaterial.SetFloat("_Outline_Thickness", Outline_Thickness);
+            mainMaterial.SetFloat("_OutLine_Thickness", Outline_Thickness);
         }
         else
         {
-            mainMaterial.SetFloat("_Outline_Thickness", 0.0f);
+            mainMaterial.SetFloat("_OutLine_Thickness", 0.0f);
         }
     }
 }

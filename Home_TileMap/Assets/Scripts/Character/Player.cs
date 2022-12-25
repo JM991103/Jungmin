@@ -49,6 +49,7 @@ public class Player : MonoBehaviour
 
         // 객체 생성
         inputActions = new PlayerInputActions();
+        
     }
 
     private void OnEnable()
@@ -79,8 +80,10 @@ public class Player : MonoBehaviour
     {
         // 이동 입력이 들어왔을 때
         inputDir = context.ReadValue<Vector2>();    // 입력 이동 방향 저장하고
+        oldInputDir = inputDir;                     // 이후 복원을 위해 입력 이동 방향 저장
         anim.SetFloat("InputX", inputDir.x);        // 애니메이터 파라메터 변경
         anim.SetFloat("InputY", inputDir.y);
+
 
         isMove = true;                              // 이동 한다고 표시하고
         anim.SetBool("IsMove", isMove);             // 이동 애니메이션 재생
@@ -95,7 +98,7 @@ public class Player : MonoBehaviour
 
     private void OnAttack(InputAction.CallbackContext context)
     {
-        oldInputDir = inputDir;         // 이후 복원을 위해 입력 이동 방향 저장
+        oldInputDir = inputDir;         // 이후 복원을 위해 입력 이동 방향 저장        
         inputDir = Vector2.zero;        // 입력 이동 방향 초기화
         anim.SetTrigger("Attack");      // 공격 애니메이션 실행
     }

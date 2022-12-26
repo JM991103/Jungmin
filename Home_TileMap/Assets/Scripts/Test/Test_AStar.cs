@@ -30,8 +30,5 @@ public class Test_AStar : TestBase
         nodeList.Add(node4);
         nodeList.Add(node5);
         nodeList.Sort();
-
-
-        int i = 0;
     }
 }

@@ -125,6 +125,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Test5",
+                    "type": "Button",
+                    "id": "ad6a22da-a525-4341-ad4d-055408715f44",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Test4",
                     "type": "Button",
                     "id": "1ce31a57-8237-48f7-9662-ecefc426c78a",
@@ -134,9 +143,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Test5",
+                    "name": "LeftClick",
                     "type": "Button",
-                    "id": "ad6a22da-a525-4341-ad4d-055408715f44",
+                    "id": "9c56db1c-31db-44ba-a625-e2d876e7e365",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightClick",
+                    "type": "Button",
+                    "id": "48de8467-d2f1-4765-82f6-82647e027cdc",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -157,11 +175,22 @@
                 },
                 {
                     "name": "",
+                    "id": "d5f9cf26-f6dd-4aba-903e-5ca13f323046",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "4a23e188-b021-4d1a-85d9-56bc65079127",
                     "path": "<Keyboard>/2",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard/Mouse",
+                    "groups": "",
                     "action": "Test2",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -172,7 +201,7 @@
                     "path": "<Keyboard>/3",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard/Mouse",
+                    "groups": "",
                     "action": "Test3",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -183,7 +212,7 @@
                     "path": "<Keyboard>/4",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard/Mouse",
+                    "groups": "",
                     "action": "Test4",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -194,8 +223,19 @@
                     "path": "<Keyboard>/5",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard/Mouse",
+                    "groups": "",
                     "action": "Test5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f7ff4d42-4afa-4f66-a486-590ebc664e64",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftClick",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

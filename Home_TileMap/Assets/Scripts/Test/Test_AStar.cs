@@ -36,8 +36,7 @@ public class Test_AStar : TestBase
         nodeList.Add(node5);
         nodeList.Sort();
 
-
-        int i = 0;
+        //int i = 0;
     }
 
     protected override void Test2(InputAction.CallbackContext _)
@@ -47,7 +46,7 @@ public class Test_AStar : TestBase
         node.G = 1;
         node.H = 2;
         gridMap.ClearAStarData();
-        int i = 0;
+        //int i = 0;
     }
 
     protected override void Test3(InputAction.CallbackContext _)

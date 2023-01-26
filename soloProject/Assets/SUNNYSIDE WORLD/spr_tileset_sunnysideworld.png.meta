@@ -1053,15 +1053,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_47
+      name: Trees_1
       rect:
         serializedVersion: 2
         x: 816
-        y: 992
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 976
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.25, y: 0.31}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1069,27 +1069,6 @@ TextureImporter:
       bones: []
       spriteID: 9bbe11e42673a264a92b6ad7f0190c0a
       internalID: -1892583102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_48
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 992
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e9fa3ab3db556240b4507560b6f6730
-      internalID: -588736865
       vertices: []
       indices: 
       edges: []
@@ -2035,48 +2014,6 @@ TextureImporter:
       bones: []
       spriteID: 165ceb7649eb17d40a7553c3489d39ea
       internalID: 808212421
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_95
-      rect:
-        serializedVersion: 2
-        x: 816
-        y: 976
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5039f6092debe148a0ff6a54fd2769a
-      internalID: 1414805409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_96
-      rect:
-        serializedVersion: 2
-        x: 832
-        y: 976
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 641f36fd53b5e954b9808ee2d322550a
-      internalID: -5930967
       vertices: []
       indices: 
       edges: []
@@ -3048,90 +2985,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_146
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 960
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ddd960fdff00545479b936360fb344db
-      internalID: 2083107125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_147
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 960
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1fb65b954bc129e4db0a1797a4ede78f
-      internalID: -1291227422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_148
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 960
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4340f56f7b26b5d4288e5baf7adee507
-      internalID: -1923600554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_149
-      rect:
-        serializedVersion: 2
-        x: 928
-        y: 960
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc93457df1dde504cb25b23d458cf150
-      internalID: 1206301259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: spr_tileset_sunnysideworld_150
       rect:
         serializedVersion: 2
@@ -4014,90 +3867,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_194
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 944
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a6eea8e8a830304f81a7f4c5607b6d9
-      internalID: 1518942459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_195
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 944
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 969d50e1cf4cf614d957aebad64745a0
-      internalID: -1143843067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_196
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 944
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f66454055fca3724baab3aacd71ab307
-      internalID: -1384788724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_197
-      rect:
-        serializedVersion: 2
-        x: 928
-        y: 944
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c15ccd4f4b76f6345920f82e38de7364
-      internalID: 139612554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: spr_tileset_sunnysideworld_198
       rect:
         serializedVersion: 2
@@ -4434,15 +4203,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_214
+      name: ChimneyHead_0
       rect:
         serializedVersion: 2
         x: 432
         y: 928
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.23693657, y: 0.7998924}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4455,15 +4224,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_215
+      name: ChimneyHead_1
       rect:
         serializedVersion: 2
         x: 448
         y: 928
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.42619896, y: 0.75}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4476,15 +4245,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_216
+      name: ChimneyHead_2
       rect:
         serializedVersion: 2
         x: 464
         y: 928
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.375, y: 0.61}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4744,90 +4513,6 @@ TextureImporter:
       bones: []
       spriteID: 33e9400bebc50f0428b3d22c43dfd834
       internalID: -279095521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_231
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 928
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ced78efa31c1c2549bf77278b37f7b2d
-      internalID: 1687556201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_232
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 928
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec73325465bd8254bbf64760974032c1
-      internalID: -1314336090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_233
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 928
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01c42253725fe13418918804143f039a
-      internalID: -180775869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_234
-      rect:
-        serializedVersion: 2
-        x: 928
-        y: 928
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab1c86891cd7f2b45a55950ef4d71b3d
-      internalID: -892387131
       vertices: []
       indices: 
       edges: []
@@ -5374,90 +5059,6 @@ TextureImporter:
       bones: []
       spriteID: 31bcbd24bd7b0d241babd910fa7de615
       internalID: 1862589574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_264
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 912
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b4de1c4093b5b245bf6d46acc6ee7b7
-      internalID: 1128314560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_265
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 912
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d03700acb02a17846ae7b48c78f3a810
-      internalID: -240031253
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_266
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 912
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eeb919fcadf2a554ba2a26d2f6f38ee0
-      internalID: -1690855580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_267
-      rect:
-        serializedVersion: 2
-        x: 928
-        y: 912
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: baa26bf47e903f94fabd935ce3afb479
-      internalID: 952072805
       vertices: []
       indices: 
       edges: []
@@ -6450,90 +6051,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_317
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 896
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a9e2ebd855b0d7c439d1ebd3f1cfeaee
-      internalID: 341874487
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_318
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 896
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f004dac1d3709644f993691d471c29ad
-      internalID: 2043258193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_319
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 896
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bc4d679718572941ab6a184bbfb032a
-      internalID: 931994844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_320
-      rect:
-        serializedVersion: 2
-        x: 928
-        y: 896
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3901ac45f6784e34b914402af1096241
-      internalID: -677823400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: spr_tileset_sunnysideworld_321
       rect:
         serializedVersion: 2
@@ -6558,10 +6075,10 @@ TextureImporter:
       name: spr_tileset_sunnysideworld_322
       rect:
         serializedVersion: 2
-        x: 960
-        y: 896
-        width: 16
-        height: 16
+        x: 880
+        y: 878
+        width: 64
+        height: 98
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7416,90 +6933,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_364
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 880
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1c501720dd2f91439145f95671cf586
-      internalID: 1197388163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_365
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 880
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 575db602150a1c84aa480b74f536ddd5
-      internalID: -142307875
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_366
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 880
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f5299b2b51e6dc4b8ecee73060e06fb
-      internalID: 1071191668
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_367
-      rect:
-        serializedVersion: 2
-        x: 928
-        y: 880
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c231d4a8a5dff64ea6fab66110dbb09
-      internalID: 940787800
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: spr_tileset_sunnysideworld_368
       rect:
         serializedVersion: 2
@@ -8314,90 +7747,6 @@ TextureImporter:
       bones: []
       spriteID: 5f8f3afe465d0b342b9b2a42f258c31f
       internalID: -132882968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_408
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 864
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88c505464b9a434498a60afa1bebe2d7
-      internalID: -1103196464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_409
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 864
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4e094ed8fde99645b5a643830744ebe
-      internalID: -1613093352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_410
-      rect:
-        serializedVersion: 2
-        x: 912
-        y: 864
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b290dcc216da36f4bb1bf4f260e713f1
-      internalID: -196533265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_411
-      rect:
-        serializedVersion: 2
-        x: 928
-        y: 864
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 085461712e529c04082dd24da5515202
-      internalID: -1172557464
       vertices: []
       indices: 
       edges: []
@@ -14115,7 +13464,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_710
+      name: wooden pail_0
       rect:
         serializedVersion: 2
         x: 608
@@ -14136,7 +13485,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_711
+      name: wooden pail_1
       rect:
         serializedVersion: 2
         x: 624
@@ -14157,7 +13506,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_712
+      name: wooden pail_2
       rect:
         serializedVersion: 2
         x: 640
@@ -14178,7 +13527,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_713
+      name: wooden pail_3
       rect:
         serializedVersion: 2
         x: 656
@@ -15900,15 +15249,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_804
+      name: Chimney_1
       rect:
         serializedVersion: 2
         x: 624
         y: 720
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -15921,15 +15270,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spr_tileset_sunnysideworld_805
+      name: Chimney_0
       rect:
         serializedVersion: 2
         x: 656
         y: 720
         width: 26
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.72, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -31219,10 +30568,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      spr_tileset_sunnysideworld_1482: -937665483
+      spr_tileset_sunnysideworld_1482: 285761681
       spr_tileset_sunnysideworld_1383: 624590607
-      spr_tileset_sunnysideworld_1513: 285761681
-      spr_tileset_sunnysideworld_1290: -1783530102
+      spr_tileset_sunnysideworld_1513: 1703389536
+      spr_tileset_sunnysideworld_1290: -937665483
       spr_tileset_sunnysideworld_207: 1646473856
       Carrot_1: -1409305194
       spr_tileset_sunnysideworld_938: -836430585
@@ -31278,6 +30627,7 @@ TextureImporter:
       spr_tileset_sunnysideworld_458: 2010424693
       spr_tileset_sunnysideworld_7: -1665001142
       spr_tileset_sunnysideworld_654: 813369957
+      Trees_1: -1892583102
       spr_tileset_sunnysideworld_1149: 1220526794
       spr_tileset_sunnysideworld_456: 272620828
       spr_tileset_sunnysideworld_1336: 185378971
@@ -31297,6 +30647,7 @@ TextureImporter:
       spr_tileset_sunnysideworld_44: 1692165869
       spr_tileset_sunnysideworld_1295: 402706683
       spr_tileset_sunnysideworld_657: 1692806761
+      wooden pail_2: -1735325189
       spr_tileset_sunnysideworld_1262: -194983145
       GrassFloor_6: -1207748700
       spr_tileset_sunnysideworld_659: -1329199434
@@ -31312,1469 +30663,1467 @@ TextureImporter:
       spr_tileset_sunnysideworld_641: -273922477
       spr_tileset_sunnysideworld_849: -583421954
       spr_tileset_sunnysideworld_1481: 204627337
-      spr_tileset_sunnysideworld_6: -532585361
-      spr_tileset_sunnysideworld_559: 1077493615
-      spr_tileset_sunnysideworld_467: 1790755633
-      spr_tileset_sunnysideworld_875: -1235372005
-      spr_tileset_sunnysideworld_897: 353040865
-      spr_tileset_sunnysideworld_1218: -231066558
-      spr_tileset_sunnysideworld_483: -1283411896
-      spr_tileset_sunnysideworld_770: 1850761935
-      spr_tileset_sunnysideworld_303: -1177935878
-      spr_tileset_sunnysideworld_1326: 2009323582
-      spr_tileset_sunnysideworld_1435: -1991084832
-      spr_tileset_sunnysideworld_1039: 2025639529
-      spr_tileset_sunnysideworld_574: -1803244504
-      spr_tileset_sunnysideworld_931: 550733626
-      spr_tileset_sunnysideworld_1504: 376183619
-      Rice_1: 894340501
-      spr_tileset_sunnysideworld_450: -1019137995
-      spr_tileset_sunnysideworld_1546: 75054080
-      spr_tileset_sunnysideworld_45: -232158204
-      spr_tileset_sunnysideworld_506: -1799407576
-      spr_tileset_sunnysideworld_1080: -20439544
-      spr_tileset_sunnysideworld_1111: -26626575
-      spr_tileset_sunnysideworld_1465: 1638183340
-      spr_tileset_sunnysideworld_717: -90644769
-      spr_tileset_sunnysideworld_866: 47578682
-      spr_tileset_sunnysideworld_927: 291322915
-      spr_tileset_sunnysideworld_1258: -934432194
-      spr_tileset_sunnysideworld_1105: 1889330089
-      spr_tileset_sunnysideworld_809: 901891583
-      spr_tileset_sunnysideworld_342: -672187646
-      spr_tileset_sunnysideworld_665: 6232399
-      spr_tileset_sunnysideworld_1320: -574386185
-      spr_tileset_sunnysideworld_1438: -128745732
-      spr_tileset_sunnysideworld_332: -637523374
-      spr_tileset_sunnysideworld_1138: -2085464272
-      spr_tileset_sunnysideworld_418: 313084061
-      spr_tileset_sunnysideworld_676: -284550583
-      spr_tileset_sunnysideworld_10: -1152818873
-      spr_tileset_sunnysideworld_943: -1256740981
-      spr_tileset_sunnysideworld_1385: 315822177
-      spr_tileset_sunnysideworld_1420: -214811563
-      spr_tileset_sunnysideworld_957: 320363878
-      spr_tileset_sunnysideworld_68: 12737280
-      spr_tileset_sunnysideworld_1319: 1294949239
-      spr_tileset_sunnysideworld_63: 1227780662
-      spr_tileset_sunnysideworld_1283: -1865377059
-      spr_tileset_sunnysideworld_1545: -202814492
-      water Falls_3: -425921159
-      spr_tileset_sunnysideworld_1384: -1506419231
-      spr_tileset_sunnysideworld_758: -1372967383
-      spr_tileset_sunnysideworld_915: 1073189453
-      spr_tileset_sunnysideworld_444: -697038366
-      spr_tileset_sunnysideworld_995: -158957548
-      spr_tileset_sunnysideworld_789: -1358922543
-      spr_tileset_sunnysideworld_151: 200343517
-      spr_tileset_sunnysideworld_223: 718440866
-      spr_tileset_sunnysideworld_1126: -1950959084
-      spr_tileset_sunnysideworld_1002: -816779259
-      spr_tileset_sunnysideworld_812: 60415993
-      spr_tileset_sunnysideworld_357: 380767921
-      GrassFloor_12: -1324689500
-      spr_tileset_sunnysideworld_341: 1103080615
-      spr_tileset_sunnysideworld_20: -1344725384
-      spr_tileset_sunnysideworld_488: 1746937096
-      spr_tileset_sunnysideworld_1327: 188370485
-      spr_tileset_sunnysideworld_442: -1307753355
-      spr_tileset_sunnysideworld_391: 120515907
-      spr_tileset_sunnysideworld_643: -847297291
-      spr_tileset_sunnysideworld_531: 1461252807
-      spr_tileset_sunnysideworld_498: -796713163
-      spr_tileset_sunnysideworld_962: -1036467298
-      spr_tileset_sunnysideworld_1517: -1957755042
-      spr_tileset_sunnysideworld_575: -715809922
-      spr_tileset_sunnysideworld_1289: 1410632595
-      Well_2: 1893969276
-      spr_tileset_sunnysideworld_1370: 145243987
-      spr_tileset_sunnysideworld_510: -757500839
-      spr_tileset_sunnysideworld_852: -1731894277
-      spr_tileset_sunnysideworld_576: -1632607757
-      spr_tileset_sunnysideworld_971: 778043737
-      spr_tileset_sunnysideworld_1163: 315998207
-      spr_tileset_sunnysideworld_1182: -2068011060
-      spr_tileset_sunnysideworld_1260: -1415016821
-      spr_tileset_sunnysideworld_231: 1687556201
-      spr_tileset_sunnysideworld_470: -914751542
-      spr_tileset_sunnysideworld_1137: 727956196
-      spr_tileset_sunnysideworld_876: 193358098
-      water_0: -1704898257
-      spr_tileset_sunnysideworld_834: -885673697
-      spr_tileset_sunnysideworld_644: -223259210
-      spr_tileset_sunnysideworld_557: -1714412120
-      spr_tileset_sunnysideworld_593: 1397856409
-      spr_tileset_sunnysideworld_1275: -774988266
-      spr_tileset_sunnysideworld_1463: -1710651462
-      spr_tileset_sunnysideworld_1549: 428855195
-      spr_tileset_sunnysideworld_534: 1651878655
-      spr_tileset_sunnysideworld_1008: -487973339
-      spr_tileset_sunnysideworld_1064: 859618224
-      GrassFloor_2: 955377722
-      spr_tileset_sunnysideworld_756: 1835769784
-      spr_tileset_sunnysideworld_460: 856425493
-      spr_tileset_sunnysideworld_1146: 462404418
-      spr_tileset_sunnysideworld_240: -1791072341
-      spr_tileset_sunnysideworld_1407: 321743201
-      water Falls_6: 500399697
-      spr_tileset_sunnysideworld_731: 626006667
-      spr_tileset_sunnysideworld_1040: -1508764478
-      spr_tileset_sunnysideworld_1223: -1765385835
-      spr_tileset_sunnysideworld_344: -1703488066
-      spr_tileset_sunnysideworld_289: 1744800670
-      spr_tileset_sunnysideworld_431: 1151473842
-      spr_tileset_sunnysideworld_1147: -2036133960
-      spr_tileset_sunnysideworld_1116: 1351561825
-      spr_tileset_sunnysideworld_1211: 1298359933
-      spr_tileset_sunnysideworld_471: 36735071
-      spr_tileset_sunnysideworld_937: 907075503
-      spr_tileset_sunnysideworld_836: 524139757
-      spr_tileset_sunnysideworld_884: -534510943
-      spr_tileset_sunnysideworld_940: -7036509
-      spr_tileset_sunnysideworld_1156: -1484173128
-      spr_tileset_sunnysideworld_482: -1611746114
-      spr_tileset_sunnysideworld_191: -586683603
-      spr_tileset_sunnysideworld_596: -1455861538
-      GrassFloor_15: 1295331812
-      spr_tileset_sunnysideworld_646: 616132990
-      spr_tileset_sunnysideworld_1310: -2047563196
-      spr_tileset_sunnysideworld_1459: -923271329
-      spr_tileset_sunnysideworld_1230: 1698862589
-      spr_tileset_sunnysideworld_244: -36623519
-      spr_tileset_sunnysideworld_180: -55207099
-      spr_tileset_sunnysideworld_1434: -908122386
-      spr_tileset_sunnysideworld_1226: -1466053041
-      spr_tileset_sunnysideworld_1440: 1552572696
-      spr_tileset_sunnysideworld_50: -579414881
-      spr_tileset_sunnysideworld_933: -163933245
-      spr_tileset_sunnysideworld_473: 466295059
-      spr_tileset_sunnysideworld_630: 156366357
-      spr_tileset_sunnysideworld_292: 1227496575
-      spr_tileset_sunnysideworld_1003: -613899277
-      WoodFence_6: 922448794
-      spr_tileset_sunnysideworld_94: 149271384
-      spr_tileset_sunnysideworld_212: -481399573
-      spr_tileset_sunnysideworld_612: 1839590443
-      spr_tileset_sunnysideworld_786: -2097551690
-      spr_tileset_sunnysideworld_1121: 472423666
-      spr_tileset_sunnysideworld_1393: 2082047273
-      spr_tileset_sunnysideworld_645: -1761510589
-      spr_tileset_sunnysideworld_1460: 1918247633
-      spr_tileset_sunnysideworld_1011: 1754754344
-      spr_tileset_sunnysideworld_651: -485344855
-      spr_tileset_sunnysideworld_533: -1901434190
-      spr_tileset_sunnysideworld_1171: 197911047
-      Rice_0: -551708592
-      spr_tileset_sunnysideworld_1094: 2055989382
-      spr_tileset_sunnysideworld_1148: 215214599
-      spr_tileset_sunnysideworld_311: 2109542425
-      spr_tileset_sunnysideworld_890: -331527515
-      spr_tileset_sunnysideworld_472: 804704876
-      spr_tileset_sunnysideworld_1151: 108822484
-      spr_tileset_sunnysideworld_1339: 1796882811
-      spr_tileset_sunnysideworld_396: -873498047
-      spr_tileset_sunnysideworld_243: -1109986301
-      spr_tileset_sunnysideworld_697: 1195435429
-      spr_tileset_sunnysideworld_1175: 782571560
-      spr_tileset_sunnysideworld_313: 1849015775
-      spr_tileset_sunnysideworld_953: 1932641401
-      anvil: -1330151580
-      spr_tileset_sunnysideworld_729: 409379532
-      spr_tileset_sunnysideworld_1395: 1463071130
-      spr_tileset_sunnysideworld_438: 1665066558
-      spr_tileset_sunnysideworld_1473: 247662965
-      spr_tileset_sunnysideworld_764: -770094735
-      spr_tileset_sunnysideworld_113: 802461613
-      spr_tileset_sunnysideworld_384: -25939869
-      spr_tileset_sunnysideworld_663: 628738219
-      spr_tileset_sunnysideworld_206: 1810353154
-      spr_tileset_sunnysideworld_511: 20410882
-      Road_Line_1: -1693142429
-      spr_tileset_sunnysideworld_1488: -781782064
-      spr_tileset_sunnysideworld_1205: 491173262
-      spr_tileset_sunnysideworld_963: -133122144
-      spr_tileset_sunnysideworld_914: 493597967
-      spr_tileset_sunnysideworld_345: -1696880869
-      spr_tileset_sunnysideworld_541: -1639095970
-      spr_tileset_sunnysideworld_445: -228868430
-      spr_tileset_sunnysideworld_873: 148669296
-      spr_tileset_sunnysideworld_1096: 1181937542
-      spr_tileset_sunnysideworld_1144: -1486193947
-      spr_tileset_sunnysideworld_404: -955915809
-      spr_tileset_sunnysideworld_911: -1215681791
-      spr_tileset_sunnysideworld_1134: 647675204
-      spr_tileset_sunnysideworld_1328: -1881033080
-      spr_tileset_sunnysideworld_1000: 907745462
-      spr_tileset_sunnysideworld_1316: 1950035749
-      spr_tileset_sunnysideworld_1472: -1761175651
-      spr_tileset_sunnysideworld_369: 1635934878
-      spr_tileset_sunnysideworld_723: -218458123
-      spr_tileset_sunnysideworld_1351: 2056020152
-      spr_tileset_sunnysideworld_1455: -856410678
-      spr_tileset_sunnysideworld_1048: 136425976
-      spr_tileset_sunnysideworld_1457: 1530563043
-      spr_tileset_sunnysideworld_830: -259138287
-      spr_tileset_sunnysideworld_600: -414716031
-      spr_tileset_sunnysideworld_714: 38330257
-      spr_tileset_sunnysideworld_1015: -372448426
-      spr_tileset_sunnysideworld_1306: 1382245431
-      spr_tileset_sunnysideworld_785: 1733286594
-      spr_tileset_sunnysideworld_774: -357026130
-      spr_tileset_sunnysideworld_100: 1595791930
-      spr_tileset_sunnysideworld_1052: -2131777044
-      spr_tileset_sunnysideworld_41: 278287839
-      spr_tileset_sunnysideworld_1129: 2129139324
-      spr_tileset_sunnysideworld_958: -349197588
-      spr_tileset_sunnysideworld_1021: -826008005
-      spr_tileset_sunnysideworld_1424: -304235317
-      spr_tileset_sunnysideworld_1406: -301547841
-      spr_tileset_sunnysideworld_1006: 469335216
-      spr_tileset_sunnysideworld_2: 2057886433
-      spr_tileset_sunnysideworld_647: 1527086289
-      spr_tileset_sunnysideworld_335: 244511300
-      spr_tileset_sunnysideworld_797: -138066974
-      water Falls_5: -132058225
-      spr_tileset_sunnysideworld_203: 1932532469
-      spr_tileset_sunnysideworld_309: 1102850519
-      spr_tileset_sunnysideworld_627: -471726979
-      spr_tileset_sunnysideworld_726: -82962459
-      spr_tileset_sunnysideworld_126: 36532474
-      spr_tileset_sunnysideworld_169: 1667274157
-      spr_tileset_sunnysideworld_293: -1178193689
-      spr_tileset_sunnysideworld_88: 51374914
-      spr_tileset_sunnysideworld_373: 1748798348
-      spr_tileset_sunnysideworld_861: 1021119606
-      spr_tileset_sunnysideworld_524: -667588730
-      spr_tileset_sunnysideworld_1518: -1072569989
-      WoodFence_8: -1373855867
-      spr_tileset_sunnysideworld_835: -1237702274
-      spr_tileset_sunnysideworld_1288: -1235480121
-      spr_tileset_sunnysideworld_157: -1531615187
-      spr_tileset_sunnysideworld_1294: 1195413044
-      spr_tileset_sunnysideworld_1300: -1026323700
-      spr_tileset_sunnysideworld_310: -1448903777
-      spr_tileset_sunnysideworld_749: 2135815345
-      spr_tileset_sunnysideworld_1277: -430026013
-      spr_tileset_sunnysideworld_771: 1733839507
-      spr_tileset_sunnysideworld_744: -2018563421
-      spr_tileset_sunnysideworld_1389: 211838150
-      spr_tileset_sunnysideworld_121: 113648153
-      spr_tileset_sunnysideworld_1024: 789202464
-      Road_Line_4: -258812190
-      WoodFence_7: -1667424778
-      spr_tileset_sunnysideworld_187: 2079551390
-      spr_tileset_sunnysideworld_305: 424244400
-      spr_tileset_sunnysideworld_1240: -1528859804
-      spr_tileset_sunnysideworld_1397: -644987483
-      Road_Line_3: 21630374
-      spr_tileset_sunnysideworld_623: -365413343
-      spr_tileset_sunnysideworld_222: -260033901
-      spr_tileset_sunnysideworld_410: -196533265
-      spr_tileset_sunnysideworld_1335: 874326293
-      spr_tileset_sunnysideworld_64: -2044872254
-      spr_tileset_sunnysideworld_773: -494669897
-      spr_tileset_sunnysideworld_1063: -1160602016
-      spr_tileset_sunnysideworld_757: -408914321
-      spr_tileset_sunnysideworld_490: -706082222
-      spr_tileset_sunnysideworld_1377: -1776814443
-      spr_tileset_sunnysideworld_1055: 1417487549
-      spr_tileset_sunnysideworld_1312: 1986187011
-      spr_tileset_sunnysideworld_1524: -1281670095
-      spr_tileset_sunnysideworld_845: -1810043116
-      spr_tileset_sunnysideworld_537: -611559192
-      Blueflower_2: 567158748
-      spr_tileset_sunnysideworld_891: 138667963
-      spr_tileset_sunnysideworld_1249: -1533510590
-      spr_tileset_sunnysideworld_1305: 1798916534
-      spr_tileset_sunnysideworld_1130: 1073859381
-      spr_tileset_sunnysideworld_1160: 1379006295
-      spr_tileset_sunnysideworld_1429: -1673889439
-      spr_tileset_sunnysideworld_710: 461328423
-      spr_tileset_sunnysideworld_712: -1735325189
-      spr_tileset_sunnysideworld_850: 803946567
-      GrassFloor_8: -1782742698
-      spr_tileset_sunnysideworld_167: 1287638363
-      spr_tileset_sunnysideworld_504: -741745115
-      spr_tileset_sunnysideworld_1056: 1815771210
-      spr_tileset_sunnysideworld_1432: 1473255658
-      spr_tileset_sunnysideworld_1523: -325590518
-      spr_tileset_sunnysideworld_213: -689786913
-      spr_tileset_sunnysideworld_284: 2058557994
-      spr_tileset_sunnysideworld_469: 1744633295
-      spr_tileset_sunnysideworld_99: 1081701883
-      spr_tileset_sunnysideworld_1141: -293516969
-      spr_tileset_sunnysideworld_880: -1538648661
-      spr_tileset_sunnysideworld_27: -13842880
-      spr_tileset_sunnysideworld_1512: -330556605
-      spr_tileset_sunnysideworld_291: 1893948116
-      spr_tileset_sunnysideworld_1551: -251994819
-      spr_tileset_sunnysideworld_1506: -1702372557
-      spr_tileset_sunnysideworld_1436: -1095795972
-      spr_tileset_sunnysideworld_1522: 1168428500
-      spr_tileset_sunnysideworld_433: 2022244198
-      spr_tileset_sunnysideworld_1501: -866194462
-      spr_tileset_sunnysideworld_721: 428552321
-      spr_tileset_sunnysideworld_878: 842097639
-      spr_tileset_sunnysideworld_1354: 1058274935
-      spr_tileset_sunnysideworld_677: -491548471
-      spr_tileset_sunnysideworld_1185: -1983989221
-      spr_tileset_sunnysideworld_1507: -1429151147
-      spr_tileset_sunnysideworld_164: 720698355
-      Red flower_2: 1812367103
-      spr_tileset_sunnysideworld_1133: -1825367499
-      spr_tileset_sunnysideworld_1516: -1789927803
-      spr_tileset_sunnysideworld_1360: -1721781853
-      spr_tileset_sunnysideworld_195: -1143843067
-      spr_tileset_sunnysideworld_1333: 843730733
-      spr_tileset_sunnysideworld_738: -238905491
-      spr_tileset_sunnysideworld_689: 1633218194
-      spr_tileset_sunnysideworld_939: -1066763940
-      spr_tileset_sunnysideworld_405: -15985279
-      spr_tileset_sunnysideworld_1255: -2099795425
-      spr_tileset_sunnysideworld_1089: 1175868391
-      spr_tileset_sunnysideworld_611: -434339061
-      spr_tileset_sunnysideworld_906: 1521620397
-      spr_tileset_sunnysideworld_236: 1305980568
-      spr_tileset_sunnysideworld_737: 248043121
-      spr_tileset_sunnysideworld_453: 1619079587
-      spr_tileset_sunnysideworld_137: 1469862459
-      spr_tileset_sunnysideworld_1099: -1462379407
-      spr_tileset_sunnysideworld_465: 2132197682
-      spr_tileset_sunnysideworld_376: -1718718866
-      spr_tileset_sunnysideworld_1494: 40682829
-      spr_tileset_sunnysideworld_347: -660699642
-      spr_tileset_sunnysideworld_847: -613445513
-      spr_tileset_sunnysideworld_907: -1177258361
-      spr_tileset_sunnysideworld_1281: -1446999196
-      spr_tileset_sunnysideworld_888: -1646868171
-      spr_tileset_sunnysideworld_784: -2002195173
-      spr_tileset_sunnysideworld_209: 2022622920
-      spr_tileset_sunnysideworld_358: -1624975903
-      spr_tileset_sunnysideworld_1242: 38735586
-      spr_tileset_sunnysideworld_1307: 547350682
-      water Falls_4: 1449141413
-      spr_tileset_sunnysideworld_200: -1138039039
-      spr_tileset_sunnysideworld_553: -1682580116
-      spr_tileset_sunnysideworld_337: -1931784977
-      spr_tileset_sunnysideworld_967: -398414451
-      spr_tileset_sunnysideworld_429: 1525237561
-      spr_tileset_sunnysideworld_547: -354854573
-      spr_tileset_sunnysideworld_1540: -141036102
-      sea water_10: -407228536
-      Blue_House_3: -1382512390
-      spr_tileset_sunnysideworld_436: -1872228583
-      spr_tileset_sunnysideworld_787: 1732193480
-      spr_tileset_sunnysideworld_848: 1043649458
-      spr_tileset_sunnysideworld_718: 1678891447
-      spr_tileset_sunnysideworld_1061: 1766381228
-      spr_tileset_sunnysideworld_1026: -1997337329
-      spr_tileset_sunnysideworld_1430: 1917571778
-      spr_tileset_sunnysideworld_1379: 609642179
-      spr_tileset_sunnysideworld_1054: -1496550125
-      spr_tileset_sunnysideworld_1292: -1369732769
-      spr_tileset_sunnysideworld_874: -354895811
-      spr_tileset_sunnysideworld_1477: 1226065368
-      spr_tileset_sunnysideworld_1364: -1965368653
-      spr_tileset_sunnysideworld_1321: 1456874762
-      spr_tileset_sunnysideworld_1209: 784127409
-      spr_tileset_sunnysideworld_715: -103904390
-      spr_tileset_sunnysideworld_398: -1679887020
-      WoodFence_3: 80401154
-      spr_tileset_sunnysideworld_1529: 848541616
-      spr_tileset_sunnysideworld_889: 1990029534
-      WoodFence_4: 544878340
-      spr_tileset_sunnysideworld_356: -965331262
-      spr_tileset_sunnysideworld_1418: -1935118063
-      spr_tileset_sunnysideworld_1250: 1365242928
-      spr_tileset_sunnysideworld_263: 1862589574
-      spr_tileset_sunnysideworld_390: 448882513
-      spr_tileset_sunnysideworld_620: 933212255
-      spr_tileset_sunnysideworld_25: 2106584906
-      spr_tileset_sunnysideworld_1489: -1036272464
-      spr_tileset_sunnysideworld_903: -1811987971
-      spr_tileset_sunnysideworld_704: 1510953145
-      spr_tileset_sunnysideworld_122: 142895179
-      spr_tileset_sunnysideworld_420: 699371250
-      spr_tileset_sunnysideworld_118: -494962770
-      spr_tileset_sunnysideworld_591: 315685122
-      spr_tileset_sunnysideworld_1239: 229531717
-      spr_tileset_sunnysideworld_769: -1715940207
-      spr_tileset_sunnysideworld_1093: -1441218915
-      spr_tileset_sunnysideworld_678: -288526415
-      spr_tileset_sunnysideworld_512: -1441803225
-      spr_tileset_sunnysideworld_650: -1248012736
-      spr_tileset_sunnysideworld_954: 1632919783
-      spr_tileset_sunnysideworld_985: 638706919
-      spr_tileset_sunnysideworld_1046: 875215069
-      spr_tileset_sunnysideworld_229: -1104207392
-      Woodbottom_0: -669490383
-      water Falls_1: 299620100
-      spr_tileset_sunnysideworld_625: 770802623
-      spr_tileset_sunnysideworld_1371: 458067630
-      spr_tileset_sunnysideworld_499: 2138963456
-      spr_tileset_sunnysideworld_631: 456948399
-      spr_tileset_sunnysideworld_1311: -140550206
-      spr_tileset_sunnysideworld_949: -382849534
-      spr_tileset_sunnysideworld_601: -287741780
-      spr_tileset_sunnysideworld_599: 1864981489
-      white flower_0: -293067373
-      spr_tileset_sunnysideworld_321: -899055259
-      spr_tileset_sunnysideworld_895: -1038305213
-      spr_tileset_sunnysideworld_1313: -1162764377
-      spr_tileset_sunnysideworld_508: 1537204462
-      spr_tileset_sunnysideworld_1322: 503856967
-      spr_tileset_sunnysideworld_1113: 338389062
-      spr_tileset_sunnysideworld_1102: -1980472060
-      spr_tileset_sunnysideworld_813: -771558731
-      spr_tileset_sunnysideworld_1193: -644440859
-      spr_tileset_sunnysideworld_97: -59452125
-      spr_tileset_sunnysideworld_334: -278261362
-      spr_tileset_sunnysideworld_42: -892300589
-      spr_tileset_sunnysideworld_1372: -2107152215
-      spr_tileset_sunnysideworld_1051: -1554182366
-      spr_tileset_sunnysideworld_1356: 1532767469
-      spr_tileset_sunnysideworld_1298: -140741534
-      spr_tileset_sunnysideworld_1376: 919639647
-      sea water_13: -224865708
-      spr_tileset_sunnysideworld_419: 999282533
-      spr_tileset_sunnysideworld_1068: -1109762698
-      spr_tileset_sunnysideworld_539: 136060012
-      spr_tileset_sunnysideworld_724: 16756071
-      Blue_House_7: 586478895
-      spr_tileset_sunnysideworld_546: -1940243386
-      WoodFence_13: 417666485
-      spr_tileset_sunnysideworld_1009: -638587450
-      spr_tileset_sunnysideworld_751: -605660178
-      spr_tileset_sunnysideworld_538: -170601921
-      spr_tileset_sunnysideworld_1198: -45718748
-      spr_tileset_sunnysideworld_1343: -1162766501
-      spr_tileset_sunnysideworld_1450: 320451987
-      water Falls_7: 293959943
-      Beat_3: 1276027166
-      spr_tileset_sunnysideworld_793: -1227562993
-      spr_tileset_sunnysideworld_424: -1293048249
-      spr_tileset_sunnysideworld_132: -1613030075
-      spr_tileset_sunnysideworld_70: 1335928398
-      spr_tileset_sunnysideworld_437: 575043612
-      spr_tileset_sunnysideworld_1028: -1528885035
-      Road_2: 735818366
-      spr_tileset_sunnysideworld_1072: -2131883074
-      spr_tileset_sunnysideworld_837: -1859086311
-      spr_tileset_sunnysideworld_999: -1322851716
-      spr_tileset_sunnysideworld_166: -2143777247
-      spr_tileset_sunnysideworld_290: -349670283
-      spr_tileset_sunnysideworld_319: 931994844
-      spr_tileset_sunnysideworld_870: -1540056199
-      spr_tileset_sunnysideworld_682: 109790639
-      spr_tileset_sunnysideworld_910: 723095164
-      spr_tileset_sunnysideworld_235: 378215553
-      spr_tileset_sunnysideworld_246: 316924619
-      spr_tileset_sunnysideworld_1366: -1166227373
-      spr_tileset_sunnysideworld_1520: 1748414781
-      spr_tileset_sunnysideworld_877: -1054906986
-      spr_tileset_sunnysideworld_916: 206451553
-      spr_tileset_sunnysideworld_1528: 1430080310
-      spr_tileset_sunnysideworld_1302: 1924558276
-      spr_tileset_sunnysideworld_1437: -2028967714
-      spr_tileset_sunnysideworld_1531: 2092415827
-      spr_tileset_sunnysideworld_1470: -1128401525
-      etc2: 285761681
-      spr_tileset_sunnysideworld_26: 1232059458
-      spr_tileset_sunnysideworld_822: 1743097673
-      spr_tileset_sunnysideworld_1280: 1698192941
-      spr_tileset_sunnysideworld_1276: -222373510
-      spr_tileset_sunnysideworld_387: 1017747049
-      sea water_12: -2020478370
-      spr_tileset_sunnysideworld_994: 786113187
-      spr_tileset_sunnysideworld_637: 922244248
-      spr_tileset_sunnysideworld_1526: -589937567
-      spr_tileset_sunnysideworld_484: -128346343
-      spr_tileset_sunnysideworld_269: -1305782225
-      spr_tileset_sunnysideworld_1235: -1059547621
-      spr_tileset_sunnysideworld_1036: 3477399
-      spr_tileset_sunnysideworld_1291: 2020929700
-      spr_tileset_sunnysideworld_1541: -462243057
-      spr_tileset_sunnysideworld_1402: 767186625
-      spr_tileset_sunnysideworld_1190: -365813988
-      spr_tileset_sunnysideworld_1010: -1496325306
-      spr_tileset_sunnysideworld_1548: 1225659776
-      spr_tileset_sunnysideworld_1476: -1379333746
-      spr_tileset_sunnysideworld_690: 1843527481
-      spr_tileset_sunnysideworld_393: -405553579
-      spr_tileset_sunnysideworld_815: 218419666
-      spr_tileset_sunnysideworld_1200: 313636269
-      spr_tileset_sunnysideworld_674: -1110874550
-      spr_tileset_sunnysideworld_977: 836609077
-      spr_tileset_sunnysideworld_1419: 92509958
-      spr_tileset_sunnysideworld_1325: 2089520210
-      spr_tileset_sunnysideworld_894: 362817126
-      spr_tileset_sunnysideworld_1027: -812411980
-      spr_tileset_sunnysideworld_808: -2006626352
-      spr_tileset_sunnysideworld_1017: -1926747843
-      spr_tileset_sunnysideworld_1071: 419107026
-      spr_tileset_sunnysideworld_1172: 815511789
-      spr_tileset_sunnysideworld_1170: 398592667
-      spr_tileset_sunnysideworld_234: -892387131
-      spr_tileset_sunnysideworld_186: -47389367
-      sea water_15: -573278254
-      spr_tileset_sunnysideworld_1499: -1502875807
-      spr_tileset_sunnysideworld_281: 2100953743
-      spr_tileset_sunnysideworld_192: 1419366208
-      WoodFence_11: -1293942957
-      spr_tileset_sunnysideworld_316: -827919448
-      spr_tileset_sunnysideworld_1391: -1056513178
-      spr_tileset_sunnysideworld_408: -1103196464
-      spr_tileset_sunnysideworld_603: -1757390224
-      Beat_2: -516086411
-      spr_tileset_sunnysideworld_572: -1119145720
-      spr_tileset_sunnysideworld_1053: 1690079475
-      spr_tileset_sunnysideworld_204: 1110218249
-      spr_tileset_sunnysideworld_720: 435841888
-      spr_tileset_sunnysideworld_730: 1423800329
-      spr_tileset_sunnysideworld_974: -887940266
-      spr_tileset_sunnysideworld_746: 83099117
-      spr_tileset_sunnysideworld_993: -1479613642
-      GrassFloor_4: -1448769233
-      spr_tileset_sunnysideworld_49: 773777463
-      spr_tileset_sunnysideworld_76: 707165619
-      spr_tileset_sunnysideworld_114: 715209627
-      spr_tileset_sunnysideworld_520: 2096444839
-      spr_tileset_sunnysideworld_685: -1444195969
-      spr_tileset_sunnysideworld_493: 384923315
-      spr_tileset_sunnysideworld_238: 1155400909
-      spr_tileset_sunnysideworld_443: -66954848
-      spr_tileset_sunnysideworld_1358: 42956419
-      spr_tileset_sunnysideworld_615: 2118831609
-      spr_tileset_sunnysideworld_1197: -1066462961
-      spr_tileset_sunnysideworld_1350: 368027301
-      spr_tileset_sunnysideworld_116: -952200412
-      spr_tileset_sunnysideworld_1368: -1327894739
-      spr_tileset_sunnysideworld_569: 112712133
-      statue: 203655479
-      spr_tileset_sunnysideworld_1263: -1548814799
-      spr_tileset_sunnysideworld_735: -734706414
-      spr_tileset_sunnysideworld_573: 1551865317
-      spr_tileset_sunnysideworld_163: -2090902249
-      spr_tileset_sunnysideworld_457: 1142278500
-      spr_tileset_sunnysideworld_739: -1735834838
-      spr_tileset_sunnysideworld_422: 1739712066
-      spr_tileset_sunnysideworld_869: -1754856872
-      spr_tileset_sunnysideworld_1210: 1915416435
-      spr_tileset_sunnysideworld_975: 1975668423
-      spr_tileset_sunnysideworld_908: 31569406
-      spr_tileset_sunnysideworld_35: -1588214922
-      spr_tileset_sunnysideworld_9: 1686064009
-      spr_tileset_sunnysideworld_619: 857725025
-      spr_tileset_sunnysideworld_868: -235263387
-      GrassFloor_16: -1739724845
-      spr_tileset_sunnysideworld_1045: -435189611
-      spr_tileset_sunnysideworld_1367: 156315564
-      spr_tileset_sunnysideworld_1192: -1607406181
-      spr_tileset_sunnysideworld_988: 1219090462
-      spr_tileset_sunnysideworld_307: -1742570827
-      WoodFence_12: 1358231043
-      spr_tileset_sunnysideworld_658: -867218709
-      spr_tileset_sunnysideworld_468: -349516310
-      spr_tileset_sunnysideworld_1439: -740649280
-      spr_tileset_sunnysideworld_1282: -42752345
-      spr_tileset_sunnysideworld_777: -2077572618
-      spr_tileset_sunnysideworld_807: -10868350
-      spr_tileset_sunnysideworld_1394: 754625145
-      spr_tileset_sunnysideworld_1411: 890180188
-      spr_tileset_sunnysideworld_1273: -277368341
-      spr_tileset_sunnysideworld_329: 1244673938
-      spr_tileset_sunnysideworld_1162: 1973942004
-      spr_tileset_sunnysideworld_1025: 529993899
-      spr_tileset_sunnysideworld_1189: 271539038
-      spr_tileset_sunnysideworld_146: 2083107125
-      spr_tileset_sunnysideworld_978: 1998900498
-      spr_tileset_sunnysideworld_1458: 1478375807
-      spr_tileset_sunnysideworld_839: -1680947629
-      spr_tileset_sunnysideworld_1191: 310855051
-      spr_tileset_sunnysideworld_96: -5930967
-      spr_tileset_sunnysideworld_605: -1727668268
-      spr_tileset_sunnysideworld_979: 562428858
-      spr_tileset_sunnysideworld_522: 149609894
-      spr_tileset_sunnysideworld_339: 1021193807
-      Red flower_0: 220977234
-      spr_tileset_sunnysideworld_1511: -651551002
-      spr_tileset_sunnysideworld_1533: -537228786
-      spr_tileset_sunnysideworld_208: -2039737353
-      spr_tileset_sunnysideworld_1329: 1739922302
-      spr_tileset_sunnysideworld_1443: -1451939754
-      spr_tileset_sunnysideworld_1033: -1467955525
-      spr_tileset_sunnysideworld_1267: 1927253780
-      spr_tileset_sunnysideworld_798: 1453321200
-      spr_tileset_sunnysideworld_1479: -34399095
-      spr_tileset_sunnysideworld_256: 1484488987
-      Road_Line_0: 588082135
-      spr_tileset_sunnysideworld_1140: 909537561
-      spr_tileset_sunnysideworld_976: 756406056
-      spr_tileset_sunnysideworld_1403: -1859874147
-      thicket_2: -661488791
-      spr_tileset_sunnysideworld_561: 1924304331
-      spr_tileset_sunnysideworld_964: 1984610226
-      spr_tileset_sunnysideworld_1164: -1568504582
-      spr_tileset_sunnysideworld_400: 658382217
-      spr_tileset_sunnysideworld_51: 1907811091
-      spr_tileset_sunnysideworld_912: 2113208471
-      spr_tileset_sunnysideworld_124: -1333993010
-      spr_tileset_sunnysideworld_1127: 1968333677
-      spr_tileset_sunnysideworld_805: 176163119
-      spr_tileset_sunnysideworld_346: -1799314298
-      spr_tileset_sunnysideworld_1399: -3452636
-      spr_tileset_sunnysideworld_983: 80736717
-      spr_tileset_sunnysideworld_996: 362327886
-      spr_tileset_sunnysideworld_382: -1825023823
-      spr_tileset_sunnysideworld_388: -617093826
-      spr_tileset_sunnysideworld_881: 239277482
-      spr_tileset_sunnysideworld_1194: 104481910
-      spr_tileset_sunnysideworld_221: 430541222
-      spr_tileset_sunnysideworld_73: 33996657
-      spr_tileset_sunnysideworld_1464: 786372319
-      spr_tileset_sunnysideworld_840: 1285292470
-      spr_tileset_sunnysideworld_1547: -1619841808
-      spr_tileset_sunnysideworld_210: -687173142
-      spr_tileset_sunnysideworld_447: 606998456
-      spr_tileset_sunnysideworld_232: -1314336090
-      spr_tileset_sunnysideworld_241: -1032444711
-      spr_tileset_sunnysideworld_110: -1982804383
-      spr_tileset_sunnysideworld_1515: -1231470077
-      spr_tileset_sunnysideworld_505: -940977145
-      Road_4: -1391981169
-      spr_tileset_sunnysideworld_1165: -1468628084
-      spr_tileset_sunnysideworld_521: -483839935
-      spr_tileset_sunnysideworld_632: -989335590
-      spr_tileset_sunnysideworld_1131: 1938421049
-      spr_tileset_sunnysideworld_1491: 858152484
-      spr_tileset_sunnysideworld_514: 1963547025
-      spr_tileset_sunnysideworld_672: -204238683
-      spr_tileset_sunnysideworld_1496: -980012793
-      spr_tileset_sunnysideworld_1088: -2036041325
-      thicket_1: 552024488
-      spr_tileset_sunnysideworld_22: -638949048
-      spr_tileset_sunnysideworld_1462: 674615150
-      spr_tileset_sunnysideworld_412: -468740586
-      spr_tileset_sunnysideworld_117: 1419186707
-      spr_tileset_sunnysideworld_215: 1825241148
-      spr_tileset_sunnysideworld_560: -2060883646
-      spr_tileset_sunnysideworld_202: -1873237577
-      spr_tileset_sunnysideworld_1117: -1395989756
-      spr_tileset_sunnysideworld_1334: 441189044
-      spr_tileset_sunnysideworld_403: 2140682470
-      spr_tileset_sunnysideworld_826: -1685150376
-      spr_tileset_sunnysideworld_893: -955827398
-      spr_tileset_sunnysideworld_1122: -967042609
-      spr_tileset_sunnysideworld_423: 1965873098
-      spr_tileset_sunnysideworld_147: -1291227422
-      Blueflower_0: -265455098
-      spr_tileset_sunnysideworld_1497: -1204526654
-      spr_tileset_sunnysideworld_542: 1113295830
-      spr_tileset_sunnysideworld_1414: -1709947846
-      WoodFence_5: -58346373
-      spr_tileset_sunnysideworld_414: -1992102071
-      spr_tileset_sunnysideworld_296: -1584936265
-      sea water_8: 1596471759
-      Road_1: -189465900
-      spr_tileset_sunnysideworld_1181: 788709130
-      spr_tileset_sunnysideworld_1166: 108485321
-      spr_tileset_sunnysideworld_727: -1916486753
-      spr_tileset_sunnysideworld_535: -812113295
-      spr_tileset_sunnysideworld_733: 1408066933
-      spr_tileset_sunnysideworld_1271: 1136261815
-      spr_tileset_sunnysideworld_1225: -1760588180
-      spr_tileset_sunnysideworld_1478: -1970583377
-      Road_5: 718051138
-      spr_tileset_sunnysideworld_763: -1042047065
-      spr_tileset_sunnysideworld_823: 334526478
-      Stone_0: -1428139900
-      spr_tileset_sunnysideworld_1035: -150501729
-      spr_tileset_sunnysideworld_1204: -750596769
-      spr_tileset_sunnysideworld_648: 2042059071
-      spr_tileset_sunnysideworld_67: -1474136560
-      spr_tileset_sunnysideworld_1110: -1158337982
-      spr_tileset_sunnysideworld_362: 917265673
-      spr_tileset_sunnysideworld_170: -1023038409
-      spr_tileset_sunnysideworld_328: 710349867
-      spr_tileset_sunnysideworld_1445: -1907958317
-      spr_tileset_sunnysideworld_932: 1980025868
-      spr_tileset_sunnysideworld_1176: -1481754665
-      spr_tileset_sunnysideworld_670: 485160597
-      spr_tileset_sunnysideworld_1308: -517355271
-      spr_tileset_sunnysideworld_1314: -817644185
-      spr_tileset_sunnysideworld_649: -1095920187
-      spr_tileset_sunnysideworld_261: 181821844
-      spr_tileset_sunnysideworld_255: -1880201357
-      spr_tileset_sunnysideworld_567: 1253121377
-      spr_tileset_sunnysideworld_585: 1687312136
-      spr_tileset_sunnysideworld_435: 738950345
-      spr_tileset_sunnysideworld_675: 763859891
-      spr_tileset_sunnysideworld_966: -2046988229
-      spr_tileset_sunnysideworld_736: 1460668582
-      spr_tileset_sunnysideworld_1050: -579896510
-      Red flower_3: 495931494
-      spr_tileset_sunnysideworld_831: -1328068358
-      spr_tileset_sunnysideworld_1029: -435228605
-      spr_tileset_sunnysideworld_1304: 253279365
-      spr_tileset_sunnysideworld_1174: -646026010
-      spr_tileset_sunnysideworld_1468: -662947655
-      sea water_1: 1292596856
-      spr_tileset_sunnysideworld_1257: -1610907594
-      sea water_3: 1993534242
-      spr_tileset_sunnysideworld_12: -881390844
-      spr_tileset_sunnysideworld_214: -1602885077
-      spr_tileset_sunnysideworld_216: 1126681599
-      spr_tileset_sunnysideworld_8: -2039218990
-      spr_tileset_sunnysideworld_543: -1873353021
-      spr_tileset_sunnysideworld_626: -16162779
-      spr_tileset_sunnysideworld_1408: -796260220
-      etc: -1290904041
-      spr_tileset_sunnysideworld_1269: -1594828554
-      spr_tileset_sunnysideworld_792: 1420403944
-      spr_tileset_sunnysideworld_75: -923822987
-      spr_tileset_sunnysideworld_860: -1053375500
-      spr_tileset_sunnysideworld_1521: -198457673
-      spr_tileset_sunnysideworld_1022: -813647452
-      spr_tileset_sunnysideworld_1012: 1316955350
-      spr_tileset_sunnysideworld_1032: -381104798
-      spr_tileset_sunnysideworld_1285: -332789794
-      spr_tileset_sunnysideworld_1286: 1879120393
-      spr_tileset_sunnysideworld_525: 740165988
-      spr_tileset_sunnysideworld_696: -1645251468
-      spr_tileset_sunnysideworld_268: -1626885724
-      spr_tileset_sunnysideworld_945: 758541456
-      spr_tileset_sunnysideworld_1232: -715482796
-      spr_tileset_sunnysideworld_434: -998043532
-      spr_tileset_sunnysideworld_140: -195980380
-      Rice_2: -1045894038
-      spr_tileset_sunnysideworld_1103: -253395070
-      spr_tileset_sunnysideworld_295: -1446757221
-      spr_tileset_sunnysideworld_111: -1739455830
-      spr_tileset_sunnysideworld_1500: 959162695
-      spr_tileset_sunnysideworld_1274: 527839409
-      spr_tileset_sunnysideworld_1247: -1317735390
-      spr_tileset_sunnysideworld_799: 1890608679
-      spr_tileset_sunnysideworld_740: -1882025135
-      spr_tileset_sunnysideworld_705: 421775949
-      spr_tileset_sunnysideworld_441: -840032681
-      spr_tileset_sunnysideworld_1101: 1643870896
-      spr_tileset_sunnysideworld_883: 670924016
-      spr_tileset_sunnysideworld_1013: -320208153
-      spr_tileset_sunnysideworld_1296: -521207783
-      spr_tileset_sunnysideworld_867: 1552605066
-      Road_Line_10: 1209234809
-      spr_tileset_sunnysideworld_885: -645879794
-      spr_tileset_sunnysideworld_156: 366780935
-      spr_tileset_sunnysideworld_517: 10174750
-      spr_tileset_sunnysideworld_481: 244833841
-      spr_tileset_sunnysideworld_1426: 652908652
-      spr_tileset_sunnysideworld_898: -469371777
-      spr_tileset_sunnysideworld_1442: -1102239933
-      spr_tileset_sunnysideworld_1446: 508053297
-      spr_tileset_sunnysideworld_1539: -1156769865
-      spr_tileset_sunnysideworld_440: -100848217
-      spr_tileset_sunnysideworld_595: -884694521
-      spr_tileset_sunnysideworld_432: 60250934
-      spr_tileset_sunnysideworld_529: -1518985857
-      spr_tileset_sunnysideworld_1309: -1493794000
-      spr_tileset_sunnysideworld_1261: -927005252
-      Carrot_2: -45064229
-      spr_tileset_sunnysideworld_1427: -1770535198
-      spr_tileset_sunnysideworld_642: 1510504502
-      spr_tileset_sunnysideworld_402: -2067259636
-      spr_tileset_sunnysideworld_587: -20201980
-      spr_tileset_sunnysideworld_842: 1481330314
-      GrassFloor_7: -1760505248
-      spr_tileset_sunnysideworld_947: -506422301
-      spr_tileset_sunnysideworld_1346: -1013456207
-      spr_tileset_sunnysideworld_383: -650423061
-      spr_tileset_sunnysideworld_1090: -1419816150
-      spr_tileset_sunnysideworld_74: -1102272791
-      spr_tileset_sunnysideworld_1092: 98557595
-      spr_tileset_sunnysideworld_580: 1899170683
-      spr_tileset_sunnysideworld_142: -1936791131
-      spr_tileset_sunnysideworld_544: 77228415
-      spr_tileset_sunnysideworld_1059: -238070488
-      Stone_1: 499615316
-      spr_tileset_sunnysideworld_566: -1233592435
-      spr_tileset_sunnysideworld_1076: 98513216
-      spr_tileset_sunnysideworld_1132: -1811610825
-      GrassFloor_11: 631536819
-      spr_tileset_sunnysideworld_1480: -8815863
-      spr_tileset_sunnysideworld_318: 2043258193
-      spr_tileset_sunnysideworld_0: 1283247661
-      spr_tileset_sunnysideworld_1125: -163525558
-      spr_tileset_sunnysideworld_1382: -715361404
-      spr_tileset_sunnysideworld_466: -2023917891
-      spr_tileset_sunnysideworld_917: 1807741015
-      Carrot_3: -585826625
-      Blue_House_1: 1344486204
-      spr_tileset_sunnysideworld_1337: 1819410893
-      spr_tileset_sunnysideworld_1106: -1702849552
-      spr_tileset_sunnysideworld_1118: 260990541
-      spr_tileset_sunnysideworld_851: 352863650
-      spr_tileset_sunnysideworld_934: -141705506
-      spr_tileset_sunnysideworld_1233: 204784441
-      spr_tileset_sunnysideworld_224: -1611017846
-      spr_tileset_sunnysideworld_1467: -34256271
-      Road_Line_9: -1197472705
-      spr_tileset_sunnysideworld_250: -1301319835
-      spr_tileset_sunnysideworld_1279: -1014990789
-      spr_tileset_sunnysideworld_219: -1138605795
-      spr_tileset_sunnysideworld_485: 1008591873
-      spr_tileset_sunnysideworld_173: 781808246
-      spr_tileset_sunnysideworld_1091: -1786105113
-      spr_tileset_sunnysideworld_286: 605733640
-      spr_tileset_sunnysideworld_581: 138618657
-      spr_tileset_sunnysideworld_501: 1818215604
-      spr_tileset_sunnysideworld_698: -2033473212
-      water_3: -1987962006
-      spr_tileset_sunnysideworld_865: -132590460
-      spr_tileset_sunnysideworld_1245: 85971054
-      spr_tileset_sunnysideworld_579: 833212914
-      spr_tileset_sunnysideworld_245: -983552386
-      spr_tileset_sunnysideworld_15: -2055189854
-      spr_tileset_sunnysideworld_568: -1155317745
-      spr_tileset_sunnysideworld_1452: 997253864
-      spr_tileset_sunnysideworld_145: -41344311
-      spr_tileset_sunnysideworld_515: 1418901185
-      spr_tileset_sunnysideworld_225: 1619517706
-      Rice_3: 1540448451
-      spr_tileset_sunnysideworld_513: -788254333
-      spr_tileset_sunnysideworld_226: -747070275
-      spr_tileset_sunnysideworld_859: 1935768599
-      spr_tileset_sunnysideworld_604: -103330641
-      spr_tileset_sunnysideworld_1086: -330064385
-      spr_tileset_sunnysideworld_257: -1886436288
-      spr_tileset_sunnysideworld_956: 783822699
-      spr_tileset_sunnysideworld_82: 1692893084
-      spr_tileset_sunnysideworld_948: 1654378310
-      spr_tileset_sunnysideworld_775: 1507948451
-      spr_tileset_sunnysideworld_1087: 1189499798
-      spr_tileset_sunnysideworld_1241: -1223195566
-      spr_tileset_sunnysideworld_359: 272431294
-      spr_tileset_sunnysideworld_951: -1446489427
-      spr_tileset_sunnysideworld_380: -1246691105
-      spr_tileset_sunnysideworld_1409: -1997167790
-      spr_tileset_sunnysideworld_30: -2058207326
-      spr_tileset_sunnysideworld_421: 1742387034
-      spr_tileset_sunnysideworld_588: -400811865
-      spr_tileset_sunnysideworld_1187: -497909974
-      spr_tileset_sunnysideworld_1077: 1122710608
-      spr_tileset_sunnysideworld_185: 38693909
-      spr_tileset_sunnysideworld_379: -1447000721
-      spr_tileset_sunnysideworld_353: -1097012723
-      spr_tileset_sunnysideworld_476: 1264144250
-      spr_tileset_sunnysideworld_1388: 1806699143
-      spr_tileset_sunnysideworld_716: -1672888074
-      spr_tileset_sunnysideworld_801: 1452218488
-      spr_tileset_sunnysideworld_77: -1289580357
-      spr_tileset_sunnysideworld_1317: -1253980858
-      spr_tileset_sunnysideworld_1037: 523442657
-      spr_tileset_sunnysideworld_1143: 206008554
-      spr_tileset_sunnysideworld_1331: 2034517682
-      spr_tileset_sunnysideworld_14: -25357130
-      spr_tileset_sunnysideworld_941: -836258225
-      spr_tileset_sunnysideworld_509: 1036561945
-      spr_tileset_sunnysideworld_772: -1635733941
-      spr_tileset_sunnysideworld_621: -403647950
-      spr_tileset_sunnysideworld_610: -476706175
-      spr_tileset_sunnysideworld_864: 379739146
-      spr_tileset_sunnysideworld_990: 193552986
-      spr_tileset_sunnysideworld_161: -10968690
-      spr_tileset_sunnysideworld_684: -2068084518
-      spr_tileset_sunnysideworld_765: -1866570497
-      spr_tileset_sunnysideworld_1553: -383731988
-      spr_tileset_sunnysideworld_320: -677823400
-      spr_tileset_sunnysideworld_1202: 710293808
-      spr_tileset_sunnysideworld_98: 827205929
-      spr_tileset_sunnysideworld_1014: 1649290994
-      spr_tileset_sunnysideworld_1201: -145695178
-      spr_tileset_sunnysideworld_872: -410424254
-      water_2: 1856176737
-      spr_tileset_sunnysideworld_1220: -1840525101
-      spr_tileset_sunnysideworld_389: 536476072
-      spr_tileset_sunnysideworld_1268: 1594090758
-      spr_tileset_sunnysideworld_1297: 2099534990
-      spr_tileset_sunnysideworld_394: -1928598590
-      spr_tileset_sunnysideworld_1065: -1208339547
-      spr_tileset_sunnysideworld_365: -142307875
-      spr_tileset_sunnysideworld_24: 2102016651
-      spr_tileset_sunnysideworld_693: 1604658708
-      spr_tileset_sunnysideworld_1400: -199340840
-      WoodFence_2: 1389285331
-      spr_tileset_sunnysideworld_987: 1731628724
-      spr_tileset_sunnysideworld_545: -2020000009
-      spr_tileset_sunnysideworld_791: 320702969
-      spr_tileset_sunnysideworld_1532: -820407480
-      statue_2: -50660772
-      spr_tileset_sunnysideworld_550: -1751553996
-      spr_tileset_sunnysideworld_745: 998188208
-      spr_tileset_sunnysideworld_1136: -723660587
-      spr_tileset_sunnysideworld_989: -1699816808
-      spr_tileset_sunnysideworld_109: 2054926583
-      spr_tileset_sunnysideworld_528: -188680087
-      spr_tileset_sunnysideworld_1150: 213295286
-      spr_tileset_sunnysideworld_1186: -262733152
-      spr_tileset_sunnysideworld_378: -83368837
-      Stone_3: 1183034899
-      spr_tileset_sunnysideworld_1359: -652619673
-      spr_tileset_sunnysideworld_1412: 1232034605
-      spr_tileset_sunnysideworld_1042: -343278906
-      spr_tileset_sunnysideworld_597: 781846686
-      spr_tileset_sunnysideworld_936: 1252332531
-      spr_tileset_sunnysideworld_474: -553269584
-      spr_tileset_sunnysideworld_1448: 406333190
-      spr_tileset_sunnysideworld_760: 698644078
-      WoodFence_0: -241585251
-      water Falls_0: 1580886107
-      spr_tileset_sunnysideworld_1299: -938439279
-      spr_tileset_sunnysideworld_584: 45045887
-      thicket_0: 1691678485
-      GrassFloor_18: 493528012
-      spr_tileset_sunnysideworld_1097: 808212421
-      spr_tileset_sunnysideworld_1401: -318164202
-      spr_tileset_sunnysideworld_634: 347762958
-      spr_tileset_sunnysideworld_1244: 1347809452
-      spr_tileset_sunnysideworld_308: 227809709
-      WoodFence_1: 994571163
-      spr_tileset_sunnysideworld_294: 649124198
-      spr_tileset_sunnysideworld_426: 692900432
-      spr_tileset_sunnysideworld_655: 846742300
-      spr_tileset_sunnysideworld_91: 1361094538
-      Blue_House_6: 158924782
-      spr_tileset_sunnysideworld_285: 1258642701
-      spr_tileset_sunnysideworld_1352: -939572858
-      spr_tileset_sunnysideworld_247: 869155958
-      spr_tileset_sunnysideworld_613: 697949339
-      spr_tileset_sunnysideworld_1453: 8129203
-      spr_tileset_sunnysideworld_1530: 728486445
-      spr_tileset_sunnysideworld_1236: -1312146126
-      spr_tileset_sunnysideworld_1348: -1432386591
-      spr_tileset_sunnysideworld_478: -340614760
-      spr_tileset_sunnysideworld_602: 334185178
-      spr_tileset_sunnysideworld_1034: -906290343
-      spr_tileset_sunnysideworld_1180: 1350415292
-      spr_tileset_sunnysideworld_355: 56660877
-      spr_tileset_sunnysideworld_1169: -1703267123
-      spr_tileset_sunnysideworld_189: 1366414723
-      spr_tileset_sunnysideworld_695: 1428545713
-      water tank: 386402134
-      spr_tileset_sunnysideworld_174: 91720314
-      spr_tileset_sunnysideworld_1208: -1860703898
-      spr_tileset_sunnysideworld_854: 2013585354
-      spr_tileset_sunnysideworld_1357: -1279353764
-      spr_tileset_sunnysideworld_862: -783574496
-      spr_tileset_sunnysideworld_199: 187787574
-      spr_tileset_sunnysideworld_1550: -1568817637
-      spr_tileset_sunnysideworld_416: -1822011334
-      spr_tileset_sunnysideworld_406: 1721075855
-      spr_tileset_sunnysideworld_314: -659480128
-      spr_tileset_sunnysideworld_1023: 852022660
-      spr_tileset_sunnysideworld_90: 1603333787
-      spr_tileset_sunnysideworld_123: -1613093352
-      spr_tileset_sunnysideworld_409: -1202945159
-      spr_tileset_sunnysideworld_1378: 78796042
-      spr_tileset_sunnysideworld_227: -1883325767
-      spr_tileset_sunnysideworld_709: 1640324259
-      spr_tileset_sunnysideworld_1552: 1992638995
-      spr_tileset_sunnysideworld_1315: 1735713972
-      spr_tileset_sunnysideworld_586: -1953226554
-      spr_tileset_sunnysideworld_804: -1628571235
-      spr_tileset_sunnysideworld_633: -2027803396
-      spr_tileset_sunnysideworld_1485: -1691508957
-      spr_tileset_sunnysideworld_946: 1011237307
-      spr_tileset_sunnysideworld_297: -2103261223
-      spr_tileset_sunnysideworld_711: -1874390615
-      spr_tileset_sunnysideworld_1375: -1365061082
-      spr_tileset_sunnysideworld_986: -416866707
-      spr_tileset_sunnysideworld_205: 1768873808
-      spr_tileset_sunnysideworld_1237: -332663030
-      spr_tileset_sunnysideworld_606: 586519523
-      spr_tileset_sunnysideworld_184: 603343703
-      spr_tileset_sunnysideworld_248: -513431637
-      spr_tileset_sunnysideworld_1492: -1458984038
-      spr_tileset_sunnysideworld_886: 1619266188
-      spr_tileset_sunnysideworld_72: 1997649887
-      spr_tileset_sunnysideworld_62: -853446040
-      spr_tileset_sunnysideworld_1390: 636319901
-      GrassFloor_9: 1621972004
-      spr_tileset_sunnysideworld_1195: -1124778793
-      spr_tileset_sunnysideworld_1112: 1257202745
-      spr_tileset_sunnysideworld_1542: 2086551052
-      spr_tileset_sunnysideworld_1207: -1690855580
-      spr_tileset_sunnysideworld_266: 1923089256
-      spr_tileset_sunnysideworld_1070: -1694089503
-      spr_tileset_sunnysideworld_1433: 1951883074
-      spr_tileset_sunnysideworld_1537: 1534266673
-      spr_tileset_sunnysideworld_370: 2015123718
-      spr_tileset_sunnysideworld_530: -1038628808
-      spr_tileset_sunnysideworld_155: 978881614
-      spr_tileset_sunnysideworld_262: 459958301
-      spr_tileset_sunnysideworld_882: -988444473
-      spr_tileset_sunnysideworld_492: -166733136
-      spr_tileset_sunnysideworld_766: -329582912
-      spr_tileset_sunnysideworld_1075: 891640790
-      spr_tileset_sunnysideworld_755: 1634277401
-      Woodbottom_1: -1223330413
-      spr_tileset_sunnysideworld_1398: -521758698
-      spr_tileset_sunnysideworld_922: 1775109991
-      spr_tileset_sunnysideworld_138: -1124233317
-      spr_tileset_sunnysideworld_1183: 434102429
-      spr_tileset_sunnysideworld_503: -110654068
-      Road_Line_8: 323144711
-      spr_tileset_sunnysideworld_984: 1869503073
-      Blue_House_2: -1256374030
-      spr_tileset_sunnysideworld_991: -80142496
-      spr_tileset_sunnysideworld_961: 1128314560
-      spr_tileset_sunnysideworld_264: -1552104226
-      spr_tileset_sunnysideworld_846: 561731056
-      spr_tileset_sunnysideworld_1332: -2096013320
-      spr_tileset_sunnysideworld_1216: 658542043
-      Road_Line_5: -1643694555
-      spr_tileset_sunnysideworld_887: 1255849913
-      spr_tileset_sunnysideworld_1381: -850715878
-      spr_tileset_sunnysideworld_119: -461769365
-      spr_tileset_sunnysideworld_1423: -480561414
-      spr_tileset_sunnysideworld_159: 1915290026
-      spr_tileset_sunnysideworld_66: 1707444716
-      spr_tileset_sunnysideworld_1067: 224011165
-      spr_tileset_sunnysideworld_475: -423454742
-      spr_tileset_sunnysideworld_1119: 154441110
-      spr_tileset_sunnysideworld_1038: 711211820
-      spr_tileset_sunnysideworld_415: 321898791
-      spr_tileset_sunnysideworld_526: -611768501
-      spr_tileset_sunnysideworld_165: 963050502
-      spr_tileset_sunnysideworld_782: -1014999230
-      spr_tileset_sunnysideworld_198: -1159836523
-      spr_tileset_sunnysideworld_1155: 597790334
-      spr_tileset_sunnysideworld_930: -1201279922
-      spr_tileset_sunnysideworld_701: 28999185
-      Road_Line_2: 268872570
-      spr_tileset_sunnysideworld_150: 339796571
-      spr_tileset_sunnysideworld_608: 10985233
-      spr_tileset_sunnysideworld_706: 1556105693
-      spr_tileset_sunnysideworld_1341: 4341738
-      spr_tileset_sunnysideworld_671: -1789449459
-      spr_tileset_sunnysideworld_1293: 1503109189
-      spr_tileset_sunnysideworld_1196: -1162237512
-      spr_tileset_sunnysideworld_1253: -1617915623
-      spr_tileset_sunnysideworld_71: 1768737183
-      Blueflower_3: 1999452680
-      spr_tileset_sunnysideworld_565: -1039219116
-      spr_tileset_sunnysideworld_1451: 1593612054
-      spr_tileset_sunnysideworld_1224: -526509177
-      spr_tileset_sunnysideworld_1264: 1625516254
-      spr_tileset_sunnysideworld_201: -1658643763
-      Road_Line_7: -179116091
-      spr_tileset_sunnysideworld_1234: 1239369209
-      spr_tileset_sunnysideworld_65: 611564007
-      spr_tileset_sunnysideworld_162: -1390208794
-      spr_tileset_sunnysideworld_249: -375683078
-      spr_tileset_sunnysideworld_282: -1885315162
-      spr_tileset_sunnysideworld_495: -1762019205
-      spr_tileset_sunnysideworld_1503: 1892258028
-      Red flower_1: -1050930792
-      spr_tileset_sunnysideworld_1212: -1499875817
-      spr_tileset_sunnysideworld_451: -1526514594
-      spr_tileset_sunnysideworld_1016: -614664096
-      spr_tileset_sunnysideworld_1425: -1932546221
-      spr_tileset_sunnysideworld_519: 1460168649
-      spr_tileset_sunnysideworld_540: -1398682667
-      spr_tileset_sunnysideworld_160: -2101227896
-      spr_tileset_sunnysideworld_18: -105881065
-      spr_tileset_sunnysideworld_1243: 156346223
-      spr_tileset_sunnysideworld_417: 1680118678
-      spr_tileset_sunnysideworld_614: 1884117594
-      spr_tileset_sunnysideworld_1109: -1227344432
-      spr_tileset_sunnysideworld_21: 1720682842
-      spr_tileset_sunnysideworld_172: 1698230565
-      spr_tileset_sunnysideworld_913: 1645951590
-      spr_tileset_sunnysideworld_1154: 49941831
-      spr_tileset_sunnysideworld_491: -1763363109
-      spr_tileset_sunnysideworld_497: -662474566
-      spr_tileset_sunnysideworld_144: -1828174947
-      spr_tileset_sunnysideworld_1157: -1978803905
-      spr_tileset_sunnysideworld_607: 7935600
-      GrassFloor_14: 865553021
-      spr_tileset_sunnysideworld_548: -1308728136
-      spr_tileset_sunnysideworld_707: -2091425980
-      spr_tileset_sunnysideworld_664: 817987660
-      spr_tileset_sunnysideworld_982: 1480403124
-      spr_tileset_sunnysideworld_960: -279095521
-      spr_tileset_sunnysideworld_230: 722012427
-      spr_tileset_sunnysideworld_1342: 1780155292
-      spr_tileset_sunnysideworld_1534: -774488749
-      spr_tileset_sunnysideworld_125: -1858255609
-      spr_tileset_sunnysideworld_1256: -540300699
-      spr_tileset_sunnysideworld_368: 1710004326
-      spr_tileset_sunnysideworld_1344: -251949135
-      spr_tileset_sunnysideworld_413: -1654516058
-      spr_tileset_sunnysideworld_639: 1946261985
-      spr_tileset_sunnysideworld_981: 839976877
-      spr_tileset_sunnysideworld_1447: -1122343633
-      GrassFloor_17: 267546220
-      spr_tileset_sunnysideworld_796: -310165439
-      spr_tileset_sunnysideworld_863: -1188471017
-      spr_tileset_sunnysideworld_821: -1933338901
-      spr_tileset_sunnysideworld_928: -2054577127
-      spr_tileset_sunnysideworld_1502: -736941827
-      spr_tileset_sunnysideworld_1228: 246844650
-      spr_tileset_sunnysideworld_552: -614304360
-      spr_tileset_sunnysideworld_1004: -344487893
-      spr_tileset_sunnysideworld_1431: -1232492409
-      spr_tileset_sunnysideworld_1353: 73962393
-      spr_tileset_sunnysideworld_616: -1429034681
-      spr_tileset_sunnysideworld_439: 2064719230
-      spr_tileset_sunnysideworld_661: 1997361407
-      spr_tileset_sunnysideworld_183: -1892583102
-      spr_tileset_sunnysideworld_829: 1847690582
-      spr_tileset_sunnysideworld_47: 1967583188
-      spr_tileset_sunnysideworld_464: 978301974
-      spr_tileset_sunnysideworld_168: -1085967888
-      spr_tileset_sunnysideworld_1069: 1037645253
-      spr_tileset_sunnysideworld_1514: -1762987782
-      spr_tileset_sunnysideworld_1213: -861988950
-      spr_tileset_sunnysideworld_950: -963499397
-      spr_tileset_sunnysideworld_28: 65545946
-      spr_tileset_sunnysideworld_480: 1304740836
-      spr_tileset_sunnysideworld_838: 854509275
-      spr_tileset_sunnysideworld_1215: -1576684690
-      spr_tileset_sunnysideworld_463: -1079942545
-      spr_tileset_sunnysideworld_1272: 1917368695
-      spr_tileset_sunnysideworld_1386: -1213386676
-      GrassFloor_1: -1090739908
-      spr_tileset_sunnysideworld_1254: 471941807
-      spr_tileset_sunnysideworld_449: 715287098
-      spr_tileset_sunnysideworld_1128: -1974612827
-      spr_tileset_sunnysideworld_1007: -627934339
-      spr_tileset_sunnysideworld_298: -1683955159
-      spr_tileset_sunnysideworld_551: 1890552852
-      spr_tileset_sunnysideworld_871: 78323057
-      anvil_Weapon: -1868875698
-      spr_tileset_sunnysideworld_1058: 849431705
-      spr_tileset_sunnysideworld_732: 1480831996
-      spr_tileset_sunnysideworld_1361: 160899076
-      spr_tileset_sunnysideworld_1030: -871467270
-      spr_tileset_sunnysideworld_662: -973983730
-      spr_tileset_sunnysideworld_1405: -1108623852
-      spr_tileset_sunnysideworld_667: 1492350859
-      spr_tileset_sunnysideworld_1217: 1063814820
-      spr_tileset_sunnysideworld_322: -2059227102
-      spr_tileset_sunnysideworld_181: -588774208
-      spr_tileset_sunnysideworld_952: 1499347922
-      Carrot_0: -1308419703
-      spr_tileset_sunnysideworld_753: -95453211
-      spr_tileset_sunnysideworld_795: -1973614210
-      spr_tileset_sunnysideworld_1380: -1062774969
-      spr_tileset_sunnysideworld_803: 1526380540
-      Road_Line_6: -1415978291
-      spr_tileset_sunnysideworld_578: 1303654037
-      spr_tileset_sunnysideworld_582: 564817585
-      spr_tileset_sunnysideworld_1404: 910830713
-      spr_tileset_sunnysideworld_828: -655593599
-      GrassFloor_0: -1633470793
-      water Falls_2: 1917347899
-      spr_tileset_sunnysideworld_1498: 1832412423
-      spr_tileset_sunnysideworld_239: 1904820858
-      spr_tileset_sunnysideworld_1167: 858629242
-      spr_tileset_sunnysideworld_304: -226135746
-      spr_tileset_sunnysideworld_844: 1814382175
-      spr_tileset_sunnysideworld_750: 254578494
-      spr_tileset_sunnysideworld_918: -1965548895
-      sea water_14: 893305251
-      spr_tileset_sunnysideworld_832: 140190512
-      spr_tileset_sunnysideworld_454: -527472575
-      spr_tileset_sunnysideworld_1508: -666054975
-      spr_tileset_sunnysideworld_489: -1762347458
-      Blue_House_0: 1823606988
-      spr_tileset_sunnysideworld_687: 517733137
-      spr_tileset_sunnysideworld_1251: -1514742523
-      spr_tileset_sunnysideworld_1413: 1242021997
-      spr_tileset_sunnysideworld_277: -887585451
-      spr_tileset_sunnysideworld_814: 940787800
-      white flower_3: -24865202
-      spr_tileset_sunnysideworld_367: 522133965
-      spr_tileset_sunnysideworld_336: -247734305
-      sea water_11: 462084241
-      spr_tileset_sunnysideworld_629: 116870586
-      spr_tileset_sunnysideworld_1369: -1461644261
-      spr_tileset_sunnysideworld_752: -858442487
-      spr_tileset_sunnysideworld_1505: -2030875148
-      spr_tileset_sunnysideworld_13: 1482490587
-      spr_tileset_sunnysideworld_1324: -1104966139
-      spr_tileset_sunnysideworld_998: 1840057898
-      spr_tileset_sunnysideworld_969: -429924971
-      spr_tileset_sunnysideworld_1221: -397059841
-      spr_tileset_sunnysideworld_1085: 1753023924
-      GrassFloor_10: 1512230497
-      spr_tileset_sunnysideworld_827: -1122265471
-      spr_tileset_sunnysideworld_395: 1276027166
-      spr_tileset_sunnysideworld_653: 2145265629
-      spr_tileset_sunnysideworld_1417: -494389159
-      spr_tileset_sunnysideworld_1416: 611400676
-      spr_tileset_sunnysideworld_1074: -1573050929
-      spr_tileset_sunnysideworld_1284: 1701904272
-      spr_tileset_sunnysideworld_1373: -902118214
-      spr_tileset_sunnysideworld_1104: -713830018
-      spr_tileset_sunnysideworld_428: -2002182397
-      spr_tileset_sunnysideworld_496: 550289442
-      spr_tileset_sunnysideworld_790: -5692372
-      spr_tileset_sunnysideworld_942: 2062204976
-      spr_tileset_sunnysideworld_997: -1769879140
-      spr_tileset_sunnysideworld_283: 2095393065
-      spr_tileset_sunnysideworld_477: -1384788724
-      spr_tileset_sunnysideworld_1031: -174121999
-      spr_tileset_sunnysideworld_196: 1245806460
-      spr_tileset_sunnysideworld_29: 1950875097
-      Well: -1837035149
-      Beat_1: 901806669
-      spr_tileset_sunnysideworld_920: 1244700681
-      sea water_6: -2124200146
-      spr_tileset_sunnysideworld_892: -145920159
-      sea water_5: 1180368368
-      spr_tileset_sunnysideworld_1066: -733711095
-      spr_tileset_sunnysideworld_1227: 2055456962
-      Blue_House_5: -531938090
-      woodentank: 443833508
-      spr_tileset_sunnysideworld_1475: 1591940752
-      GrassFloor_5: -1000852551
-      spr_tileset_sunnysideworld_385: -1293171121
-      spr_tileset_sunnysideworld_980: 1135049649
-      spr_tileset_sunnysideworld_992: -1945157780
-      spr_tileset_sunnysideworld_1396: 228393010
-      spr_tileset_sunnysideworld_923: 203901966
-      spr_tileset_sunnysideworld_1123: -1141551867
-      spr_tileset_sunnysideworld_1349: -2019887043
-      spr_tileset_sunnysideworld_549: -2044188634
-      spr_tileset_sunnysideworld_1543: 1134369966
-      spr_tileset_sunnysideworld_211: 525437798
-      spr_tileset_sunnysideworld_1469: 152690111
-      spr_tileset_sunnysideworld_242: 556136265
-      spr_tileset_sunnysideworld_719: 1365759984
-      spr_tileset_sunnysideworld_1449: 1213503475
-      spr_tileset_sunnysideworld_734: -589866616
-      spr_tileset_sunnysideworld_1490: -644674355
-      spr_tileset_sunnysideworld_1100: -760683460
-      spr_tileset_sunnysideworld_1114: 1451226862
-      spr_tileset_sunnysideworld_589: 753485480
-      spr_tileset_sunnysideworld_1231: 560198303
-      spr_tileset_sunnysideworld_312: 1081224575
-      spr_tileset_sunnysideworld_259: -1653281121
-      spr_tileset_sunnysideworld_518: 1422553482
-      spr_tileset_sunnysideworld_1410: 1510213488
-      spr_tileset_sunnysideworld_1461: 794407579
-      spr_tileset_sunnysideworld_635: -938690973
-      spr_tileset_sunnysideworld_905: 1416425411
-      spr_tileset_sunnysideworld_92: 1513658921
-      spr_tileset_sunnysideworld_1493: -1420812081
-      spr_tileset_sunnysideworld_220: -1250118700
-      spr_tileset_sunnysideworld_1161: 1000142965
-      spr_tileset_sunnysideworld_516: -497209437
-      spr_tileset_sunnysideworld_260: -902846689
-      sea water_2: 663269006
-      spr_tileset_sunnysideworld_487: 1888672900
-      spr_tileset_sunnysideworld_965: -1656412913
-      spr_tileset_sunnysideworld_348: 406919987
-      spr_tileset_sunnysideworld_1107: -861656934
-      spr_tileset_sunnysideworld_820: 1038969328
-      spr_tileset_sunnysideworld_23: -390165570
-      spr_tileset_sunnysideworld_1184: 2025887646
-      spr_tileset_sunnysideworld_1538: -1595574790
-      spr_tileset_sunnysideworld_972: -1099720669
-      spr_tileset_sunnysideworld_190: -1604487684
-      spr_tileset_sunnysideworld_680: -531705140
-      spr_tileset_sunnysideworld_139: -1013707107
-      spr_tileset_sunnysideworld_794: -362502095
-      spr_tileset_sunnysideworld_921: 576819729
-      spr_tileset_sunnysideworld_959: 688927616
-      spr_tileset_sunnysideworld_425: 1193222308
-      spr_tileset_sunnysideworld_136: 1730828777
-      spr_tileset_sunnysideworld_1392: 181067063
-      white flower_4: 1238931898
-      spr_tileset_sunnysideworld_1483: 500440987
-      spr_tileset_sunnysideworld_1203: 1414805409
-      spr_tileset_sunnysideworld_1454: 1232047358
-      spr_tileset_sunnysideworld_95: 2146143159
-      spr_tileset_sunnysideworld_1120: -741972184
-      spr_tileset_sunnysideworld_728: -1586902623
-      spr_tileset_sunnysideworld_1179: -893138034
-      spr_tileset_sunnysideworld_1484: -724451369
-      spr_tileset_sunnysideworld_446: 1706771083
-      spr_tileset_sunnysideworld_61: 1145597260
-      spr_tileset_sunnysideworld_1345: 1938420536
-      spr_tileset_sunnysideworld_973: -509007336
-      spr_tileset_sunnysideworld_1519: -593180569
-      spr_tileset_sunnysideworld_19: -845389903
-      spr_tileset_sunnysideworld_112: 355044451
-      spr_tileset_sunnysideworld_656: -948870029
-      spr_tileset_sunnysideworld_374: -803166711
-      spr_tileset_sunnysideworld_1265: -396041279
-      spr_tileset_sunnysideworld_833: 1300193833
-      spr_tileset_sunnysideworld_1444: -618480022
-      spr_tileset_sunnysideworld_17: -683526956
-      spr_tileset_sunnysideworld_700: -84419997
-      spr_tileset_sunnysideworld_1525: 1854649124
-      spr_tileset_sunnysideworld_288: -1298829955
-      spr_tileset_sunnysideworld_1301: -72099174
-      spr_tileset_sunnysideworld_338: -1872318412
-      spr_tileset_sunnysideworld_754: -1294329021
-      spr_tileset_sunnysideworld_115: -2047941221
-      spr_tileset_sunnysideworld_679: -827389938
-      spr_tileset_sunnysideworld_372: -71718912
-      spr_tileset_sunnysideworld_1338: 139612554
-      spr_tileset_sunnysideworld_762: -233106380
-      spr_tileset_sunnysideworld_197: -1095953971
-      spr_tileset_sunnysideworld_343: -536464168
-      spr_tileset_sunnysideworld_375: -796368475
-      spr_tileset_sunnysideworld_703: 2094537617
-      spr_tileset_sunnysideworld_1536: -430207570
-      spr_tileset_sunnysideworld_628: -1783134842
-      spr_tileset_sunnysideworld_60: 305314856
-      tree_0: 2038737387
-      spr_tileset_sunnysideworld_462: 2031269397
-      spr_tileset_sunnysideworld_1152: 723147865
-      sea water_0: 343384029
-      spr_tileset_sunnysideworld_120: -462200263
-      spr_tileset_sunnysideworld_1158: 863734148
-      white flower_1: -1070727378
-      spr_tileset_sunnysideworld_1510: 1554736492
-      spr_tileset_sunnysideworld_571: -1923600554
-      spr_tileset_sunnysideworld_1168: -2031062968
-      spr_tileset_sunnysideworld_148: -114500869
-      spr_tileset_sunnysideworld_527: -1392184517
-      spr_tileset_sunnysideworld_694: 1738647498
-      tree_1: -1682181034
-      spr_tileset_sunnysideworld_558: 2032625690
-      spr_tileset_sunnysideworld_783: -86837625
-      spr_tileset_sunnysideworld_287: -1431038915
-      spr_tileset_sunnysideworld_1471: -1045107781
-      spr_tileset_sunnysideworld_853: 1972310798
-      spr_tileset_sunnysideworld_926: -952391245
-      spr_tileset_sunnysideworld_1081: 2048014069
-      spr_tileset_sunnysideworld_1441: -180775869
-      spr_tileset_sunnysideworld_315: -1187549804
-      spr_tileset_sunnysideworld_233: 1086483466
-      spr_tileset_sunnysideworld_1019: -1804896643
-      spr_tileset_sunnysideworld_1330: -1687167773
-      spr_tileset_sunnysideworld_1020: 1917862698
-      spr_tileset_sunnysideworld_590: 1170061950
-      spr_tileset_sunnysideworld_686: 946794386
-      spr_tileset_sunnysideworld_5: -132882968
-      spr_tileset_sunnysideworld_43: 1724091996
-      spr_tileset_sunnysideworld_407: -1086359367
-      spr_tileset_sunnysideworld_968: 388120159
-      spr_tileset_sunnysideworld_1083: 857710984
-      spr_tileset_sunnysideworld_46: -76136329
-      spr_tileset_sunnysideworld_699: -1138983663
-      spr_tileset_sunnysideworld_788: -642450349
-      spr_tileset_sunnysideworld_1415: 148545110
-      spr_tileset_sunnysideworld_669: -1204380825
-      spr_tileset_sunnysideworld_1374: 1783117202
-      spr_tileset_sunnysideworld_1159: 1219543044
-      spr_tileset_sunnysideworld_1318: -1895414553
-      spr_tileset_sunnysideworld_1041: -1070251063
-      spr_tileset_sunnysideworld_1084: 1888618220
-      spr_tileset_sunnysideworld_1177: -1394716720
-      spr_tileset_sunnysideworld_1139: -1805722411
-      spr_tileset_sunnysideworld_909: 1226787941
-      spr_tileset_sunnysideworld_1238: 341874487
-      spr_tileset_sunnysideworld_743: -786547434
-      spr_tileset_sunnysideworld_317: -2007721305
-      spr_tileset_sunnysideworld_1323: -163848631
-      spr_tileset_sunnysideworld_1362: 392859825
-      spr_tileset_sunnysideworld_935: 1476412468
-      spr_tileset_sunnysideworld_193: 1191450184
-      spr_tileset_sunnysideworld_158: -733431718
-      spr_tileset_sunnysideworld_742: 479832621
-      white flower_2: 1887637373
-      spr_tileset_sunnysideworld_507: -1212025609
-      sea water_9: 738169010
-      sea water_7: -1172557464
-      spr_tileset_sunnysideworld_1206: -927107720
-      spr_tileset_sunnysideworld_411: -535186114
-      spr_tileset_sunnysideworld_1535: -1883207449
-      spr_tileset_sunnysideworld_761: -442759408
-      spr_tileset_sunnysideworld_800: 1756921802
-      spr_tileset_sunnysideworld_1365: -981333583
-      spr_tileset_sunnysideworld_1047: 866018453
-      spr_tileset_sunnysideworld_1527: -898110756
-      spr_tileset_sunnysideworld_532: -1565125439
-      spr_tileset_sunnysideworld_666: 1942054075
-      spr_tileset_sunnysideworld_59: -1704693298
-      spr_tileset_sunnysideworld_652: 1197797618
-      spr_tileset_sunnysideworld_1466: -1751497727
-      spr_tileset_sunnysideworld_955: 1399395468
-      Road_3: 1828083000
-      spr_tileset_sunnysideworld_722: 1206301259
-      spr_tileset_sunnysideworld_1474: 174123091
-      spr_tileset_sunnysideworld_149: -548248767
-      spr_tileset_sunnysideworld_89: -1657535027
-      spr_tileset_sunnysideworld_141: -973908265
-      spr_tileset_sunnysideworld_1486: 297197703
-      spr_tileset_sunnysideworld_1062: 1596926263
-      spr_tileset_sunnysideworld_1487: 680984524
-      spr_tileset_sunnysideworld_237: -1734660883
-      spr_tileset_sunnysideworld_668: 2024033733
-      spr_tileset_sunnysideworld_904: -1824617785
-      spr_tileset_sunnysideworld_556: -2078949756
-      spr_tileset_sunnysideworld_143: -1911142875
-      spr_tileset_sunnysideworld_554: 1781104647
-      spr_tileset_sunnysideworld_577: 1197388163
-      spr_tileset_sunnysideworld_1060: 272792324
-      spr_tileset_sunnysideworld_364: -588736865
-      water_1: 1667223508
-      spr_tileset_sunnysideworld_48: -1687917871
-      spr_tileset_sunnysideworld_1199: -1709209966
-      spr_tileset_sunnysideworld_1142: 1737591659
-      spr_tileset_sunnysideworld_1252: -107869914
-      spr_tileset_sunnysideworld_1347: -909997962
-      spr_tileset_sunnysideworld_741: 1120834910
-      Stone_2: 1169458101
-      spr_tileset_sunnysideworld_1188: -406986134
-      spr_tileset_sunnysideworld_361: 499724278
-      spr_tileset_sunnysideworld_970: -1224526554
-      spr_tileset_sunnysideworld_175: 676623825
-      spr_tileset_sunnysideworld_52: -2033855653
-      spr_tileset_sunnysideworld_929: -2107551100
-      spr_tileset_sunnysideworld_381: 478276007
-      spr_tileset_sunnysideworld_523: -1117923345
-      spr_tileset_sunnysideworld_427: -103064961
-      spr_tileset_sunnysideworld_1246: 1002133357
-      spr_tileset_sunnysideworld_1108: -2073166379
-      spr_tileset_sunnysideworld_500: -191959749
-      spr_tileset_sunnysideworld_713: 447598893
-      spr_tileset_sunnysideworld_392: 1435164270
-      spr_tileset_sunnysideworld_640: 1283776317
-      spr_tileset_sunnysideworld_944: -846134844
-      spr_tileset_sunnysideworld_1428: 1572915940
-      spr_tileset_sunnysideworld_1135: -1525187759
-      spr_tileset_sunnysideworld_1057: -1968857757
-      spr_tileset_sunnysideworld_598: -1397617802
-      spr_tileset_sunnysideworld_452: -1113107038
-      spr_tileset_sunnysideworld_1214: 1601718131
-      spr_tileset_sunnysideworld_1544: 833369450
-      spr_tileset_sunnysideworld_825: 342431230
-      spr_tileset_sunnysideworld_1178: -1155767374
-      Road_0: 725840744
-      spr_tileset_sunnysideworld_1043: 788625201
-      spr_tileset_sunnysideworld_1287: 1260933186
-      spr_tileset_sunnysideworld_1153: 1558327236
-      spr_tileset_sunnysideworld_583: 1447361662
-      spr_tileset_sunnysideworld_702: -276939276
-      spr_tileset_sunnysideworld_1229: -591508579
-      spr_tileset_sunnysideworld_502: -1103245224
-      spr_tileset_sunnysideworld_1278: 43359958
-      spr_tileset_sunnysideworld_1115: -870218891
-      spr_tileset_sunnysideworld_494: 952072805
-      spr_tileset_sunnysideworld_1219: 1968520376
-      spr_tileset_sunnysideworld_747: 1705608518
+      Chimney_1: -532585361
+      spr_tileset_sunnysideworld_6: 1077493615
+      spr_tileset_sunnysideworld_559: 1790755633
+      spr_tileset_sunnysideworld_467: -1235372005
+      spr_tileset_sunnysideworld_875: 353040865
+      spr_tileset_sunnysideworld_897: -231066558
+      spr_tileset_sunnysideworld_1218: -1283411896
+      spr_tileset_sunnysideworld_483: 1850761935
+      spr_tileset_sunnysideworld_770: -1177935878
+      spr_tileset_sunnysideworld_303: 2009323582
+      spr_tileset_sunnysideworld_1326: -1991084832
+      spr_tileset_sunnysideworld_1435: 2025639529
+      spr_tileset_sunnysideworld_1039: -1803244504
+      spr_tileset_sunnysideworld_574: 550733626
+      spr_tileset_sunnysideworld_931: 376183619
+      spr_tileset_sunnysideworld_1504: 894340501
+      Rice_1: -1019137995
+      spr_tileset_sunnysideworld_450: 75054080
+      spr_tileset_sunnysideworld_1546: -232158204
+      spr_tileset_sunnysideworld_45: -1799407576
+      spr_tileset_sunnysideworld_506: -20439544
+      spr_tileset_sunnysideworld_1080: -26626575
+      spr_tileset_sunnysideworld_1111: 1638183340
+      spr_tileset_sunnysideworld_1465: -90644769
+      spr_tileset_sunnysideworld_717: 47578682
+      spr_tileset_sunnysideworld_866: 291322915
+      spr_tileset_sunnysideworld_927: -934432194
+      spr_tileset_sunnysideworld_1258: 1889330089
+      spr_tileset_sunnysideworld_1105: 901891583
+      spr_tileset_sunnysideworld_809: -672187646
+      spr_tileset_sunnysideworld_342: 6232399
+      spr_tileset_sunnysideworld_665: -574386185
+      spr_tileset_sunnysideworld_1320: -128745732
+      spr_tileset_sunnysideworld_1438: -637523374
+      spr_tileset_sunnysideworld_332: -2085464272
+      spr_tileset_sunnysideworld_1138: 313084061
+      spr_tileset_sunnysideworld_418: -284550583
+      spr_tileset_sunnysideworld_676: -1152818873
+      spr_tileset_sunnysideworld_10: -1256740981
+      spr_tileset_sunnysideworld_943: 315822177
+      spr_tileset_sunnysideworld_1385: -214811563
+      spr_tileset_sunnysideworld_1420: 320363878
+      spr_tileset_sunnysideworld_957: 12737280
+      spr_tileset_sunnysideworld_68: 1294949239
+      spr_tileset_sunnysideworld_1319: 1227780662
+      spr_tileset_sunnysideworld_63: -1865377059
+      spr_tileset_sunnysideworld_1283: -202814492
+      spr_tileset_sunnysideworld_1545: -425921159
+      water Falls_3: -1506419231
+      spr_tileset_sunnysideworld_1384: -1372967383
+      spr_tileset_sunnysideworld_758: 1073189453
+      spr_tileset_sunnysideworld_915: -697038366
+      spr_tileset_sunnysideworld_444: -158957548
+      spr_tileset_sunnysideworld_995: -1358922543
+      spr_tileset_sunnysideworld_789: 200343517
+      spr_tileset_sunnysideworld_151: 718440866
+      spr_tileset_sunnysideworld_223: -1950959084
+      spr_tileset_sunnysideworld_1126: -816779259
+      spr_tileset_sunnysideworld_1002: 60415993
+      spr_tileset_sunnysideworld_812: 380767921
+      spr_tileset_sunnysideworld_357: -1324689500
+      GrassFloor_12: 1103080615
+      spr_tileset_sunnysideworld_341: -1344725384
+      spr_tileset_sunnysideworld_20: 1746937096
+      spr_tileset_sunnysideworld_488: 188370485
+      spr_tileset_sunnysideworld_1327: -1307753355
+      spr_tileset_sunnysideworld_442: 120515907
+      spr_tileset_sunnysideworld_391: -847297291
+      spr_tileset_sunnysideworld_643: 1461252807
+      spr_tileset_sunnysideworld_531: -796713163
+      spr_tileset_sunnysideworld_498: -1036467298
+      spr_tileset_sunnysideworld_962: -1957755042
+      spr_tileset_sunnysideworld_1517: -715809922
+      spr_tileset_sunnysideworld_575: 1410632595
+      spr_tileset_sunnysideworld_1289: 1893969276
+      Well_2: 145243987
+      spr_tileset_sunnysideworld_1370: -757500839
+      spr_tileset_sunnysideworld_510: -1731894277
+      spr_tileset_sunnysideworld_852: -1632607757
+      spr_tileset_sunnysideworld_576: 778043737
+      spr_tileset_sunnysideworld_971: 315998207
+      spr_tileset_sunnysideworld_1163: -2068011060
+      spr_tileset_sunnysideworld_1182: -1415016821
+      spr_tileset_sunnysideworld_1260: 1687556201
+      spr_tileset_sunnysideworld_231: -914751542
+      spr_tileset_sunnysideworld_470: 727956196
+      spr_tileset_sunnysideworld_1137: 193358098
+      spr_tileset_sunnysideworld_876: -1704898257
+      water_0: -885673697
+      spr_tileset_sunnysideworld_834: -223259210
+      spr_tileset_sunnysideworld_644: -1714412120
+      spr_tileset_sunnysideworld_557: 1397856409
+      spr_tileset_sunnysideworld_593: -774988266
+      spr_tileset_sunnysideworld_1275: -1710651462
+      spr_tileset_sunnysideworld_1463: 428855195
+      spr_tileset_sunnysideworld_1549: 1651878655
+      spr_tileset_sunnysideworld_534: -487973339
+      spr_tileset_sunnysideworld_1008: 859618224
+      spr_tileset_sunnysideworld_1064: 955377722
+      GrassFloor_2: 1835769784
+      spr_tileset_sunnysideworld_756: 856425493
+      spr_tileset_sunnysideworld_460: 462404418
+      spr_tileset_sunnysideworld_1146: -1791072341
+      spr_tileset_sunnysideworld_240: 321743201
+      spr_tileset_sunnysideworld_1407: -1765385835
+      spr_tileset_sunnysideworld_731: 1351561825
+      spr_tileset_sunnysideworld_1223: -1508764478
+      spr_tileset_sunnysideworld_1040: 500399697
+      water Falls_6: -1703488066
+      spr_tileset_sunnysideworld_344: 1744800670
+      spr_tileset_sunnysideworld_289: 1151473842
+      spr_tileset_sunnysideworld_431: -2036133960
+      spr_tileset_sunnysideworld_1147: 626006667
+      spr_tileset_sunnysideworld_1116: 1298359933
+      spr_tileset_sunnysideworld_1211: 461328423
+      wooden pail_0: 36735071
+      spr_tileset_sunnysideworld_471: 907075503
+      spr_tileset_sunnysideworld_937: 524139757
+      spr_tileset_sunnysideworld_836: -534510943
+      spr_tileset_sunnysideworld_884: -7036509
+      spr_tileset_sunnysideworld_940: -1484173128
+      spr_tileset_sunnysideworld_1156: -1611746114
+      spr_tileset_sunnysideworld_482: -586683603
+      spr_tileset_sunnysideworld_191: -1455861538
+      spr_tileset_sunnysideworld_596: 1295331812
+      GrassFloor_15: 616132990
+      spr_tileset_sunnysideworld_646: -2047563196
+      spr_tileset_sunnysideworld_1310: -923271329
+      spr_tileset_sunnysideworld_1459: 1698862589
+      spr_tileset_sunnysideworld_1230: -36623519
+      spr_tileset_sunnysideworld_244: -55207099
+      spr_tileset_sunnysideworld_180: -908122386
+      spr_tileset_sunnysideworld_1434: -1466053041
+      spr_tileset_sunnysideworld_1226: 1552572696
+      spr_tileset_sunnysideworld_1440: -579414881
+      spr_tileset_sunnysideworld_50: -163933245
+      spr_tileset_sunnysideworld_933: 466295059
+      spr_tileset_sunnysideworld_473: 156366357
+      spr_tileset_sunnysideworld_630: 1227496575
+      spr_tileset_sunnysideworld_292: -613899277
+      spr_tileset_sunnysideworld_1003: 922448794
+      WoodFence_6: 149271384
+      spr_tileset_sunnysideworld_94: -481399573
+      spr_tileset_sunnysideworld_212: 1839590443
+      spr_tileset_sunnysideworld_612: -2097551690
+      spr_tileset_sunnysideworld_786: 472423666
+      spr_tileset_sunnysideworld_1121: 2082047273
+      spr_tileset_sunnysideworld_1393: -1761510589
+      spr_tileset_sunnysideworld_645: 1918247633
+      spr_tileset_sunnysideworld_1460: 1754754344
+      spr_tileset_sunnysideworld_1011: -485344855
+      spr_tileset_sunnysideworld_651: -1901434190
+      spr_tileset_sunnysideworld_533: 197911047
+      spr_tileset_sunnysideworld_1171: -551708592
+      Rice_0: 2055989382
+      spr_tileset_sunnysideworld_1094: 215214599
+      spr_tileset_sunnysideworld_1148: 2109542425
+      spr_tileset_sunnysideworld_311: -331527515
+      spr_tileset_sunnysideworld_890: 804704876
+      spr_tileset_sunnysideworld_472: 108822484
+      spr_tileset_sunnysideworld_1151: 1796882811
+      spr_tileset_sunnysideworld_1339: -873498047
+      spr_tileset_sunnysideworld_396: -1109986301
+      spr_tileset_sunnysideworld_243: 1195435429
+      spr_tileset_sunnysideworld_697: 782571560
+      spr_tileset_sunnysideworld_1175: 1849015775
+      spr_tileset_sunnysideworld_313: 1932641401
+      spr_tileset_sunnysideworld_953: -1330151580
+      anvil: 409379532
+      spr_tileset_sunnysideworld_729: 1463071130
+      spr_tileset_sunnysideworld_1395: 1665066558
+      spr_tileset_sunnysideworld_438: 247662965
+      spr_tileset_sunnysideworld_1473: -770094735
+      spr_tileset_sunnysideworld_764: 802461613
+      spr_tileset_sunnysideworld_113: -25939869
+      spr_tileset_sunnysideworld_384: 628738219
+      spr_tileset_sunnysideworld_663: 1810353154
+      spr_tileset_sunnysideworld_206: 20410882
+      spr_tileset_sunnysideworld_511: -1693142429
+      Road_Line_1: -781782064
+      spr_tileset_sunnysideworld_1488: 491173262
+      spr_tileset_sunnysideworld_1205: -133122144
+      spr_tileset_sunnysideworld_963: 493597967
+      spr_tileset_sunnysideworld_914: -1696880869
+      spr_tileset_sunnysideworld_345: -1639095970
+      spr_tileset_sunnysideworld_541: -228868430
+      spr_tileset_sunnysideworld_445: 148669296
+      spr_tileset_sunnysideworld_873: 1181937542
+      spr_tileset_sunnysideworld_1096: -1486193947
+      spr_tileset_sunnysideworld_1144: -955915809
+      spr_tileset_sunnysideworld_404: -1215681791
+      spr_tileset_sunnysideworld_911: 647675204
+      spr_tileset_sunnysideworld_1134: -1881033080
+      spr_tileset_sunnysideworld_1328: 907745462
+      spr_tileset_sunnysideworld_1000: 1950035749
+      spr_tileset_sunnysideworld_1316: -1761175651
+      spr_tileset_sunnysideworld_1472: 1635934878
+      spr_tileset_sunnysideworld_369: -218458123
+      spr_tileset_sunnysideworld_723: 2056020152
+      spr_tileset_sunnysideworld_1351: -856410678
+      spr_tileset_sunnysideworld_1455: 136425976
+      spr_tileset_sunnysideworld_1048: 1530563043
+      spr_tileset_sunnysideworld_1457: -259138287
+      spr_tileset_sunnysideworld_830: -414716031
+      spr_tileset_sunnysideworld_600: 38330257
+      spr_tileset_sunnysideworld_714: -372448426
+      spr_tileset_sunnysideworld_1015: 1382245431
+      spr_tileset_sunnysideworld_1306: 1733286594
+      spr_tileset_sunnysideworld_785: -357026130
+      spr_tileset_sunnysideworld_774: 1595791930
+      spr_tileset_sunnysideworld_100: -2131777044
+      spr_tileset_sunnysideworld_1052: 278287839
+      spr_tileset_sunnysideworld_41: 2129139324
+      spr_tileset_sunnysideworld_1129: -349197588
+      spr_tileset_sunnysideworld_958: -826008005
+      spr_tileset_sunnysideworld_1021: -304235317
+      spr_tileset_sunnysideworld_1424: -301547841
+      spr_tileset_sunnysideworld_1406: 469335216
+      spr_tileset_sunnysideworld_1006: 2057886433
+      spr_tileset_sunnysideworld_2: 1527086289
+      spr_tileset_sunnysideworld_647: 244511300
+      spr_tileset_sunnysideworld_335: -138066974
+      spr_tileset_sunnysideworld_797: -132058225
+      water Falls_5: 1932532469
+      spr_tileset_sunnysideworld_203: 1102850519
+      spr_tileset_sunnysideworld_309: -471726979
+      spr_tileset_sunnysideworld_627: -82962459
+      spr_tileset_sunnysideworld_726: 36532474
+      spr_tileset_sunnysideworld_126: 1667274157
+      spr_tileset_sunnysideworld_169: -1178193689
+      spr_tileset_sunnysideworld_293: 51374914
+      spr_tileset_sunnysideworld_88: 1748798348
+      spr_tileset_sunnysideworld_373: 1021119606
+      spr_tileset_sunnysideworld_861: -667588730
+      spr_tileset_sunnysideworld_524: -1072569989
+      spr_tileset_sunnysideworld_1518: -1373855867
+      WoodFence_8: -1237702274
+      spr_tileset_sunnysideworld_835: -1235480121
+      spr_tileset_sunnysideworld_1288: -1531615187
+      spr_tileset_sunnysideworld_157: 1195413044
+      spr_tileset_sunnysideworld_1294: -1026323700
+      spr_tileset_sunnysideworld_1300: -1448903777
+      spr_tileset_sunnysideworld_310: 2135815345
+      spr_tileset_sunnysideworld_749: -430026013
+      spr_tileset_sunnysideworld_1277: 1733839507
+      spr_tileset_sunnysideworld_771: -2018563421
+      spr_tileset_sunnysideworld_744: 211838150
+      spr_tileset_sunnysideworld_1389: 113648153
+      spr_tileset_sunnysideworld_121: 789202464
+      spr_tileset_sunnysideworld_1024: -258812190
+      Road_Line_4: -1667424778
+      WoodFence_7: 2079551390
+      spr_tileset_sunnysideworld_187: 424244400
+      spr_tileset_sunnysideworld_305: -1528859804
+      spr_tileset_sunnysideworld_1240: -644987483
+      spr_tileset_sunnysideworld_1397: 21630374
+      Road_Line_3: -365413343
+      spr_tileset_sunnysideworld_623: -260033901
+      spr_tileset_sunnysideworld_222: -196533265
+      spr_tileset_sunnysideworld_410: 874326293
+      spr_tileset_sunnysideworld_1335: -2044872254
+      spr_tileset_sunnysideworld_64: -494669897
+      spr_tileset_sunnysideworld_773: -1160602016
+      spr_tileset_sunnysideworld_1063: -408914321
+      spr_tileset_sunnysideworld_757: -706082222
+      spr_tileset_sunnysideworld_490: -1776814443
+      spr_tileset_sunnysideworld_1377: 1417487549
+      spr_tileset_sunnysideworld_1055: 1986187011
+      spr_tileset_sunnysideworld_1312: -1281670095
+      spr_tileset_sunnysideworld_1524: -1810043116
+      spr_tileset_sunnysideworld_845: -611559192
+      spr_tileset_sunnysideworld_537: 567158748
+      Blueflower_2: 138667963
+      spr_tileset_sunnysideworld_891: -1533510590
+      spr_tileset_sunnysideworld_1249: 1798916534
+      spr_tileset_sunnysideworld_1305: 1073859381
+      spr_tileset_sunnysideworld_1130: 1379006295
+      spr_tileset_sunnysideworld_1160: -1673889439
+      spr_tileset_sunnysideworld_1429: 803946567
+      spr_tileset_sunnysideworld_850: -1782742698
+      GrassFloor_8: 1287638363
+      spr_tileset_sunnysideworld_167: -741745115
+      spr_tileset_sunnysideworld_504: 1815771210
+      spr_tileset_sunnysideworld_1056: 1473255658
+      spr_tileset_sunnysideworld_1432: -325590518
+      spr_tileset_sunnysideworld_1523: -689786913
+      spr_tileset_sunnysideworld_213: 2058557994
+      spr_tileset_sunnysideworld_284: 1744633295
+      spr_tileset_sunnysideworld_469: 1081701883
+      spr_tileset_sunnysideworld_99: -293516969
+      spr_tileset_sunnysideworld_1141: -1538648661
+      spr_tileset_sunnysideworld_880: -13842880
+      spr_tileset_sunnysideworld_27: -330556605
+      spr_tileset_sunnysideworld_1512: 1893948116
+      spr_tileset_sunnysideworld_291: -251994819
+      spr_tileset_sunnysideworld_1551: -1702372557
+      spr_tileset_sunnysideworld_1506: -1095795972
+      spr_tileset_sunnysideworld_1436: 1168428500
+      spr_tileset_sunnysideworld_1522: 2022244198
+      spr_tileset_sunnysideworld_433: -866194462
+      spr_tileset_sunnysideworld_1501: 428552321
+      spr_tileset_sunnysideworld_721: 842097639
+      spr_tileset_sunnysideworld_878: 1058274935
+      spr_tileset_sunnysideworld_1354: -491548471
+      spr_tileset_sunnysideworld_677: -1983989221
+      spr_tileset_sunnysideworld_1185: -1429151147
+      spr_tileset_sunnysideworld_1507: 720698355
+      spr_tileset_sunnysideworld_164: 1812367103
+      Red flower_2: -1825367499
+      spr_tileset_sunnysideworld_1133: -1789927803
+      spr_tileset_sunnysideworld_1516: -1721781853
+      spr_tileset_sunnysideworld_1360: -1143843067
+      spr_tileset_sunnysideworld_195: 843730733
+      spr_tileset_sunnysideworld_1333: -238905491
+      spr_tileset_sunnysideworld_738: 1633218194
+      spr_tileset_sunnysideworld_689: -1066763940
+      spr_tileset_sunnysideworld_939: -15985279
+      spr_tileset_sunnysideworld_405: -2099795425
+      spr_tileset_sunnysideworld_1255: 1175868391
+      spr_tileset_sunnysideworld_1089: -434339061
+      spr_tileset_sunnysideworld_611: 1521620397
+      spr_tileset_sunnysideworld_906: 1305980568
+      spr_tileset_sunnysideworld_236: 248043121
+      spr_tileset_sunnysideworld_737: 1619079587
+      spr_tileset_sunnysideworld_453: 1469862459
+      spr_tileset_sunnysideworld_137: -1462379407
+      spr_tileset_sunnysideworld_1099: 2132197682
+      spr_tileset_sunnysideworld_465: -1718718866
+      spr_tileset_sunnysideworld_376: 40682829
+      spr_tileset_sunnysideworld_1494: -660699642
+      spr_tileset_sunnysideworld_347: -613445513
+      spr_tileset_sunnysideworld_847: -1177258361
+      spr_tileset_sunnysideworld_907: -1446999196
+      spr_tileset_sunnysideworld_1281: -1646868171
+      spr_tileset_sunnysideworld_888: -2002195173
+      spr_tileset_sunnysideworld_784: 2022622920
+      spr_tileset_sunnysideworld_209: -1624975903
+      spr_tileset_sunnysideworld_358: 38735586
+      spr_tileset_sunnysideworld_1242: 547350682
+      spr_tileset_sunnysideworld_1307: 1449141413
+      water Falls_4: -1138039039
+      spr_tileset_sunnysideworld_200: -1682580116
+      spr_tileset_sunnysideworld_553: -1931784977
+      spr_tileset_sunnysideworld_337: -398414451
+      spr_tileset_sunnysideworld_967: 1525237561
+      spr_tileset_sunnysideworld_429: -354854573
+      spr_tileset_sunnysideworld_547: -141036102
+      spr_tileset_sunnysideworld_1540: -407228536
+      sea water_10: -1382512390
+      Blue_House_3: -1872228583
+      spr_tileset_sunnysideworld_436: 1732193480
+      spr_tileset_sunnysideworld_787: 1043649458
+      spr_tileset_sunnysideworld_848: 1678891447
+      spr_tileset_sunnysideworld_718: 1766381228
+      spr_tileset_sunnysideworld_1061: -1997337329
+      spr_tileset_sunnysideworld_1026: 1917571778
+      spr_tileset_sunnysideworld_1430: 609642179
+      spr_tileset_sunnysideworld_1379: -1496550125
+      spr_tileset_sunnysideworld_1054: -1369732769
+      spr_tileset_sunnysideworld_1292: -354895811
+      spr_tileset_sunnysideworld_874: 1226065368
+      spr_tileset_sunnysideworld_1477: -1965368653
+      spr_tileset_sunnysideworld_1364: 1456874762
+      spr_tileset_sunnysideworld_1321: 784127409
+      spr_tileset_sunnysideworld_1209: -103904390
+      spr_tileset_sunnysideworld_715: -1679887020
+      spr_tileset_sunnysideworld_398: 80401154
+      WoodFence_3: 848541616
+      spr_tileset_sunnysideworld_1529: 1990029534
+      spr_tileset_sunnysideworld_889: 544878340
+      WoodFence_4: -965331262
+      spr_tileset_sunnysideworld_356: -1935118063
+      spr_tileset_sunnysideworld_1418: 1365242928
+      spr_tileset_sunnysideworld_1250: 1862589574
+      spr_tileset_sunnysideworld_263: 448882513
+      spr_tileset_sunnysideworld_390: 933212255
+      spr_tileset_sunnysideworld_620: 2106584906
+      spr_tileset_sunnysideworld_25: -1036272464
+      spr_tileset_sunnysideworld_1489: -1811987971
+      spr_tileset_sunnysideworld_903: 1510953145
+      spr_tileset_sunnysideworld_704: 142895179
+      spr_tileset_sunnysideworld_122: 699371250
+      spr_tileset_sunnysideworld_420: -494962770
+      spr_tileset_sunnysideworld_118: 315685122
+      spr_tileset_sunnysideworld_591: 229531717
+      spr_tileset_sunnysideworld_1239: -1715940207
+      spr_tileset_sunnysideworld_769: -1441218915
+      spr_tileset_sunnysideworld_1093: -288526415
+      spr_tileset_sunnysideworld_678: -1441803225
+      spr_tileset_sunnysideworld_512: -1248012736
+      spr_tileset_sunnysideworld_650: 1632919783
+      spr_tileset_sunnysideworld_954: 638706919
+      spr_tileset_sunnysideworld_985: 875215069
+      spr_tileset_sunnysideworld_1046: -1104207392
+      spr_tileset_sunnysideworld_229: -669490383
+      Woodbottom_0: 299620100
+      water Falls_1: 770802623
+      spr_tileset_sunnysideworld_625: 458067630
+      spr_tileset_sunnysideworld_1371: 2138963456
+      spr_tileset_sunnysideworld_499: 456948399
+      spr_tileset_sunnysideworld_631: -140550206
+      spr_tileset_sunnysideworld_1311: -382849534
+      spr_tileset_sunnysideworld_949: -287741780
+      spr_tileset_sunnysideworld_601: 1864981489
+      spr_tileset_sunnysideworld_599: -293067373
+      white flower_0: -899055259
+      spr_tileset_sunnysideworld_321: -1038305213
+      spr_tileset_sunnysideworld_895: -1162764377
+      spr_tileset_sunnysideworld_1313: 1537204462
+      spr_tileset_sunnysideworld_508: 503856967
+      spr_tileset_sunnysideworld_1322: 338389062
+      spr_tileset_sunnysideworld_1113: -1980472060
+      spr_tileset_sunnysideworld_1102: -771558731
+      spr_tileset_sunnysideworld_813: -644440859
+      spr_tileset_sunnysideworld_1193: -59452125
+      spr_tileset_sunnysideworld_97: -278261362
+      spr_tileset_sunnysideworld_334: -892300589
+      spr_tileset_sunnysideworld_42: -2107152215
+      spr_tileset_sunnysideworld_1372: -1554182366
+      spr_tileset_sunnysideworld_1051: 1532767469
+      spr_tileset_sunnysideworld_1356: -140741534
+      spr_tileset_sunnysideworld_1298: 919639647
+      spr_tileset_sunnysideworld_1376: -224865708
+      sea water_13: 999282533
+      spr_tileset_sunnysideworld_419: -1109762698
+      spr_tileset_sunnysideworld_1068: 136060012
+      spr_tileset_sunnysideworld_539: 16756071
+      spr_tileset_sunnysideworld_724: 586478895
+      Blue_House_7: -1940243386
+      spr_tileset_sunnysideworld_546: 417666485
+      WoodFence_13: -638587450
+      spr_tileset_sunnysideworld_1009: -605660178
+      spr_tileset_sunnysideworld_751: -170601921
+      spr_tileset_sunnysideworld_538: -45718748
+      spr_tileset_sunnysideworld_1198: -1162766501
+      spr_tileset_sunnysideworld_1343: 320451987
+      spr_tileset_sunnysideworld_1450: 293959943
+      water Falls_7: 1276027166
+      Beat_3: -1227562993
+      spr_tileset_sunnysideworld_793: -1293048249
+      spr_tileset_sunnysideworld_424: -1613030075
+      spr_tileset_sunnysideworld_132: 1335928398
+      spr_tileset_sunnysideworld_70: 575043612
+      spr_tileset_sunnysideworld_437: -1528885035
+      spr_tileset_sunnysideworld_1028: 735818366
+      Road_2: -2131883074
+      spr_tileset_sunnysideworld_1072: -1859086311
+      spr_tileset_sunnysideworld_837: -1322851716
+      spr_tileset_sunnysideworld_999: -2143777247
+      spr_tileset_sunnysideworld_166: -349670283
+      spr_tileset_sunnysideworld_290: 931994844
+      spr_tileset_sunnysideworld_319: -1540056199
+      spr_tileset_sunnysideworld_870: 109790639
+      spr_tileset_sunnysideworld_682: 723095164
+      spr_tileset_sunnysideworld_910: 378215553
+      spr_tileset_sunnysideworld_235: 316924619
+      spr_tileset_sunnysideworld_246: -1166227373
+      spr_tileset_sunnysideworld_1366: 1748414781
+      spr_tileset_sunnysideworld_1520: -1054906986
+      spr_tileset_sunnysideworld_877: 206451553
+      spr_tileset_sunnysideworld_916: 1430080310
+      spr_tileset_sunnysideworld_1528: 1924558276
+      spr_tileset_sunnysideworld_1302: -2028967714
+      spr_tileset_sunnysideworld_1437: 2092415827
+      spr_tileset_sunnysideworld_1531: -1128401525
+      spr_tileset_sunnysideworld_1470: 285761681
+      etc2: 1232059458
+      spr_tileset_sunnysideworld_26: 1743097673
+      spr_tileset_sunnysideworld_822: 1698192941
+      spr_tileset_sunnysideworld_1280: -222373510
+      spr_tileset_sunnysideworld_1276: 1017747049
+      spr_tileset_sunnysideworld_387: -2020478370
+      sea water_12: 786113187
+      spr_tileset_sunnysideworld_994: 922244248
+      spr_tileset_sunnysideworld_637: -589937567
+      spr_tileset_sunnysideworld_1526: -128346343
+      spr_tileset_sunnysideworld_484: -1305782225
+      spr_tileset_sunnysideworld_269: -1059547621
+      spr_tileset_sunnysideworld_1235: 3477399
+      spr_tileset_sunnysideworld_1036: 2020929700
+      spr_tileset_sunnysideworld_1291: -462243057
+      spr_tileset_sunnysideworld_1541: 176163119
+      Chimney_0: 767186625
+      spr_tileset_sunnysideworld_1402: -365813988
+      spr_tileset_sunnysideworld_1190: -1496325306
+      spr_tileset_sunnysideworld_1010: 1225659776
+      spr_tileset_sunnysideworld_1548: -1379333746
+      spr_tileset_sunnysideworld_1476: 1843527481
+      spr_tileset_sunnysideworld_690: -405553579
+      spr_tileset_sunnysideworld_393: 218419666
+      spr_tileset_sunnysideworld_815: 313636269
+      spr_tileset_sunnysideworld_1200: -1110874550
+      spr_tileset_sunnysideworld_674: 836609077
+      spr_tileset_sunnysideworld_977: 92509958
+      spr_tileset_sunnysideworld_1419: 2089520210
+      spr_tileset_sunnysideworld_1325: 362817126
+      spr_tileset_sunnysideworld_894: -812411980
+      spr_tileset_sunnysideworld_1027: -2006626352
+      spr_tileset_sunnysideworld_808: -1926747843
+      spr_tileset_sunnysideworld_1017: 419107026
+      spr_tileset_sunnysideworld_1071: 815511789
+      spr_tileset_sunnysideworld_1172: 398592667
+      spr_tileset_sunnysideworld_1170: -892387131
+      spr_tileset_sunnysideworld_234: -47389367
+      spr_tileset_sunnysideworld_186: -573278254
+      sea water_15: -1502875807
+      spr_tileset_sunnysideworld_1499: 2100953743
+      spr_tileset_sunnysideworld_281: 1419366208
+      spr_tileset_sunnysideworld_192: -1293942957
+      WoodFence_11: -827919448
+      spr_tileset_sunnysideworld_316: -1056513178
+      spr_tileset_sunnysideworld_1391: -1103196464
+      spr_tileset_sunnysideworld_408: -1757390224
+      spr_tileset_sunnysideworld_603: -516086411
+      Beat_2: -1119145720
+      spr_tileset_sunnysideworld_572: 1690079475
+      spr_tileset_sunnysideworld_1053: 1110218249
+      spr_tileset_sunnysideworld_204: 435841888
+      spr_tileset_sunnysideworld_720: 1423800329
+      spr_tileset_sunnysideworld_730: -887940266
+      spr_tileset_sunnysideworld_974: 83099117
+      spr_tileset_sunnysideworld_746: -1479613642
+      spr_tileset_sunnysideworld_993: -1448769233
+      GrassFloor_4: 773777463
+      spr_tileset_sunnysideworld_49: 707165619
+      spr_tileset_sunnysideworld_76: 715209627
+      spr_tileset_sunnysideworld_114: 2096444839
+      spr_tileset_sunnysideworld_520: -1444195969
+      spr_tileset_sunnysideworld_685: 384923315
+      spr_tileset_sunnysideworld_493: 1155400909
+      spr_tileset_sunnysideworld_238: -66954848
+      spr_tileset_sunnysideworld_443: 42956419
+      spr_tileset_sunnysideworld_1358: 2118831609
+      spr_tileset_sunnysideworld_615: -1066462961
+      spr_tileset_sunnysideworld_1197: 368027301
+      spr_tileset_sunnysideworld_1350: -952200412
+      spr_tileset_sunnysideworld_116: -1327894739
+      spr_tileset_sunnysideworld_1368: 112712133
+      spr_tileset_sunnysideworld_569: 203655479
+      statue: -1548814799
+      spr_tileset_sunnysideworld_1263: -734706414
+      spr_tileset_sunnysideworld_735: 1551865317
+      spr_tileset_sunnysideworld_573: -2090902249
+      spr_tileset_sunnysideworld_163: 1142278500
+      spr_tileset_sunnysideworld_457: -1735834838
+      spr_tileset_sunnysideworld_739: 1739712066
+      spr_tileset_sunnysideworld_422: -1754856872
+      spr_tileset_sunnysideworld_869: 1915416435
+      spr_tileset_sunnysideworld_1210: 1975668423
+      spr_tileset_sunnysideworld_975: 31569406
+      spr_tileset_sunnysideworld_908: -1588214922
+      spr_tileset_sunnysideworld_35: 1686064009
+      spr_tileset_sunnysideworld_9: 857725025
+      spr_tileset_sunnysideworld_619: -235263387
+      spr_tileset_sunnysideworld_868: -1739724845
+      GrassFloor_16: -435189611
+      spr_tileset_sunnysideworld_1045: 156315564
+      spr_tileset_sunnysideworld_1367: -1607406181
+      spr_tileset_sunnysideworld_1192: 1219090462
+      spr_tileset_sunnysideworld_988: -1742570827
+      spr_tileset_sunnysideworld_307: 1358231043
+      WoodFence_12: -867218709
+      spr_tileset_sunnysideworld_658: -349516310
+      spr_tileset_sunnysideworld_468: -740649280
+      spr_tileset_sunnysideworld_1439: -42752345
+      spr_tileset_sunnysideworld_1282: -2077572618
+      spr_tileset_sunnysideworld_777: -10868350
+      spr_tileset_sunnysideworld_807: 754625145
+      spr_tileset_sunnysideworld_1394: 890180188
+      spr_tileset_sunnysideworld_1411: -277368341
+      spr_tileset_sunnysideworld_1273: 1244673938
+      spr_tileset_sunnysideworld_329: 1973942004
+      spr_tileset_sunnysideworld_1162: 529993899
+      spr_tileset_sunnysideworld_1025: 271539038
+      spr_tileset_sunnysideworld_1189: 2083107125
+      spr_tileset_sunnysideworld_146: 1998900498
+      spr_tileset_sunnysideworld_978: 1478375807
+      spr_tileset_sunnysideworld_1458: -1680947629
+      spr_tileset_sunnysideworld_839: 310855051
+      spr_tileset_sunnysideworld_1191: -5930967
+      spr_tileset_sunnysideworld_96: -1727668268
+      spr_tileset_sunnysideworld_605: 562428858
+      spr_tileset_sunnysideworld_979: 149609894
+      spr_tileset_sunnysideworld_522: 1021193807
+      spr_tileset_sunnysideworld_339: 220977234
+      Red flower_0: -651551002
+      spr_tileset_sunnysideworld_1511: -537228786
+      spr_tileset_sunnysideworld_1533: -2039737353
+      spr_tileset_sunnysideworld_208: 1739922302
+      spr_tileset_sunnysideworld_1329: -1451939754
+      spr_tileset_sunnysideworld_1443: -1467955525
+      spr_tileset_sunnysideworld_1033: 1927253780
+      spr_tileset_sunnysideworld_1267: 1453321200
+      spr_tileset_sunnysideworld_798: -34399095
+      spr_tileset_sunnysideworld_1479: 1484488987
+      spr_tileset_sunnysideworld_256: 588082135
+      Road_Line_0: 909537561
+      spr_tileset_sunnysideworld_1140: 756406056
+      spr_tileset_sunnysideworld_976: -1859874147
+      spr_tileset_sunnysideworld_1403: -661488791
+      thicket_2: 1924304331
+      spr_tileset_sunnysideworld_561: 1984610226
+      spr_tileset_sunnysideworld_964: -1568504582
+      spr_tileset_sunnysideworld_1164: 658382217
+      spr_tileset_sunnysideworld_400: 1907811091
+      spr_tileset_sunnysideworld_51: 2113208471
+      spr_tileset_sunnysideworld_912: -1333993010
+      spr_tileset_sunnysideworld_124: 1968333677
+      spr_tileset_sunnysideworld_1127: -1799314298
+      spr_tileset_sunnysideworld_346: -3452636
+      spr_tileset_sunnysideworld_1399: 80736717
+      spr_tileset_sunnysideworld_983: 362327886
+      spr_tileset_sunnysideworld_996: -1825023823
+      spr_tileset_sunnysideworld_382: -617093826
+      spr_tileset_sunnysideworld_388: 239277482
+      spr_tileset_sunnysideworld_881: 104481910
+      spr_tileset_sunnysideworld_1194: 430541222
+      spr_tileset_sunnysideworld_221: 33996657
+      spr_tileset_sunnysideworld_73: 786372319
+      spr_tileset_sunnysideworld_1464: 1285292470
+      spr_tileset_sunnysideworld_840: -1619841808
+      spr_tileset_sunnysideworld_1547: -687173142
+      spr_tileset_sunnysideworld_210: 606998456
+      spr_tileset_sunnysideworld_447: -1314336090
+      spr_tileset_sunnysideworld_232: -1032444711
+      spr_tileset_sunnysideworld_241: -1982804383
+      spr_tileset_sunnysideworld_110: -1231470077
+      spr_tileset_sunnysideworld_1515: -940977145
+      spr_tileset_sunnysideworld_505: -1391981169
+      Road_4: -1468628084
+      spr_tileset_sunnysideworld_1165: -483839935
+      spr_tileset_sunnysideworld_521: -989335590
+      spr_tileset_sunnysideworld_632: 1938421049
+      spr_tileset_sunnysideworld_1131: 858152484
+      spr_tileset_sunnysideworld_1491: 1963547025
+      spr_tileset_sunnysideworld_514: -204238683
+      spr_tileset_sunnysideworld_672: -980012793
+      spr_tileset_sunnysideworld_1496: -2036041325
+      spr_tileset_sunnysideworld_1088: 552024488
+      thicket_1: -638949048
+      spr_tileset_sunnysideworld_22: 674615150
+      spr_tileset_sunnysideworld_1462: -468740586
+      spr_tileset_sunnysideworld_412: 1419186707
+      spr_tileset_sunnysideworld_117: 1825241148
+      spr_tileset_sunnysideworld_560: -1873237577
+      spr_tileset_sunnysideworld_202: -1395989756
+      spr_tileset_sunnysideworld_1117: 441189044
+      spr_tileset_sunnysideworld_1334: 2140682470
+      spr_tileset_sunnysideworld_403: -1685150376
+      spr_tileset_sunnysideworld_826: -955827398
+      spr_tileset_sunnysideworld_893: -967042609
+      spr_tileset_sunnysideworld_1122: 1965873098
+      spr_tileset_sunnysideworld_423: -1291227422
+      spr_tileset_sunnysideworld_147: -265455098
+      Blueflower_0: -2073166379
+      wooden pail_3: -1204526654
+      spr_tileset_sunnysideworld_1497: 1113295830
+      spr_tileset_sunnysideworld_542: -58346373
+      WoodFence_5: -1709947846
+      spr_tileset_sunnysideworld_1414: -1992102071
+      spr_tileset_sunnysideworld_414: -1584936265
+      spr_tileset_sunnysideworld_296: 1596471759
+      sea water_8: -189465900
+      Road_1: 788709130
+      spr_tileset_sunnysideworld_1181: 108485321
+      spr_tileset_sunnysideworld_1166: -1916486753
+      spr_tileset_sunnysideworld_727: -812113295
+      spr_tileset_sunnysideworld_535: 1408066933
+      spr_tileset_sunnysideworld_733: 1136261815
+      spr_tileset_sunnysideworld_1271: -1760588180
+      spr_tileset_sunnysideworld_1225: -1970583377
+      spr_tileset_sunnysideworld_1478: 718051138
+      Road_5: -1042047065
+      spr_tileset_sunnysideworld_763: 334526478
+      spr_tileset_sunnysideworld_823: -1428139900
+      Stone_0: -150501729
+      spr_tileset_sunnysideworld_1035: -750596769
+      spr_tileset_sunnysideworld_1204: 2042059071
+      spr_tileset_sunnysideworld_648: -1474136560
+      spr_tileset_sunnysideworld_67: -1158337982
+      spr_tileset_sunnysideworld_1110: 917265673
+      spr_tileset_sunnysideworld_362: -1023038409
+      spr_tileset_sunnysideworld_170: 710349867
+      spr_tileset_sunnysideworld_328: -1907958317
+      spr_tileset_sunnysideworld_1445: 1980025868
+      spr_tileset_sunnysideworld_932: -1481754665
+      spr_tileset_sunnysideworld_1176: 485160597
+      spr_tileset_sunnysideworld_670: -517355271
+      spr_tileset_sunnysideworld_1308: -817644185
+      spr_tileset_sunnysideworld_1314: -1095920187
+      spr_tileset_sunnysideworld_649: 181821844
+      spr_tileset_sunnysideworld_261: -1880201357
+      spr_tileset_sunnysideworld_255: 1253121377
+      spr_tileset_sunnysideworld_567: 1687312136
+      spr_tileset_sunnysideworld_585: 738950345
+      spr_tileset_sunnysideworld_435: 763859891
+      Trees_0: 1128314560
+      spr_tileset_sunnysideworld_675: -2046988229
+      spr_tileset_sunnysideworld_966: 1460668582
+      spr_tileset_sunnysideworld_736: -579896510
+      spr_tileset_sunnysideworld_1050: 495931494
+      Red flower_3: -1328068358
+      spr_tileset_sunnysideworld_831: -435228605
+      spr_tileset_sunnysideworld_1029: 253279365
+      spr_tileset_sunnysideworld_1304: -646026010
+      spr_tileset_sunnysideworld_1174: -662947655
+      spr_tileset_sunnysideworld_1468: 1292596856
+      sea water_1: -1610907594
+      spr_tileset_sunnysideworld_1257: 1993534242
+      sea water_3: -881390844
+      spr_tileset_sunnysideworld_12: -1602885077
+      spr_tileset_sunnysideworld_543: -16162779
+      spr_tileset_sunnysideworld_8: -1873353021
+      spr_tileset_sunnysideworld_626: -796260220
+      spr_tileset_sunnysideworld_1408: -1290904041
+      etc: -1594828554
+      spr_tileset_sunnysideworld_1269: 1420403944
+      spr_tileset_sunnysideworld_792: -923822987
+      spr_tileset_sunnysideworld_75: -1053375500
+      spr_tileset_sunnysideworld_860: -198457673
+      spr_tileset_sunnysideworld_1521: -813647452
+      spr_tileset_sunnysideworld_1022: 1316955350
+      spr_tileset_sunnysideworld_1012: -381104798
+      spr_tileset_sunnysideworld_1032: -332789794
+      spr_tileset_sunnysideworld_1285: 1879120393
+      spr_tileset_sunnysideworld_1286: 740165988
+      spr_tileset_sunnysideworld_525: -1645251468
+      spr_tileset_sunnysideworld_696: -1626885724
+      spr_tileset_sunnysideworld_268: 758541456
+      spr_tileset_sunnysideworld_945: -715482796
+      spr_tileset_sunnysideworld_1232: -998043532
+      spr_tileset_sunnysideworld_434: -195980380
+      spr_tileset_sunnysideworld_140: -1045894038
+      Rice_2: -253395070
+      spr_tileset_sunnysideworld_1103: -1446757221
+      spr_tileset_sunnysideworld_295: -1739455830
+      spr_tileset_sunnysideworld_111: 959162695
+      spr_tileset_sunnysideworld_1500: 527839409
+      spr_tileset_sunnysideworld_1274: -1317735390
+      spr_tileset_sunnysideworld_1247: 1890608679
+      spr_tileset_sunnysideworld_799: -1882025135
+      spr_tileset_sunnysideworld_740: 421775949
+      spr_tileset_sunnysideworld_705: -840032681
+      spr_tileset_sunnysideworld_441: 1643870896
+      spr_tileset_sunnysideworld_1101: 670924016
+      spr_tileset_sunnysideworld_883: -320208153
+      spr_tileset_sunnysideworld_1013: -521207783
+      spr_tileset_sunnysideworld_1296: 1552605066
+      spr_tileset_sunnysideworld_867: 1209234809
+      Road_Line_10: -645879794
+      spr_tileset_sunnysideworld_885: 366780935
+      spr_tileset_sunnysideworld_156: 10174750
+      spr_tileset_sunnysideworld_517: 244833841
+      spr_tileset_sunnysideworld_481: 652908652
+      spr_tileset_sunnysideworld_1426: -469371777
+      spr_tileset_sunnysideworld_898: -1102239933
+      spr_tileset_sunnysideworld_1442: 508053297
+      spr_tileset_sunnysideworld_1446: -1156769865
+      spr_tileset_sunnysideworld_1539: -100848217
+      spr_tileset_sunnysideworld_440: -884694521
+      spr_tileset_sunnysideworld_595: 60250934
+      spr_tileset_sunnysideworld_432: -1518985857
+      spr_tileset_sunnysideworld_529: -1493794000
+      spr_tileset_sunnysideworld_1309: -927005252
+      spr_tileset_sunnysideworld_1261: -45064229
+      Carrot_2: -1770535198
+      spr_tileset_sunnysideworld_1427: 1510504502
+      spr_tileset_sunnysideworld_642: -2067259636
+      spr_tileset_sunnysideworld_402: -20201980
+      spr_tileset_sunnysideworld_587: 1481330314
+      spr_tileset_sunnysideworld_842: -1760505248
+      GrassFloor_7: -506422301
+      spr_tileset_sunnysideworld_947: -1013456207
+      spr_tileset_sunnysideworld_1346: -650423061
+      spr_tileset_sunnysideworld_383: -1419816150
+      spr_tileset_sunnysideworld_1090: -1102272791
+      spr_tileset_sunnysideworld_74: 98557595
+      spr_tileset_sunnysideworld_1092: 1899170683
+      spr_tileset_sunnysideworld_580: -1936791131
+      spr_tileset_sunnysideworld_142: 77228415
+      spr_tileset_sunnysideworld_544: -238070488
+      spr_tileset_sunnysideworld_1059: 499615316
+      Stone_1: -1233592435
+      spr_tileset_sunnysideworld_566: 98513216
+      spr_tileset_sunnysideworld_1076: -1811610825
+      spr_tileset_sunnysideworld_1132: 631536819
+      GrassFloor_11: -8815863
+      spr_tileset_sunnysideworld_1480: 2043258193
+      spr_tileset_sunnysideworld_318: 1283247661
+      spr_tileset_sunnysideworld_0: -163525558
+      spr_tileset_sunnysideworld_1125: -715361404
+      spr_tileset_sunnysideworld_1382: -2023917891
+      spr_tileset_sunnysideworld_466: 1807741015
+      spr_tileset_sunnysideworld_917: -585826625
+      Carrot_3: 1344486204
+      Blue_House_1: 1819410893
+      spr_tileset_sunnysideworld_1337: -1702849552
+      spr_tileset_sunnysideworld_1106: 260990541
+      spr_tileset_sunnysideworld_1118: 352863650
+      spr_tileset_sunnysideworld_851: -141705506
+      spr_tileset_sunnysideworld_934: 204784441
+      spr_tileset_sunnysideworld_1233: -1611017846
+      spr_tileset_sunnysideworld_224: -34256271
+      spr_tileset_sunnysideworld_1467: -1197472705
+      Road_Line_9: -1301319835
+      spr_tileset_sunnysideworld_250: -1014990789
+      spr_tileset_sunnysideworld_1279: -1138605795
+      spr_tileset_sunnysideworld_219: 1008591873
+      spr_tileset_sunnysideworld_485: 781808246
+      spr_tileset_sunnysideworld_173: -1786105113
+      spr_tileset_sunnysideworld_1091: 605733640
+      spr_tileset_sunnysideworld_286: 138618657
+      spr_tileset_sunnysideworld_581: 1818215604
+      spr_tileset_sunnysideworld_501: -2033473212
+      spr_tileset_sunnysideworld_698: -1987962006
+      water_3: -132590460
+      spr_tileset_sunnysideworld_865: 85971054
+      spr_tileset_sunnysideworld_1245: 833212914
+      spr_tileset_sunnysideworld_579: -983552386
+      spr_tileset_sunnysideworld_245: -2055189854
+      spr_tileset_sunnysideworld_15: -1155317745
+      spr_tileset_sunnysideworld_568: 997253864
+      spr_tileset_sunnysideworld_1452: -41344311
+      spr_tileset_sunnysideworld_145: 1418901185
+      spr_tileset_sunnysideworld_515: 1619517706
+      spr_tileset_sunnysideworld_225: 1540448451
+      Rice_3: -788254333
+      spr_tileset_sunnysideworld_513: -747070275
+      spr_tileset_sunnysideworld_226: 1935768599
+      spr_tileset_sunnysideworld_859: -103330641
+      spr_tileset_sunnysideworld_604: -330064385
+      spr_tileset_sunnysideworld_1086: -1886436288
+      spr_tileset_sunnysideworld_257: 783822699
+      spr_tileset_sunnysideworld_956: 1692893084
+      spr_tileset_sunnysideworld_82: 1654378310
+      spr_tileset_sunnysideworld_948: 1507948451
+      spr_tileset_sunnysideworld_775: 1189499798
+      spr_tileset_sunnysideworld_1087: -1223195566
+      spr_tileset_sunnysideworld_1241: 272431294
+      spr_tileset_sunnysideworld_359: -1446489427
+      spr_tileset_sunnysideworld_951: -1246691105
+      spr_tileset_sunnysideworld_380: -1997167790
+      spr_tileset_sunnysideworld_1409: -2058207326
+      spr_tileset_sunnysideworld_30: 1742387034
+      spr_tileset_sunnysideworld_421: -400811865
+      spr_tileset_sunnysideworld_588: -497909974
+      spr_tileset_sunnysideworld_1187: 1122710608
+      spr_tileset_sunnysideworld_1077: 38693909
+      spr_tileset_sunnysideworld_185: -1447000721
+      spr_tileset_sunnysideworld_379: -1097012723
+      spr_tileset_sunnysideworld_353: 1264144250
+      spr_tileset_sunnysideworld_476: 1806699143
+      spr_tileset_sunnysideworld_1388: -1672888074
+      spr_tileset_sunnysideworld_716: 1452218488
+      spr_tileset_sunnysideworld_801: -1289580357
+      spr_tileset_sunnysideworld_77: -1253980858
+      spr_tileset_sunnysideworld_1317: 523442657
+      spr_tileset_sunnysideworld_1037: 2034517682
+      spr_tileset_sunnysideworld_1331: 206008554
+      spr_tileset_sunnysideworld_1143: -25357130
+      spr_tileset_sunnysideworld_14: -836258225
+      spr_tileset_sunnysideworld_941: 1036561945
+      spr_tileset_sunnysideworld_509: -1635733941
+      spr_tileset_sunnysideworld_772: -403647950
+      spr_tileset_sunnysideworld_621: -476706175
+      spr_tileset_sunnysideworld_610: 379739146
+      spr_tileset_sunnysideworld_864: 193552986
+      spr_tileset_sunnysideworld_990: -10968690
+      spr_tileset_sunnysideworld_161: -2068084518
+      spr_tileset_sunnysideworld_684: -1866570497
+      spr_tileset_sunnysideworld_765: -383731988
+      spr_tileset_sunnysideworld_1553: -677823400
+      spr_tileset_sunnysideworld_320: 710293808
+      spr_tileset_sunnysideworld_1202: 827205929
+      spr_tileset_sunnysideworld_98: 1649290994
+      spr_tileset_sunnysideworld_1014: -145695178
+      spr_tileset_sunnysideworld_1201: -410424254
+      spr_tileset_sunnysideworld_872: 1856176737
+      water_2: -1840525101
+      spr_tileset_sunnysideworld_1220: 536476072
+      spr_tileset_sunnysideworld_389: 1594090758
+      spr_tileset_sunnysideworld_1268: 2099534990
+      spr_tileset_sunnysideworld_1297: -1928598590
+      spr_tileset_sunnysideworld_394: -1208339547
+      spr_tileset_sunnysideworld_1065: -142307875
+      spr_tileset_sunnysideworld_365: 2102016651
+      spr_tileset_sunnysideworld_24: 1604658708
+      spr_tileset_sunnysideworld_693: -199340840
+      spr_tileset_sunnysideworld_1400: 1389285331
+      WoodFence_2: 1731628724
+      spr_tileset_sunnysideworld_987: -2020000009
+      spr_tileset_sunnysideworld_545: 320702969
+      spr_tileset_sunnysideworld_791: -820407480
+      spr_tileset_sunnysideworld_1532: -50660772
+      statue_2: -1751553996
+      spr_tileset_sunnysideworld_550: 998188208
+      spr_tileset_sunnysideworld_745: -723660587
+      ChimneyHead_1: 1825241148
+      spr_tileset_sunnysideworld_1136: -1699816808
+      spr_tileset_sunnysideworld_989: 2054926583
+      spr_tileset_sunnysideworld_109: -188680087
+      spr_tileset_sunnysideworld_528: 213295286
+      spr_tileset_sunnysideworld_1150: -262733152
+      spr_tileset_sunnysideworld_1186: -83368837
+      spr_tileset_sunnysideworld_378: 1183034899
+      Stone_3: -652619673
+      spr_tileset_sunnysideworld_1359: 1232034605
+      spr_tileset_sunnysideworld_1412: -343278906
+      spr_tileset_sunnysideworld_1042: 781846686
+      spr_tileset_sunnysideworld_597: 1252332531
+      spr_tileset_sunnysideworld_936: -553269584
+      spr_tileset_sunnysideworld_474: 406333190
+      spr_tileset_sunnysideworld_1448: 698644078
+      spr_tileset_sunnysideworld_760: -241585251
+      WoodFence_0: 1580886107
+      water Falls_0: -938439279
+      spr_tileset_sunnysideworld_1299: 45045887
+      spr_tileset_sunnysideworld_584: 1691678485
+      thicket_0: 493528012
+      GrassFloor_18: 808212421
+      spr_tileset_sunnysideworld_1097: -318164202
+      spr_tileset_sunnysideworld_1401: 347762958
+      spr_tileset_sunnysideworld_634: 1347809452
+      spr_tileset_sunnysideworld_1244: 227809709
+      spr_tileset_sunnysideworld_308: 994571163
+      WoodFence_1: 649124198
+      spr_tileset_sunnysideworld_294: 692900432
+      spr_tileset_sunnysideworld_426: 846742300
+      spr_tileset_sunnysideworld_655: 1361094538
+      spr_tileset_sunnysideworld_91: 158924782
+      Blue_House_6: 1258642701
+      spr_tileset_sunnysideworld_285: -939572858
+      spr_tileset_sunnysideworld_1352: 869155958
+      spr_tileset_sunnysideworld_247: 697949339
+      spr_tileset_sunnysideworld_613: 8129203
+      spr_tileset_sunnysideworld_1453: 728486445
+      spr_tileset_sunnysideworld_1530: -1312146126
+      spr_tileset_sunnysideworld_1236: -1432386591
+      spr_tileset_sunnysideworld_1348: -340614760
+      spr_tileset_sunnysideworld_478: 334185178
+      spr_tileset_sunnysideworld_602: -906290343
+      spr_tileset_sunnysideworld_1034: 1350415292
+      spr_tileset_sunnysideworld_1180: 56660877
+      spr_tileset_sunnysideworld_355: -1703267123
+      spr_tileset_sunnysideworld_1169: 1366414723
+      spr_tileset_sunnysideworld_189: -2103261223
+      wooden pail_1: 1428545713
+      spr_tileset_sunnysideworld_695: 386402134
+      water tank: 91720314
+      spr_tileset_sunnysideworld_174: -1860703898
+      spr_tileset_sunnysideworld_1208: 2013585354
+      spr_tileset_sunnysideworld_854: -1279353764
+      spr_tileset_sunnysideworld_1357: -783574496
+      spr_tileset_sunnysideworld_862: 187787574
+      spr_tileset_sunnysideworld_199: -1568817637
+      spr_tileset_sunnysideworld_1550: -1822011334
+      spr_tileset_sunnysideworld_416: 1721075855
+      spr_tileset_sunnysideworld_406: -659480128
+      spr_tileset_sunnysideworld_314: 852022660
+      spr_tileset_sunnysideworld_1023: 1603333787
+      spr_tileset_sunnysideworld_90: -1613093352
+      spr_tileset_sunnysideworld_123: -1202945159
+      spr_tileset_sunnysideworld_409: 78796042
+      spr_tileset_sunnysideworld_1378: -1883325767
+      spr_tileset_sunnysideworld_227: 1640324259
+      spr_tileset_sunnysideworld_709: 1992638995
+      spr_tileset_sunnysideworld_1552: 1735713972
+      spr_tileset_sunnysideworld_1315: -1953226554
+      spr_tileset_sunnysideworld_586: -2027803396
+      spr_tileset_sunnysideworld_633: -1691508957
+      spr_tileset_sunnysideworld_1485: 1011237307
+      spr_tileset_sunnysideworld_946: -2103261223
+      spr_tileset_sunnysideworld_297: -1365061082
+      spr_tileset_sunnysideworld_1375: -416866707
+      spr_tileset_sunnysideworld_986: 1768873808
+      spr_tileset_sunnysideworld_205: -332663030
+      spr_tileset_sunnysideworld_1237: 586519523
+      spr_tileset_sunnysideworld_606: 603343703
+      spr_tileset_sunnysideworld_184: -513431637
+      spr_tileset_sunnysideworld_248: -1458984038
+      spr_tileset_sunnysideworld_1492: 1619266188
+      spr_tileset_sunnysideworld_886: 1997649887
+      spr_tileset_sunnysideworld_72: -853446040
+      spr_tileset_sunnysideworld_62: 636319901
+      spr_tileset_sunnysideworld_1390: 1621972004
+      GrassFloor_9: -1124778793
+      spr_tileset_sunnysideworld_1195: 1257202745
+      spr_tileset_sunnysideworld_1112: 2086551052
+      spr_tileset_sunnysideworld_1542: -1690855580
+      spr_tileset_sunnysideworld_1207: 1923089256
+      spr_tileset_sunnysideworld_266: -1694089503
+      spr_tileset_sunnysideworld_1070: 1951883074
+      spr_tileset_sunnysideworld_1433: 1534266673
+      spr_tileset_sunnysideworld_1537: 2015123718
+      spr_tileset_sunnysideworld_370: -1038628808
+      spr_tileset_sunnysideworld_530: 978881614
+      spr_tileset_sunnysideworld_155: 459958301
+      spr_tileset_sunnysideworld_262: -988444473
+      spr_tileset_sunnysideworld_882: -166733136
+      spr_tileset_sunnysideworld_492: -329582912
+      spr_tileset_sunnysideworld_766: 891640790
+      spr_tileset_sunnysideworld_1075: 1634277401
+      spr_tileset_sunnysideworld_755: -1223330413
+      Woodbottom_1: -521758698
+      spr_tileset_sunnysideworld_1398: 1775109991
+      spr_tileset_sunnysideworld_922: -1124233317
+      spr_tileset_sunnysideworld_138: 434102429
+      spr_tileset_sunnysideworld_1183: -110654068
+      spr_tileset_sunnysideworld_503: 323144711
+      Road_Line_8: 1869503073
+      spr_tileset_sunnysideworld_984: -1256374030
+      Blue_House_2: -80142496
+      spr_tileset_sunnysideworld_991: 1128314560
+      spr_tileset_sunnysideworld_961: -1552104226
+      spr_tileset_sunnysideworld_846: -2096013320
+      spr_tileset_sunnysideworld_1332: 658542043
+      spr_tileset_sunnysideworld_1216: -1643694555
+      Road_Line_5: 1255849913
+      spr_tileset_sunnysideworld_887: -850715878
+      spr_tileset_sunnysideworld_1381: -461769365
+      spr_tileset_sunnysideworld_119: -480561414
+      spr_tileset_sunnysideworld_1423: 1915290026
+      spr_tileset_sunnysideworld_159: 1707444716
+      spr_tileset_sunnysideworld_66: 224011165
+      spr_tileset_sunnysideworld_1067: -423454742
+      spr_tileset_sunnysideworld_475: 154441110
+      spr_tileset_sunnysideworld_1119: 711211820
+      spr_tileset_sunnysideworld_1038: 321898791
+      spr_tileset_sunnysideworld_415: -611768501
+      spr_tileset_sunnysideworld_526: 963050502
+      spr_tileset_sunnysideworld_165: -1014999230
+      spr_tileset_sunnysideworld_782: -1159836523
+      spr_tileset_sunnysideworld_198: 597790334
+      spr_tileset_sunnysideworld_1155: -1201279922
+      spr_tileset_sunnysideworld_930: 28999185
+      spr_tileset_sunnysideworld_701: 268872570
+      Road_Line_2: 339796571
+      spr_tileset_sunnysideworld_150: 10985233
+      spr_tileset_sunnysideworld_608: 1556105693
+      spr_tileset_sunnysideworld_706: 4341738
+      spr_tileset_sunnysideworld_1341: -1789449459
+      spr_tileset_sunnysideworld_671: 1503109189
+      spr_tileset_sunnysideworld_1293: -1162237512
+      spr_tileset_sunnysideworld_1196: -1617915623
+      spr_tileset_sunnysideworld_1253: 1768737183
+      spr_tileset_sunnysideworld_71: 1999452680
+      Blueflower_3: -1039219116
+      spr_tileset_sunnysideworld_565: 1593612054
+      spr_tileset_sunnysideworld_1451: -526509177
+      spr_tileset_sunnysideworld_1224: 1625516254
+      spr_tileset_sunnysideworld_1264: -1658643763
+      spr_tileset_sunnysideworld_201: -179116091
+      Road_Line_7: 1239369209
+      spr_tileset_sunnysideworld_1234: 611564007
+      spr_tileset_sunnysideworld_65: -1390208794
+      spr_tileset_sunnysideworld_162: -375683078
+      spr_tileset_sunnysideworld_249: -1885315162
+      spr_tileset_sunnysideworld_282: -1762019205
+      spr_tileset_sunnysideworld_495: 1892258028
+      spr_tileset_sunnysideworld_1503: -1050930792
+      Red flower_1: -1499875817
+      spr_tileset_sunnysideworld_1212: -1526514594
+      spr_tileset_sunnysideworld_451: -614664096
+      spr_tileset_sunnysideworld_1016: -1932546221
+      spr_tileset_sunnysideworld_1425: 1460168649
+      spr_tileset_sunnysideworld_519: -1398682667
+      spr_tileset_sunnysideworld_540: -2101227896
+      spr_tileset_sunnysideworld_160: -105881065
+      spr_tileset_sunnysideworld_18: 156346223
+      spr_tileset_sunnysideworld_1243: 1680118678
+      spr_tileset_sunnysideworld_417: 1884117594
+      spr_tileset_sunnysideworld_614: -1227344432
+      spr_tileset_sunnysideworld_1109: 1720682842
+      spr_tileset_sunnysideworld_21: 1698230565
+      spr_tileset_sunnysideworld_172: 1645951590
+      spr_tileset_sunnysideworld_913: 49941831
+      spr_tileset_sunnysideworld_1154: -1763363109
+      spr_tileset_sunnysideworld_491: -662474566
+      spr_tileset_sunnysideworld_497: -1828174947
+      spr_tileset_sunnysideworld_144: -1978803905
+      spr_tileset_sunnysideworld_1157: 7935600
+      spr_tileset_sunnysideworld_607: 865553021
+      GrassFloor_14: -1308728136
+      spr_tileset_sunnysideworld_548: -2091425980
+      spr_tileset_sunnysideworld_707: 817987660
+      spr_tileset_sunnysideworld_664: 1480403124
+      spr_tileset_sunnysideworld_982: -279095521
+      spr_tileset_sunnysideworld_960: 722012427
+      spr_tileset_sunnysideworld_230: 1780155292
+      spr_tileset_sunnysideworld_1342: -774488749
+      spr_tileset_sunnysideworld_1534: -1858255609
+      spr_tileset_sunnysideworld_125: -540300699
+      spr_tileset_sunnysideworld_1256: 1710004326
+      spr_tileset_sunnysideworld_368: -251949135
+      spr_tileset_sunnysideworld_1344: -1654516058
+      spr_tileset_sunnysideworld_413: 1946261985
+      spr_tileset_sunnysideworld_639: 839976877
+      spr_tileset_sunnysideworld_981: -1122343633
+      spr_tileset_sunnysideworld_1447: 267546220
+      GrassFloor_17: -310165439
+      spr_tileset_sunnysideworld_796: -1188471017
+      spr_tileset_sunnysideworld_863: -1933338901
+      spr_tileset_sunnysideworld_821: -2054577127
+      spr_tileset_sunnysideworld_928: -736941827
+      spr_tileset_sunnysideworld_1502: 246844650
+      spr_tileset_sunnysideworld_1228: -614304360
+      spr_tileset_sunnysideworld_552: -344487893
+      spr_tileset_sunnysideworld_1004: -1232492409
+      spr_tileset_sunnysideworld_1431: 73962393
+      spr_tileset_sunnysideworld_1353: -1429034681
+      spr_tileset_sunnysideworld_616: 2064719230
+      spr_tileset_sunnysideworld_439: 1997361407
+      spr_tileset_sunnysideworld_661: -1892583102
+      spr_tileset_sunnysideworld_183: 1847690582
+      spr_tileset_sunnysideworld_829: 1967583188
+      spr_tileset_sunnysideworld_464: -1085967888
+      spr_tileset_sunnysideworld_168: 1037645253
+      spr_tileset_sunnysideworld_1069: -1762987782
+      spr_tileset_sunnysideworld_1514: -861988950
+      spr_tileset_sunnysideworld_1213: -963499397
+      spr_tileset_sunnysideworld_950: 65545946
+      spr_tileset_sunnysideworld_28: 1304740836
+      spr_tileset_sunnysideworld_480: 854509275
+      spr_tileset_sunnysideworld_838: -1576684690
+      spr_tileset_sunnysideworld_1215: -1079942545
+      spr_tileset_sunnysideworld_463: 1917368695
+      spr_tileset_sunnysideworld_1272: -1213386676
+      spr_tileset_sunnysideworld_1386: -1090739908
+      GrassFloor_1: 471941807
+      spr_tileset_sunnysideworld_1254: 715287098
+      spr_tileset_sunnysideworld_449: -1974612827
+      spr_tileset_sunnysideworld_1128: -627934339
+      spr_tileset_sunnysideworld_1007: -1683955159
+      spr_tileset_sunnysideworld_298: 1890552852
+      spr_tileset_sunnysideworld_551: 78323057
+      spr_tileset_sunnysideworld_871: -1868875698
+      anvil_Weapon: 849431705
+      spr_tileset_sunnysideworld_1058: 1480831996
+      spr_tileset_sunnysideworld_732: 160899076
+      spr_tileset_sunnysideworld_1361: -871467270
+      spr_tileset_sunnysideworld_1030: -973983730
+      spr_tileset_sunnysideworld_662: -1108623852
+      spr_tileset_sunnysideworld_1405: 1492350859
+      spr_tileset_sunnysideworld_667: 1063814820
+      spr_tileset_sunnysideworld_1217: -2059227102
+      spr_tileset_sunnysideworld_322: -588774208
+      spr_tileset_sunnysideworld_181: 1499347922
+      spr_tileset_sunnysideworld_952: -1308419703
+      Carrot_0: -95453211
+      spr_tileset_sunnysideworld_753: -1973614210
+      spr_tileset_sunnysideworld_795: -1062774969
+      spr_tileset_sunnysideworld_1380: 1526380540
+      spr_tileset_sunnysideworld_803: -1415978291
+      Road_Line_6: 1303654037
+      spr_tileset_sunnysideworld_578: 564817585
+      spr_tileset_sunnysideworld_582: 910830713
+      spr_tileset_sunnysideworld_1404: -655593599
+      spr_tileset_sunnysideworld_828: -1633470793
+      GrassFloor_0: 1917347899
+      water Falls_2: 1832412423
+      spr_tileset_sunnysideworld_1498: 1904820858
+      spr_tileset_sunnysideworld_239: 858629242
+      spr_tileset_sunnysideworld_1167: -226135746
+      ChimneyHead_2: 1126681599
+      spr_tileset_sunnysideworld_304: 1814382175
+      spr_tileset_sunnysideworld_844: 254578494
+      spr_tileset_sunnysideworld_750: -1965548895
+      spr_tileset_sunnysideworld_918: 893305251
+      sea water_14: 140190512
+      spr_tileset_sunnysideworld_832: -527472575
+      spr_tileset_sunnysideworld_454: -666054975
+      spr_tileset_sunnysideworld_1508: -1762347458
+      spr_tileset_sunnysideworld_489: 1823606988
+      Blue_House_0: 517733137
+      spr_tileset_sunnysideworld_687: -1514742523
+      spr_tileset_sunnysideworld_1251: 1242021997
+      spr_tileset_sunnysideworld_1413: -887585451
+      spr_tileset_sunnysideworld_277: 940787800
+      spr_tileset_sunnysideworld_814: -24865202
+      white flower_3: 522133965
+      spr_tileset_sunnysideworld_367: -247734305
+      spr_tileset_sunnysideworld_336: 462084241
+      sea water_11: 116870586
+      spr_tileset_sunnysideworld_629: -1461644261
+      spr_tileset_sunnysideworld_1369: -858442487
+      spr_tileset_sunnysideworld_752: -2030875148
+      spr_tileset_sunnysideworld_1505: 1482490587
+      spr_tileset_sunnysideworld_13: -1104966139
+      spr_tileset_sunnysideworld_1324: 1840057898
+      spr_tileset_sunnysideworld_998: -429924971
+      spr_tileset_sunnysideworld_969: -397059841
+      spr_tileset_sunnysideworld_1221: 1753023924
+      spr_tileset_sunnysideworld_1085: 1512230497
+      GrassFloor_10: -1122265471
+      spr_tileset_sunnysideworld_827: 1276027166
+      spr_tileset_sunnysideworld_395: 2145265629
+      spr_tileset_sunnysideworld_653: -494389159
+      spr_tileset_sunnysideworld_1417: 611400676
+      spr_tileset_sunnysideworld_1416: -1573050929
+      spr_tileset_sunnysideworld_1074: 1701904272
+      spr_tileset_sunnysideworld_1284: -902118214
+      spr_tileset_sunnysideworld_1373: -713830018
+      spr_tileset_sunnysideworld_1104: -2002182397
+      spr_tileset_sunnysideworld_428: 550289442
+      spr_tileset_sunnysideworld_496: -5692372
+      spr_tileset_sunnysideworld_790: 2062204976
+      spr_tileset_sunnysideworld_942: -1769879140
+      spr_tileset_sunnysideworld_997: 2095393065
+      spr_tileset_sunnysideworld_283: -1384788724
+      spr_tileset_sunnysideworld_477: -174121999
+      spr_tileset_sunnysideworld_1031: 1245806460
+      spr_tileset_sunnysideworld_196: 1950875097
+      spr_tileset_sunnysideworld_29: -1837035149
+      Well: 901806669
+      Beat_1: 1244700681
+      spr_tileset_sunnysideworld_920: -2124200146
+      sea water_6: -145920159
+      spr_tileset_sunnysideworld_892: 1180368368
+      sea water_5: -733711095
+      spr_tileset_sunnysideworld_1066: 2055456962
+      spr_tileset_sunnysideworld_1227: -531938090
+      Blue_House_5: 443833508
+      woodentank: 1591940752
+      spr_tileset_sunnysideworld_1475: -1000852551
+      GrassFloor_5: -1293171121
+      spr_tileset_sunnysideworld_385: 1135049649
+      spr_tileset_sunnysideworld_980: -1945157780
+      spr_tileset_sunnysideworld_992: 228393010
+      spr_tileset_sunnysideworld_1396: 203901966
+      spr_tileset_sunnysideworld_923: -1141551867
+      spr_tileset_sunnysideworld_1123: -2019887043
+      spr_tileset_sunnysideworld_1349: -2044188634
+      spr_tileset_sunnysideworld_549: 1134369966
+      spr_tileset_sunnysideworld_1543: 525437798
+      spr_tileset_sunnysideworld_211: 152690111
+      spr_tileset_sunnysideworld_1469: 556136265
+      spr_tileset_sunnysideworld_242: 1365759984
+      spr_tileset_sunnysideworld_719: 1213503475
+      spr_tileset_sunnysideworld_1449: -589866616
+      spr_tileset_sunnysideworld_734: -644674355
+      spr_tileset_sunnysideworld_1490: -760683460
+      spr_tileset_sunnysideworld_1100: 1451226862
+      spr_tileset_sunnysideworld_1114: 753485480
+      spr_tileset_sunnysideworld_589: 560198303
+      spr_tileset_sunnysideworld_1231: 1081224575
+      spr_tileset_sunnysideworld_312: -1653281121
+      spr_tileset_sunnysideworld_259: 1422553482
+      spr_tileset_sunnysideworld_518: 1510213488
+      spr_tileset_sunnysideworld_1410: 794407579
+      spr_tileset_sunnysideworld_1461: -938690973
+      spr_tileset_sunnysideworld_635: 1416425411
+      spr_tileset_sunnysideworld_905: 1513658921
+      spr_tileset_sunnysideworld_92: -1420812081
+      spr_tileset_sunnysideworld_1493: -1250118700
+      spr_tileset_sunnysideworld_220: 1000142965
+      spr_tileset_sunnysideworld_1161: -497209437
+      spr_tileset_sunnysideworld_516: -902846689
+      spr_tileset_sunnysideworld_260: 663269006
+      sea water_2: 1888672900
+      spr_tileset_sunnysideworld_487: -1656412913
+      spr_tileset_sunnysideworld_965: 406919987
+      spr_tileset_sunnysideworld_348: -861656934
+      spr_tileset_sunnysideworld_1107: 1038969328
+      spr_tileset_sunnysideworld_820: -390165570
+      spr_tileset_sunnysideworld_23: 2025887646
+      spr_tileset_sunnysideworld_1184: -1595574790
+      spr_tileset_sunnysideworld_1538: -1099720669
+      spr_tileset_sunnysideworld_972: -1604487684
+      spr_tileset_sunnysideworld_190: -531705140
+      spr_tileset_sunnysideworld_680: -1013707107
+      spr_tileset_sunnysideworld_139: -362502095
+      spr_tileset_sunnysideworld_794: 576819729
+      spr_tileset_sunnysideworld_921: 688927616
+      spr_tileset_sunnysideworld_959: 1193222308
+      spr_tileset_sunnysideworld_425: 1730828777
+      spr_tileset_sunnysideworld_136: 181067063
+      spr_tileset_sunnysideworld_1392: 1238931898
+      white flower_4: 500440987
+      spr_tileset_sunnysideworld_1483: 1414805409
+      spr_tileset_sunnysideworld_1203: 1232047358
+      spr_tileset_sunnysideworld_1454: 2146143159
+      spr_tileset_sunnysideworld_95: -741972184
+      spr_tileset_sunnysideworld_1120: -1586902623
+      spr_tileset_sunnysideworld_728: -893138034
+      spr_tileset_sunnysideworld_1179: -724451369
+      spr_tileset_sunnysideworld_1484: 1706771083
+      spr_tileset_sunnysideworld_446: 1145597260
+      spr_tileset_sunnysideworld_61: 1938420536
+      spr_tileset_sunnysideworld_1345: -509007336
+      spr_tileset_sunnysideworld_973: -593180569
+      spr_tileset_sunnysideworld_1519: -845389903
+      spr_tileset_sunnysideworld_19: 355044451
+      spr_tileset_sunnysideworld_112: -948870029
+      spr_tileset_sunnysideworld_656: -803166711
+      spr_tileset_sunnysideworld_374: -396041279
+      spr_tileset_sunnysideworld_1265: 1300193833
+      spr_tileset_sunnysideworld_833: -618480022
+      spr_tileset_sunnysideworld_1444: -683526956
+      spr_tileset_sunnysideworld_17: -84419997
+      spr_tileset_sunnysideworld_700: 1854649124
+      spr_tileset_sunnysideworld_1525: -1298829955
+      spr_tileset_sunnysideworld_288: -72099174
+      spr_tileset_sunnysideworld_1301: -1872318412
+      spr_tileset_sunnysideworld_338: -1294329021
+      spr_tileset_sunnysideworld_754: -2047941221
+      spr_tileset_sunnysideworld_115: -827389938
+      spr_tileset_sunnysideworld_679: -71718912
+      spr_tileset_sunnysideworld_372: 139612554
+      spr_tileset_sunnysideworld_1338: -233106380
+      spr_tileset_sunnysideworld_762: -1095953971
+      spr_tileset_sunnysideworld_197: -536464168
+      spr_tileset_sunnysideworld_343: -796368475
+      spr_tileset_sunnysideworld_375: 2094537617
+      spr_tileset_sunnysideworld_703: -430207570
+      ChimneyHead_0: -1602885077
+      spr_tileset_sunnysideworld_1536: -1783134842
+      spr_tileset_sunnysideworld_628: 305314856
+      spr_tileset_sunnysideworld_60: 2038737387
+      tree_0: 2031269397
+      spr_tileset_sunnysideworld_462: 723147865
+      spr_tileset_sunnysideworld_1152: 343384029
+      sea water_0: -462200263
+      spr_tileset_sunnysideworld_120: 863734148
+      spr_tileset_sunnysideworld_1158: -1070727378
+      white flower_1: 1554736492
+      spr_tileset_sunnysideworld_1510: -1923600554
+      spr_tileset_sunnysideworld_571: -2031062968
+      spr_tileset_sunnysideworld_1168: -114500869
+      spr_tileset_sunnysideworld_148: -1392184517
+      spr_tileset_sunnysideworld_527: 1738647498
+      spr_tileset_sunnysideworld_694: -1682181034
+      tree_1: 2032625690
+      spr_tileset_sunnysideworld_558: -86837625
+      spr_tileset_sunnysideworld_783: -1431038915
+      spr_tileset_sunnysideworld_287: -1045107781
+      spr_tileset_sunnysideworld_1471: 1972310798
+      spr_tileset_sunnysideworld_853: -952391245
+      spr_tileset_sunnysideworld_926: 2048014069
+      spr_tileset_sunnysideworld_1081: -180775869
+      spr_tileset_sunnysideworld_1441: -1187549804
+      spr_tileset_sunnysideworld_315: 1086483466
+      spr_tileset_sunnysideworld_233: -1804896643
+      spr_tileset_sunnysideworld_1019: -1687167773
+      spr_tileset_sunnysideworld_1330: 1917862698
+      spr_tileset_sunnysideworld_1020: 1170061950
+      spr_tileset_sunnysideworld_590: 946794386
+      spr_tileset_sunnysideworld_686: -132882968
+      spr_tileset_sunnysideworld_5: 1724091996
+      spr_tileset_sunnysideworld_43: -1086359367
+      spr_tileset_sunnysideworld_407: 388120159
+      spr_tileset_sunnysideworld_968: 857710984
+      spr_tileset_sunnysideworld_1083: -76136329
+      spr_tileset_sunnysideworld_46: -1138983663
+      spr_tileset_sunnysideworld_699: -642450349
+      spr_tileset_sunnysideworld_788: 148545110
+      spr_tileset_sunnysideworld_1415: -1204380825
+      spr_tileset_sunnysideworld_669: 1783117202
+      spr_tileset_sunnysideworld_1374: 1219543044
+      spr_tileset_sunnysideworld_1159: -1895414553
+      spr_tileset_sunnysideworld_1318: -1070251063
+      spr_tileset_sunnysideworld_1041: 1888618220
+      spr_tileset_sunnysideworld_1084: -1394716720
+      spr_tileset_sunnysideworld_1177: -1805722411
+      spr_tileset_sunnysideworld_1139: 1226787941
+      spr_tileset_sunnysideworld_909: 341874487
+      spr_tileset_sunnysideworld_1238: -786547434
+      spr_tileset_sunnysideworld_743: -2007721305
+      spr_tileset_sunnysideworld_317: -163848631
+      spr_tileset_sunnysideworld_1323: 392859825
+      spr_tileset_sunnysideworld_1362: 1476412468
+      spr_tileset_sunnysideworld_935: 1191450184
+      spr_tileset_sunnysideworld_193: -733431718
+      spr_tileset_sunnysideworld_158: 479832621
+      spr_tileset_sunnysideworld_742: 1887637373
+      white flower_2: -1212025609
+      spr_tileset_sunnysideworld_507: 738169010
+      sea water_9: -1172557464
+      sea water_7: -927107720
+      spr_tileset_sunnysideworld_1206: -535186114
+      spr_tileset_sunnysideworld_411: -1883207449
+      spr_tileset_sunnysideworld_1535: -442759408
+      spr_tileset_sunnysideworld_761: 1756921802
+      spr_tileset_sunnysideworld_800: -981333583
+      spr_tileset_sunnysideworld_1365: 866018453
+      spr_tileset_sunnysideworld_1047: -898110756
+      spr_tileset_sunnysideworld_1527: -1565125439
+      spr_tileset_sunnysideworld_532: 1942054075
+      spr_tileset_sunnysideworld_666: -1704693298
+      spr_tileset_sunnysideworld_59: 1197797618
+      spr_tileset_sunnysideworld_652: -1751497727
+      spr_tileset_sunnysideworld_1466: 1399395468
+      spr_tileset_sunnysideworld_955: 1828083000
+      Road_3: 1206301259
+      spr_tileset_sunnysideworld_722: 174123091
+      spr_tileset_sunnysideworld_1474: -548248767
+      spr_tileset_sunnysideworld_149: -1657535027
+      spr_tileset_sunnysideworld_89: -973908265
+      spr_tileset_sunnysideworld_141: 297197703
+      spr_tileset_sunnysideworld_1486: 1596926263
+      spr_tileset_sunnysideworld_1062: 680984524
+      spr_tileset_sunnysideworld_1487: -1734660883
+      spr_tileset_sunnysideworld_237: 2024033733
+      spr_tileset_sunnysideworld_668: -1824617785
+      spr_tileset_sunnysideworld_904: -2078949756
+      spr_tileset_sunnysideworld_556: -1911142875
+      spr_tileset_sunnysideworld_143: 1781104647
+      spr_tileset_sunnysideworld_554: 1197388163
+      spr_tileset_sunnysideworld_577: 272792324
+      spr_tileset_sunnysideworld_1060: -588736865
+      spr_tileset_sunnysideworld_364: 1667223508
+      water_1: -1687917871
+      spr_tileset_sunnysideworld_48: -1709209966
+      spr_tileset_sunnysideworld_1199: 1737591659
+      spr_tileset_sunnysideworld_1142: -107869914
+      spr_tileset_sunnysideworld_1252: -909997962
+      spr_tileset_sunnysideworld_1347: 1120834910
+      spr_tileset_sunnysideworld_741: 1169458101
+      Stone_2: -406986134
+      spr_tileset_sunnysideworld_1188: 499724278
+      spr_tileset_sunnysideworld_361: -1224526554
+      spr_tileset_sunnysideworld_970: 676623825
+      spr_tileset_sunnysideworld_175: -2033855653
+      spr_tileset_sunnysideworld_52: -2107551100
+      spr_tileset_sunnysideworld_929: 478276007
+      spr_tileset_sunnysideworld_381: -1117923345
+      spr_tileset_sunnysideworld_523: -103064961
+      spr_tileset_sunnysideworld_427: 1002133357
+      spr_tileset_sunnysideworld_1246: -2073166379
+      spr_tileset_sunnysideworld_1108: -191959749
+      spr_tileset_sunnysideworld_500: 1435164270
+      spr_tileset_sunnysideworld_392: 1283776317
+      spr_tileset_sunnysideworld_640: -846134844
+      spr_tileset_sunnysideworld_944: 1572915940
+      spr_tileset_sunnysideworld_1428: -1525187759
+      spr_tileset_sunnysideworld_1135: -1968857757
+      spr_tileset_sunnysideworld_1057: -1397617802
+      spr_tileset_sunnysideworld_598: -1113107038
+      spr_tileset_sunnysideworld_452: 1601718131
+      spr_tileset_sunnysideworld_1214: 833369450
+      spr_tileset_sunnysideworld_1544: 342431230
+      spr_tileset_sunnysideworld_825: -1155767374
+      spr_tileset_sunnysideworld_1178: 725840744
+      Road_0: 788625201
+      spr_tileset_sunnysideworld_1043: 1260933186
+      spr_tileset_sunnysideworld_1287: 1558327236
+      spr_tileset_sunnysideworld_1153: 1447361662
+      spr_tileset_sunnysideworld_583: -276939276
+      spr_tileset_sunnysideworld_702: -591508579
+      spr_tileset_sunnysideworld_1229: -1103245224
+      spr_tileset_sunnysideworld_502: 43359958
+      spr_tileset_sunnysideworld_1278: -870218891
+      spr_tileset_sunnysideworld_1115: 952072805
+      spr_tileset_sunnysideworld_494: 1968520376
+      spr_tileset_sunnysideworld_1219: -434213094
       spr_tileset_sunnysideworld_919: -1696624993
+      spr_tileset_sunnysideworld_267: -1143480788
       GrassFloor_3: 1379410313
-      spr_tileset_sunnysideworld_267: -434213094
-      spr_tileset_sunnysideworld_1270: -1143480788
-      spr_tileset_sunnysideworld_636: -970756875
-      spr_tileset_sunnysideworld_16: 1703389536
+      spr_tileset_sunnysideworld_747: 1705608518
+      spr_tileset_sunnysideworld_1270: -970756875
+      spr_tileset_sunnysideworld_636: -1783530102
+      spr_tileset_sunnysideworld_16: -1953226554
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

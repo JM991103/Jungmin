@@ -26,21 +26,38 @@ public class Player : MonoBehaviour
 
     private void OnEnable()
     {
-        inputActions.Player.Move.Enable();
+        inputActions.Player.Enable();
         inputActions.Player.Move.performed += OnMove;
         inputActions.Player.Move.canceled += OnStop;
+        inputActions.Player.Space.performed += OnSpace;
     }
 
     private void OnDisable()
     {
+        inputActions.Player.Space.performed -= OnSpace;
         inputActions.Player.Move.canceled -= OnStop;
         inputActions.Player.Move.performed -= OnMove;
-        inputActions.Player.Move.Disable();
+        inputActions.Player.Disable();
     }
+
+    Vector3 dirVec;
+    GameObject scanObj;
 
     private void FixedUpdate()
     {
         rigid.MovePosition(rigid.position + Time.fixedDeltaTime * moveSpeed * inputDir);
+
+        Debug.DrawRay(rigid.position, dirVec * 0.7f, new Color(0,1,0));
+        RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, dirVec, 0.7f, LayerMask.GetMask("Object"));
+
+        if (rayHit.collider != null)
+        {
+            scanObj = rayHit.collider.gameObject;
+        }
+        else
+        {
+            scanObj = null;
+        }
     }
 
     private void OnMove(InputAction.CallbackContext context)
@@ -51,8 +68,26 @@ public class Player : MonoBehaviour
         inputDir = context.ReadValue<Vector2>();
         oldInputDir = inputDir;
         anim.SetFloat("InputX", inputDir.x);
-        anim.SetFloat("InputY", inputDir.y);        
-        
+        anim.SetFloat("InputY", inputDir.y);
+
+        //dirVec
+        if (inputDir.y == 1)
+        {
+            dirVec = Vector3.up;
+        }
+        else if(inputDir.y == -1)
+        {
+            dirVec = Vector3.down;
+        }
+        else if (inputDir.x == 1)
+        {
+            dirVec = Vector3.right;
+        }
+        else if (inputDir.x == -1)
+        {
+            dirVec = Vector3.left;
+        }
+
     }
 
     private void OnStop(InputAction.CallbackContext context)
@@ -60,6 +95,14 @@ public class Player : MonoBehaviour
         isMove = false;
         anim.SetBool("IsMove", isMove);
         inputDir = Vector2.zero;
+    }
+
+    private void OnSpace(InputAction.CallbackContext _)
+    {
+        if (scanObj != null)
+        {
+            Debug.Log(scanObj.name);
+        }     
     }
 
 }

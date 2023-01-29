@@ -7,12 +7,16 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    TalkManager talkManager;
     PlayerInputAction inputActions;
     Animator anim;
     Rigidbody2D rigid;
 
     Vector2 inputDir;
     Vector2 oldInputDir;
+
+    Vector3 dirVec;
+    GameObject scanObj;
 
     public float moveSpeed = 3.0f;
     bool isMove = false;
@@ -22,6 +26,7 @@ public class Player : MonoBehaviour
         inputActions = new PlayerInputAction();
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
+        talkManager = FindObjectOfType<TalkManager>();
     }
 
     private void OnEnable()
@@ -39,9 +44,6 @@ public class Player : MonoBehaviour
         inputActions.Player.Move.performed -= OnMove;
         inputActions.Player.Disable();
     }
-
-    Vector3 dirVec;
-    GameObject scanObj;
 
     private void FixedUpdate()
     {
@@ -101,8 +103,20 @@ public class Player : MonoBehaviour
     {
         if (scanObj != null)
         {
-            Debug.Log(scanObj.name);
+            talkManager.Action(scanObj);            
         }     
+    }
+
+    public void OnMoveController(bool isMove)
+    {
+        if (isMove)
+        {
+            inputActions.Player.Move.Enable();
+        }
+        else
+        {
+            inputActions.Player.Move.Disable();
+        }
     }
 
 }

@@ -19,6 +19,7 @@ public class NPCTalkManager : MonoBehaviour
     {
         // .Add로 데이터를 추가 할 수 있다.
         talkData.Add(999, new string[] { "안녕?", "이 곳에 처음 왔니?", "앞으로 쭉 가면 마을이 있을거야" });
+        talkData.Add(5000, new string[] { "여기는 들어갈 수 없어" });
         //talkData.Add(100, new string[] { "아무것도 없다." });
     }
 

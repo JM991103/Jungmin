@@ -7,18 +7,39 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    TalkManager talkManager;
-    PlayerInputAction inputActions;
+    PlayerInputAction inputActions; 
     Animator anim;
     Rigidbody2D rigid;
 
+    /// <summary>
+    /// talkPanel, talkText 관련 클래스
+    /// </summary>
+    TalkManager talkManager;
+
+    /// <summary>
+    /// 입력받은 플레이어 이동 방향
+    /// </summary>
     Vector2 inputDir;
     Vector2 oldInputDir;
 
+    /// <summary>
+    /// 플레이어 앞에 무엇이 있는지 확인 할 수 있는 레이캐스트 방향
+    /// </summary>
     Vector3 dirVec;
+
+    /// <summary>
+    /// 레이캐스트로 확인한 게임 오브젝트
+    /// </summary>
     GameObject scanObj;
 
+    /// <summary>
+    /// 플레이어 이동 스피드
+    /// </summary>
     public float moveSpeed = 3.0f;
+
+    /// <summary>
+    /// 애니메이션 이동용 파라메터
+    /// </summary>
     bool isMove = false;
 
     private void Awake()
@@ -47,18 +68,21 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // 입력받은 방향으로 moveSpeed만큼 움직이게 한다.
         rigid.MovePosition(rigid.position + Time.fixedDeltaTime * moveSpeed * inputDir);
 
+        // 씬에서 확인 가능하도록 그리는 Ray
         Debug.DrawRay(rigid.position, dirVec * 0.7f, new Color(0,1,0));
+        // dirVec방향 0.7f거리에 있는 오브젝트의 레이어가 Object인지 확인
         RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, dirVec, 0.7f, LayerMask.GetMask("Object"));
 
-        if (rayHit.collider != null)
-        {
-            scanObj = rayHit.collider.gameObject;
+        if (rayHit.collider != null)    // rayHit에 해당하는 콜라이더가 있으면
+        { 
+            scanObj = rayHit.collider.gameObject;   // 해당 콜라이더의 게임오브젝트 가져오기
         }
-        else
+        else                            
         {
-            scanObj = null;
+            scanObj = null;                         // 없으면 null
         }
     }
 
@@ -101,21 +125,25 @@ public class Player : MonoBehaviour
 
     private void OnSpace(InputAction.CallbackContext _)
     {
-        if (scanObj != null)
+        if (scanObj != null)    // scanObj가 null이 아닐때 스페이스바를 누르면
         {
-            talkManager.Action(scanObj);            
+            talkManager.Action(scanObj);            // talkManager의 Action함수 실행(해당 게임 게임오브젝트를 넘겨줌)
         }     
     }
 
+    /// <summary>
+    /// 플레이어의 이동을 사용 가능/불가 하게 해주는 함수
+    /// </summary>
+    /// <param name="isMove"></param>
     public void OnMoveController(bool isMove)
     {
         if (isMove)
         {
-            inputActions.Player.Move.Enable();
+            inputActions.Player.Move.Enable();  // 이동 연결
         }
         else
         {
-            inputActions.Player.Move.Disable();
+            inputActions.Player.Move.Disable(); // 이동 연결 해제
         }
     }
 

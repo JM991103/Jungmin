@@ -9,7 +9,7 @@ public class TalkTypeEffect : MonoBehaviour
     TextMeshProUGUI msgText;
 
     public int charPerSeconds;
-    Transform EndCursor;
+    GameObject EndCursor;
     string targetMsg;
     int index;
     float interval;
@@ -17,7 +17,7 @@ public class TalkTypeEffect : MonoBehaviour
     private void Awake()
     {
         msgText = GetComponent<TextMeshProUGUI>();
-        EndCursor = FindObjectOfType<Transform>();
+        EndCursor = FindObjectOfType<GameObject>();
     }
 
     public void SetMsg(string msg)
@@ -30,7 +30,7 @@ public class TalkTypeEffect : MonoBehaviour
     {
         msgText.text = "";
         index = 0;
-        EndCursor.gameObject.SetActive(false);
+        EndCursor.SetActive(false);
 
         interval = 1.0f / charPerSeconds;
         Invoke("Effecting", interval);
@@ -52,7 +52,7 @@ public class TalkTypeEffect : MonoBehaviour
 
     void EffectEnd()
     {
-        EndCursor.gameObject.SetActive(true);
+        EndCursor.SetActive(true);
     }
 
 }

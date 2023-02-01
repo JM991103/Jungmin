@@ -29,7 +29,7 @@ public class TalkManager : MonoBehaviour
     /// <summary>
     /// 대사 패널이 열려있는지 닫혀있는지 알려주는 bool변수
     /// </summary>
-    public bool isAction = false;
+    public bool isAction;
 
     /// <summary>
     /// 플레이어
@@ -46,6 +46,11 @@ public class TalkManager : MonoBehaviour
         player = FindObjectOfType<Player>();
         npcTalkManager = FindObjectOfType<NPCTalkManager>();
         talk = FindObjectOfType<TalkTypeEffect>();
+    }
+
+    private void Start()
+    {
+        talkPanel.SetActive(false);
     }
 
     /// <summary>

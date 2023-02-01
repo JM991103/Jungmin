@@ -12,5 +12,9 @@ public class GameManager : Singleton<GameManager>
     {
         base.Initialize();
         player = FindObjectOfType<Player>();
+
+        DontDestroyOnLoad(player);
     }
+    
+    
 }

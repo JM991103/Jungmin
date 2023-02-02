@@ -18,9 +18,9 @@ public class NPCTalkManager : MonoBehaviour
     void GenerateData()
     {
         // .Add로 데이터를 추가 할 수 있다.
-        talkData.Add(999, new string[] { "안녕?", "이 곳에 처음 왔니?", "앞으로 쭉 가면 마을이 있을거야" });
+        talkData.Add(999, new string[] { "안녕?", "이 곳에 처음 왔다고?", "앞으로 쭉 가봐 마을이 있을거야" });
         talkData.Add(1000, new string[] { "이 마을에는 슬픈 전설이 있어...", "아마도?"});
-        talkData.Add(1100, new string[] { "우와~", "이 석상은 뭘까??" });
+        talkData.Add(1100, new string[] { "우와", "이 석상은 뭘까??" });
         talkData.Add(1200, new string[] { "배고파..." });
         talkData.Add(1300, new string[] { "저 석상은 아주 오래전부터 이 마을에 있었대", "누가 만들었는지는 몰라" });
         talkData.Add(5000, new string[] { "여기는 들어갈 수 없어" });

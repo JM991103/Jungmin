@@ -8,25 +8,21 @@ public class MapPortal : MonoBehaviour
 {
     public string loadScene;
     public GameObject spawnPrefab;
-
-    private void Start()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        Player player = GameManager.Inst.Player;
-        player.transform.position = spawnPrefab.transform.position;
-    }
+    Player player;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {        
         if (collision.CompareTag("Player"))
         {            
             SceneManager.LoadScene(loadScene);
+
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
     }
 
-
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        player = GameManager.Inst.Player;
+        player.transform.position = spawnPrefab.transform.position;
+    }
 }

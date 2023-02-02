@@ -7,6 +7,20 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    //private static Player inst = null;
+
+    //public static Player Inst
+    //{
+    //    get
+    //    {
+    //        if (null == inst)
+    //        {
+    //            return null;
+    //        }
+    //        return inst;
+    //    }
+    //}
+
     PlayerInputAction inputActions; 
     Animator anim;
     Rigidbody2D rigid;
@@ -44,6 +58,16 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        //if (inst == null)
+        //{
+        //    inst = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
+
         inputActions = new PlayerInputAction();
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
@@ -74,7 +98,7 @@ public class Player : MonoBehaviour
         // 씬에서 확인 가능하도록 그리는 Ray
         Debug.DrawRay(rigid.position, dirVec * 0.7f, new Color(0,1,0));
         // dirVec방향 0.7f거리에 있는 오브젝트의 레이어가 Object인지 확인
-        RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, dirVec, 0.7f, LayerMask.GetMask("Object"));
+        RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, dirVec, 0.7f, LayerMask.GetMask("Object", "Tree"));
 
         if (rayHit.collider != null)    // rayHit에 해당하는 콜라이더가 있으면
         { 

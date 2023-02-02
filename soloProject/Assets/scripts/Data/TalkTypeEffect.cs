@@ -17,7 +17,8 @@ public class TalkTypeEffect : MonoBehaviour
     private void Awake()
     {
         msgText = GetComponent<TextMeshProUGUI>();
-        EndCursor = FindObjectOfType<GameObject>();
+        Transform parent = transform.parent;
+        EndCursor = parent.GetChild(1).gameObject;
     }
 
     public void SetMsg(string msg)

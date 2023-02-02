@@ -9,7 +9,7 @@ public class TalkManager : MonoBehaviour
     /// <summary>
     /// 
     /// </summary>
-    public NPCTalkManager npcTalkManager;
+    NPCTalkManager npcTalkManager;
 
     /// <summary>
     /// 대사 패널
@@ -45,6 +45,7 @@ public class TalkManager : MonoBehaviour
     {
         player = FindObjectOfType<Player>();
         npcTalkManager = FindObjectOfType<NPCTalkManager>();
+        
         talk = FindObjectOfType<TalkTypeEffect>();
     }
 
@@ -99,6 +100,5 @@ public class TalkManager : MonoBehaviour
 
         isAction = true;
         talkIndex++;
-
     }
 }

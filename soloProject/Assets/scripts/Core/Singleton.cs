@@ -28,10 +28,9 @@ public class Singleton<T> : MonoBehaviour where T : Component
     const int NOT_SET = -1;
 
     /// <summary>
-    /// 게임의 주 씬의 인덱스(Seamless_Base의 인덱스)
+    /// 게임의 주 씬의 인덱스 (Seamless_Base 씬)
     /// </summary>
     private int mainSceneIndex = NOT_SET;
-
 
     private static bool isShutDown = false;
     private static T _instance = null;
@@ -118,7 +117,7 @@ public class Singleton<T> : MonoBehaviour where T : Component
     }
 
     /// <summary>
-    /// 씬이 로드되면 호출이 되는 함수(자신이 아니어도 호출됨)
+    /// 씬이 로드되면 호출이 되는 함수 (자신이 아니어도 호출됨)
     /// </summary>
     /// <param name="scene"></param>
     /// <param name="mode"></param>
@@ -146,10 +145,9 @@ public class Singleton<T> : MonoBehaviour where T : Component
 #if PRINT_DEBUG_INFO
         Debug.Log($"Singleton({this.gameObject.name}) : Initialize");
 #endif
-        
         initialized = true; // 초기화 되었다고 표시
-        Scene active = SceneManager.GetActiveScene();   // 자신이 처음 존재하던 씬 가져오기 (Initialize는 한번만 실행되기 때문에 액티브 씬이 자신이 처음 존재하던 씬이 된다.)
-        mainSceneIndex = active.buildIndex;
+        //Scene active = SceneManager.GetActiveScene();   // 자신이 처음 존재하던 씬 가져오기(Initialize는 한번만 실행되기 때문에 액티브 씬이 자신이 처음 존재하던 씬이 된다.)
+        //mainSceneIndex = active.buildIndex;
     }
 
     /// <summary>
@@ -157,9 +155,11 @@ public class Singleton<T> : MonoBehaviour where T : Component
     /// </summary>
     protected virtual void ManagerDataReset()
     {
-
+        
     }
+
 }
+
 
 // static 키워드
 // 실행 시점에서 이미 메모리에 위치가 고정되게 하는 한정자 키워드

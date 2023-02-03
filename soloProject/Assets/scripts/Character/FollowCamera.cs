@@ -1,30 +1,37 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class FollowCamera : MonoBehaviour
 {
-    public float speed = 3.0f;
-    //Transform target;
-    Vector3 offset;
-    Player player;
+    Transform target;
+
+    public float smoothSpeed = 3;
+
+    public Vector2 offset;
+    public float limitMinX;
+    public float limitMaxX;
+    public float limitMinY;
+    public float limitMaxY;
+    float cameraHalfWidth;
+    float cameraHalfHeight;
 
     private void Start()
     {
-        player = GameManager.Inst.Player;
-        //target = player.transform.position;
-        offset = transform.position - player.transform.position;
-
-        transform.position = player.transform.position;
+        target = GameManager.Inst.Player.transform;
+        cameraHalfWidth = Camera.main.aspect * Camera.main.orthographicSize;
+        cameraHalfHeight = Camera.main.orthographicSize;
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
-        if (player.transform.position.x > -5 && player.transform.position.x < 33 && player.transform.position.y > -6.5 && player.transform.position.y < 6.5)
-        {
-            //transform.position = Vector3.Lerp(transform.position, player.transform.position + offset, speed * Time.fixedDeltaTime);
-            transform.position = player.transform.position;
-            
-        }
+        Vector3 desiredPosition = new Vector3(
+            Mathf.Clamp(target.position.x + offset.x, limitMinX + cameraHalfWidth, limitMaxX - cameraHalfWidth),   // X
+            Mathf.Clamp(target.position.y + offset.y, limitMinY + cameraHalfHeight, limitMaxY - cameraHalfHeight), // Y
+            -10);                                                                                                  // Z
+
+        transform.position = Vector3.Lerp(transform.position, desiredPosition, Time.deltaTime * smoothSpeed);
     }
 }

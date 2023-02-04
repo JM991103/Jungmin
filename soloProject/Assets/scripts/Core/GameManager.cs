@@ -7,7 +7,6 @@ public class GameManager : Singleton<GameManager>
     Player player;
     TalkManager talkManager;
     Canvas canvas;
-
     public Player Player => player;
 
     protected override void Initialize()

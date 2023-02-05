@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SocialPlatforms;
 
 public class Player : MonoBehaviour
 {
@@ -149,10 +150,26 @@ public class Player : MonoBehaviour
 
     private void OnSpace(InputAction.CallbackContext _)
     {
+        float speed = moveSpeed;
         if (scanObj != null)    // scanObj가 null이 아닐때 스페이스바를 누르면
         {
-            talkManager.Action(scanObj);            // talkManager의 Action함수 실행(해당 게임 게임오브젝트를 넘겨줌)
-        }     
+            if (scanObj == scanObj.CompareTag("Object"))
+            {
+                talkManager.Action(scanObj);            // talkManager의 Action함수 실행(해당 게임 게임오브젝트를 넘겨줌)
+            }
+            else if (scanObj == scanObj.CompareTag("Tree"))
+            {
+                moveSpeed = 0;
+                Debug.Log("앞에 나무가 있다");
+                anim.SetTrigger("IsTree");
+            }
+            else
+            {
+                
+            }
+            moveSpeed = speed;
+        }
+
     }
 
     /// <summary>

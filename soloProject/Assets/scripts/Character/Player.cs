@@ -150,7 +150,6 @@ public class Player : MonoBehaviour
 
     private void OnSpace(InputAction.CallbackContext _)
     {
-        float speed = moveSpeed;
         if (scanObj != null)    // scanObj가 null이 아닐때 스페이스바를 누르면
         {
             if (scanObj == scanObj.CompareTag("Object"))
@@ -159,17 +158,15 @@ public class Player : MonoBehaviour
             }
             else if (scanObj == scanObj.CompareTag("Tree"))
             {
-                moveSpeed = 0;
                 Debug.Log("앞에 나무가 있다");
                 anim.SetTrigger("IsTree");
             }
-            else
+            else if (scanObj == scanObj.CompareTag("Enemy"))
             {
-                
+                Debug.Log("앞에 몬스터가 있다");
+                anim.SetTrigger("IsAttack");
             }
-            moveSpeed = speed;
         }
-
     }
 
     /// <summary>

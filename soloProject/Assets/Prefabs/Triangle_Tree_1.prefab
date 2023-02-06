@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5514812024860813520}
   - component: {fileID: 6476438997802856887}
+  - component: {fileID: 5684804359123102628}
   m_Layer: 0
   m_Name: Triangle_Tree_1
   m_TagString: Untagged
@@ -144,6 +145,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.13, y: 1.09}
   m_EdgeRadius: 0
+--- !u!114 &5684804359123102628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2529439449070213310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c4fa400be73484ea1483cbc352acc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 3
 --- !u!1 &6757801220409040267
 GameObject:
   m_ObjectHideFlags: 0

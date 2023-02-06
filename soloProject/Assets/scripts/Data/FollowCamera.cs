@@ -23,6 +23,7 @@ public class FollowCamera : MonoBehaviour
         target = GameManager.Inst.Player.transform;
         cameraHalfWidth = Camera.main.aspect * Camera.main.orthographicSize;
         cameraHalfHeight = Camera.main.orthographicSize;
+        transform.position = target.position;
     }
 
     private void LateUpdate()

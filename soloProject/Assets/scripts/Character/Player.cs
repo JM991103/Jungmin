@@ -6,22 +6,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SocialPlatforms;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, Ilogging
 {
-    //private static Player inst = null;
-
-    //public static Player Inst
-    //{
-    //    get
-    //    {
-    //        if (null == inst)
-    //        {
-    //            return null;
-    //        }
-    //        return inst;
-    //    }
-    //}
-
     PlayerInputAction inputActions; 
     Animator anim;
     Rigidbody2D rigid;
@@ -30,6 +16,8 @@ public class Player : MonoBehaviour
     /// talkPanel, talkText 관련 클래스
     /// </summary>
     TalkManager talkManager;
+
+    Tree tree;
 
     /// <summary>
     /// 입력받은 플레이어 이동 방향
@@ -57,22 +45,23 @@ public class Player : MonoBehaviour
     /// </summary>
     bool isMove = false;
 
+    /// <summary>
+    /// 살아있으면 true 죽으면 false
+    /// </summary>
+    bool isAlive = true;
+
+
+    public int attackPower = 1;
+
+    public int AttackPower => attackPower;
+
     private void Awake()
     {
-        //if (inst == null)
-        //{
-        //    inst = this;
-        //    DontDestroyOnLoad(gameObject);
-        //}
-        //else
-        //{
-        //    Destroy(gameObject);
-        //}
-
         inputActions = new PlayerInputAction();
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
         talkManager = FindObjectOfType<TalkManager>();
+        tree = FindObjectOfType<Tree>();
     }
 
     private void OnEnable()
@@ -156,15 +145,20 @@ public class Player : MonoBehaviour
             {
                 talkManager.Action(scanObj);            // talkManager의 Action함수 실행(해당 게임 게임오브젝트를 넘겨줌)
             }
-            else if (scanObj == scanObj.CompareTag("Tree"))
-            {
+            
+            if (scanObj == scanObj.CompareTag("Tree"))
+            {                
                 Debug.Log("앞에 나무가 있다");
                 anim.SetTrigger("IsTree");
+                Ilogging target = scanObj.gameObject.GetComponent<Ilogging>();
+                Attack(target);                
             }
             else if (scanObj == scanObj.CompareTag("Enemy"))
             {
                 Debug.Log("앞에 몬스터가 있다");
                 anim.SetTrigger("IsAttack");
+                Ilogging target = scanObj.gameObject.GetComponent<Ilogging>();
+                Attack(target);
             }
         }
     }
@@ -185,4 +179,16 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void Attack(Ilogging target)
+    {
+        target?.Defence(AttackPower);
+    }
+
+    public void Defence(int damage)
+    {
+        if (isAlive)
+        {
+
+        }
+    }
 }

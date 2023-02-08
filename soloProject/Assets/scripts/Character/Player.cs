@@ -17,8 +17,6 @@ public class Player : MonoBehaviour, Ilogging
     /// </summary>
     TalkManager talkManager;
 
-    Tree tree;
-
     /// <summary>
     /// 입력받은 플레이어 이동 방향
     /// </summary>
@@ -50,7 +48,6 @@ public class Player : MonoBehaviour, Ilogging
     /// </summary>
     bool isAlive = true;
 
-
     public int attackPower = 1;
 
     public int AttackPower => attackPower;
@@ -61,7 +58,6 @@ public class Player : MonoBehaviour, Ilogging
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
         talkManager = FindObjectOfType<TalkManager>();
-        tree = FindObjectOfType<Tree>();
     }
 
     private void OnEnable()
@@ -142,8 +138,9 @@ public class Player : MonoBehaviour, Ilogging
         if (scanObj != null)    // scanObj가 null이 아닐때 스페이스바를 누르면
         {
             if (scanObj == scanObj.CompareTag("Object"))
-            {
-                talkManager.Action(scanObj);            // talkManager의 Action함수 실행(해당 게임 게임오브젝트를 넘겨줌)
+            {                
+                talkManager.Action(scanObj);
+                //talkManager.Action(scanObj);            // talkManager의 Action함수 실행(해당 게임 게임오브젝트를 넘겨줌)
             }
             
             if (scanObj == scanObj.CompareTag("Tree"))

@@ -41,11 +41,11 @@ public class TalkManager : MonoBehaviour
     /// </summary>
     public int talkIndex;
 
+
     private void Awake()
     {
         player = FindObjectOfType<Player>();
         npcTalkManager = FindObjectOfType<NPCTalkManager>();
-        
         talk = FindObjectOfType<TalkTypeEffect>();
     }
 
@@ -62,43 +62,73 @@ public class TalkManager : MonoBehaviour
     { 
         scanObject = scanObj;
         // 게임 오브젝트의 ObjectData 컴포넌트를 가져온다
-        ObjectData objData = scanObject.GetComponent<ObjectData>();
+        Dialog[] get = scanObject.transform.gameObject.GetComponent<InteractionEvent>().GetDialogs();
+        //ObjectData objData = scanObject.GetComponent<ObjectData>();
         // ObjectData의 ID와 bool값을 Talk함수에 넣는다.
-        Talk(objData.id, objData.isNpc);
-
+        //Talk(objData.id, objData.isNpc);
+        //Talks(scanObject);
+        Debug.Log("제발");
+        Talks(get);
         talkPanel.SetActive(isAction);
     }
+
+    void Talks(Dialog[] dialog)
+    {
+        string talkData = dialog.ToString();
+
+        if (talkData != null)
+        {
+            isAction = false;
+            player.OnMoveController(true);
+            return;
+        }
+        player.OnMoveController(false);
+        isAction = true;
+    }
+
+    //public string GetTalk(int id, int talkIndex)
+    //{
+    //    if (talkIndex == talkData[id].Length)   // talkIndex가 talkData[id]의 길이와 같아지면
+    //    {
+    //        return null;                        // 대사 종료
+    //    }
+    //    else
+    //    {
+    //        talkIndex가 talkData[id]의 길이보다 작으면
+    //        return talkData[id][talkIndex];     // 다음 대사 실행
+    //    }
+    //}
 
     /// <summary>
     /// 해당 id와 bool 값에 맞는 
     /// </summary>
     /// <param name="id">오브젝트데이터의 id값</param>
     /// <param name="isNpc">NPC인지 아닌지 확인용</param>
-    void Talk(int id, bool isNpc)
-    { 
-        //id, talkIndex번째에 맞는 문자열을 talkData에 저장한다.
-        string talkData = npcTalkManager.GetTalk(id, talkIndex);
+    //void Talk(int id, bool isNpc)
+    //{ 
+    //    //id, talkIndex번째에 맞는 문자열을 talkData에 저장한다.
+    //    string talkData = npcTalkManager.GetTalk(id, talkIndex);
 
-        if (talkData == null)
-        {
-            isAction = false;
-            player.OnMoveController(true);
-            talkIndex = 0;
-            return;
-        }
+    //    if (talkData == null)
+    //    {
+    //        isAction = false;
+    //        player.OnMoveController(true);
+    //        talkIndex = 0;
+    //        return;
+    //    }
 
-        if (isNpc)  // npc일 때
-        {
-            talk.SetMsg(talkData);
-        }
-        else        // npc가 아닐 때
-        {
-            talk.SetMsg(talkData);
-        }
+    //    if (isNpc)  // npc일 때
+    //    {
+    //        talk.SetMsg(talkData);
+    //    }
+    //    else        // npc가 아닐 때
+    //    {
+    //        talk.SetMsg(talkData);
+    //    }
 
-        player.OnMoveController(false);
+    //    player.OnMoveController(false);
 
-        isAction = true;
-        talkIndex++;
-    }
+    //    isAction = true;
+    //    talkIndex++;
+    //}
 }

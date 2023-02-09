@@ -15,9 +15,9 @@ public class Dialog
 [System.Serializable]
 public class DialogueEvent
 {
-    public string name;
+    public string name;     // 이벤트 이름을 정해줄 수 있다 (확인하고 관리하기 편하다)
 
-    public Vector2 line;
+    public Vector2 line;    // x ~ y까지 대화를 추출할 수 있다.
 
     public Dialog[] dialogs;
 }

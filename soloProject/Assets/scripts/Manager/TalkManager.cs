@@ -24,7 +24,7 @@ public class TalkManager : MonoBehaviour
     /// <summary>
     /// 플레이어가 레이캐스트로 확인한 게임 오브젝트
     /// </summary>
-    public GameObject scanObject;
+    public Dialog[] dialog;
 
     /// <summary>
     /// 대사 패널이 열려있는지 닫혀있는지 알려주는 bool변수
@@ -40,7 +40,6 @@ public class TalkManager : MonoBehaviour
     /// id에 포함 되어있는 Index 번째의 대사
     /// </summary>
     public int talkIndex;
-
 
     private void Awake()
     {
@@ -58,17 +57,15 @@ public class TalkManager : MonoBehaviour
     /// 오브젝트와 상호작용 하는 함수
     /// </summary>
     /// <param name="scanObj">레이캐스트로 확인한 오브젝트의 게임오브젝트</param>
-    public void Action(GameObject scanObj)
+    public void Action(Dialog[] dialogs)
     { 
-        scanObject = scanObj;
+        dialog = dialogs;
+        Debug.Log("제발");
         // 게임 오브젝트의 ObjectData 컴포넌트를 가져온다
-        Dialog[] get = scanObject.transform.gameObject.GetComponent<InteractionEvent>().GetDialogs();
         //ObjectData objData = scanObject.GetComponent<ObjectData>();
         // ObjectData의 ID와 bool값을 Talk함수에 넣는다.
         //Talk(objData.id, objData.isNpc);
         //Talks(scanObject);
-        Debug.Log("제발");
-        Talks(get);
         talkPanel.SetActive(isAction);
     }
 

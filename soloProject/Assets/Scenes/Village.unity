@@ -5793,7 +5793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6341697091795403645, guid: c069ab6b2ffe6784cb7afbcec31afb6e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c069ab6b2ffe6784cb7afbcec31afb6e, type: 3}
@@ -17707,7 +17707,13 @@ MonoBehaviour:
   dialogue:
     name: "\uB9C8\uC744 \uC785\uAD6C"
     line: {x: 1, y: 3}
-    dialogs: []
+    dialogs:
+    - name: 
+      contexts: []
+    - name: 
+      contexts: []
+    - name: 
+      contexts: []
 --- !u!1 &916988417
 GameObject:
   m_ObjectHideFlags: 0
@@ -17726,7 +17732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &916988418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21763,7 +21769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1958670802169016776, guid: 63458a44c04c93f4a8bf354853047e4d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63458a44c04c93f4a8bf354853047e4d, type: 3}

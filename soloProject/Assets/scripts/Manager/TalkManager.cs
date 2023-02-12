@@ -2,14 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
 public class TalkManager : MonoBehaviour
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    NPCTalkManager npcTalkManager;
+    //NPCTalkManager npcTalkManager;
 
     /// <summary>
     /// 대사 패널
@@ -24,7 +22,7 @@ public class TalkManager : MonoBehaviour
     /// <summary>
     /// 플레이어가 레이캐스트로 확인한 게임 오브젝트
     /// </summary>
-    public Dialog[] dialog;
+    public Dialog[] dialogs;
 
     /// <summary>
     /// 대사 패널이 열려있는지 닫혀있는지 알려주는 bool변수
@@ -44,11 +42,11 @@ public class TalkManager : MonoBehaviour
     private void Awake()
     {
         player = FindObjectOfType<Player>();
-        npcTalkManager = FindObjectOfType<NPCTalkManager>();
+        //npcTalkManager = FindObjectOfType<NPCTalkManager>();
         talk = FindObjectOfType<TalkTypeEffect>();
     }
 
-    private void Start()
+    private void Start() 
     {
         talkPanel.SetActive(false);
     }
@@ -58,29 +56,55 @@ public class TalkManager : MonoBehaviour
     /// </summary>
     /// <param name="scanObj">레이캐스트로 확인한 오브젝트의 게임오브젝트</param>
     public void Action(Dialog[] dialogs)
-    { 
-        dialog = dialogs;
-        Debug.Log("제발");
+    {
+        //dialogs = Obj.GetComponent<InteractionEvent>().GetDialogs();
+
+        
+
+        Talks(dialogs);
+
+        Debug.Log("");
         // 게임 오브젝트의 ObjectData 컴포넌트를 가져온다
         //ObjectData objData = scanObject.GetComponent<ObjectData>();
         // ObjectData의 ID와 bool값을 Talk함수에 넣는다.
-        //Talk(objData.id, objData.isNpc);
-        //Talks(scanObject);
-        talkPanel.SetActive(isAction);
+        //Talk(objData.id, objData.isNpc);        
+        //talkPanel.SetActive(isAction);
+
+        StartCoroutine(TypeWriter());
     }
+
+    int lineCount = 0;
+    int contextCount = 0;
+
+    IEnumerator TypeWriter()
+    {
+        talkPanel.SetActive(isAction);
+
+        string ReplaceText = dialogs[lineCount].contexts[contextCount];
+        ReplaceText = ReplaceText.Replace("'", ",");
+
+        talk.SetMsg(ReplaceText);
+
+        yield return null;
+    }
+
+
+
 
     void Talks(Dialog[] dialog)
     {
-        string talkData = dialog.ToString();
+        Debug.Log("토크");
+        //string talkData = dialog[lineCount].contexts[contextCount];
+        //talkData = talkData.Replace("'", ",");
 
-        if (talkData != null)
-        {
-            isAction = false;
-            player.OnMoveController(true);
-            return;
-        }
-        player.OnMoveController(false);
-        isAction = true;
+        //if (talkData != null)
+        //{
+        //    isAction = false;
+        //    player.OnMoveController(true);
+        //    return;
+        //}
+        //player.OnMoveController(false);
+        //isAction = true;
     }
 
     //public string GetTalk(int id, int talkIndex)

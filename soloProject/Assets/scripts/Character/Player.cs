@@ -140,7 +140,6 @@ public class Player : MonoBehaviour, Ilogging
             if (scanObj == scanObj.CompareTag("Object"))
             {                
                 talkManager.Action(scanObj.transform.GetComponent<InteractionEvent>().GetDialogs());
-                
                 //talkManager.Action(scanObj);            // talkManager의 Action함수 실행(해당 게임 게임오브젝트를 넘겨줌)
             }
             

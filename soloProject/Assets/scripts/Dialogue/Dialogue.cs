@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Dialog 
+public class Dialogue 
 {
     [Tooltip("대사 치는 캐릭터 이름")]
     public string name;
@@ -19,5 +19,5 @@ public class DialogueEvent
 
     public Vector2 line;    // x ~ y까지 대화를 추출할 수 있다.
 
-    public Dialog[] dialogs;
+    public Dialogue[] dialogues;
 }

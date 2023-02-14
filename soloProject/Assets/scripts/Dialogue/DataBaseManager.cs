@@ -9,7 +9,7 @@ public class DataBaseManager : MonoBehaviour
     [SerializeField]
     string csv_FileName;
 
-    Dictionary<int, Dialog> dialogDic = new Dictionary<int, Dialog>();
+    Dictionary<int, Dialogue> dialogDic = new Dictionary<int, Dialogue>();
 
     public static bool isFinish = false;            // 데이터 저장이 완료 되었는지 알려주는 변수
 
@@ -19,14 +19,20 @@ public class DataBaseManager : MonoBehaviour
         {
             instance = this;
             DialogParser theParser = GetComponent<DialogParser>();
-            Dialog[] dialogs = theParser.parse(csv_FileName);   // csv_FileName 파일을 불러와서 배열에 저장
+            Dialogue[] dialogues = theParser.parse(csv_FileName);   // csv_FileName 파일을 불러와서 배열에 저장
 
-            for (int i = 0; i < dialogs.Length; i++)
+            for (int i = 0; i < dialogues.Length; i++)
             {
-                dialogDic.Add(i + 1, dialogs[i]);
+                dialogDic.Add(i + 1, dialogues[i]);                
             }
             isFinish = true;
         }
+    }
+    private void Start()
+    {
+        Dialogue[] arry = GetDialogue(1,1);
+
+        Debug.Log(arry);
     }
 
     /// <summary>
@@ -35,14 +41,15 @@ public class DataBaseManager : MonoBehaviour
     /// <param name="startNum">시작하는 라인</param>
     /// <param name="endNum">끝나는 라인</param>
     /// <returns></returns>
-    public Dialog[] GetDialogs(int startNum, int endNum)
+    public Dialogue[] GetDialogue(int startNum, int endNum)
     {
-        List<Dialog> dialogList = new List<Dialog>();
+        List<Dialogue> dialogList = new List<Dialogue>();
 
-        for (int i = 0; i < endNum - startNum; i++)
+        for (int i = 0; i <= (endNum - startNum); i++)
         {
             dialogList.Add(dialogDic[startNum + i]);
         }
+
         return dialogList.ToArray();
     }
 }

@@ -11,10 +11,10 @@ public class InteractionEvent : MonoBehaviour
     /// line.x 부터 line.y 까지 저장된 대사를 가져오는 함수
     /// </summary>
     /// <returns></returns>
-    public Dialog[] GetDialogs()
+    public Dialogue[] GetDialogues()
     {
-        dialogue.dialogs = DataBaseManager.instance.GetDialogs((int)dialogue.line.x, (int)dialogue.line.y);
+        dialogue.dialogues = DataBaseManager.instance.GetDialogue((int)dialogue.line.x, (int)dialogue.line.y);
 
-        return dialogue.dialogs;
+        return dialogue.dialogues;
     }
 }

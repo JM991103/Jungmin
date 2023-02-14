@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -22,7 +23,7 @@ public class TalkManager : MonoBehaviour
     /// <summary>
     /// 플레이어가 레이캐스트로 확인한 게임 오브젝트
     /// </summary>
-    public Dialog[] dialogs;
+    public Dialogue[] dialogs;
 
     /// <summary>
     /// 대사 패널이 열려있는지 닫혀있는지 알려주는 bool변수
@@ -51,30 +52,30 @@ public class TalkManager : MonoBehaviour
         talkPanel.SetActive(false);
     }
 
+    int lineCount = 0;
+    int contextCount = 0;
+    Dialogue[] dialogue;
     /// <summary>
     /// 오브젝트와 상호작용 하는 함수
     /// </summary>
     /// <param name="scanObj">레이캐스트로 확인한 오브젝트의 게임오브젝트</param>
-    public void Action(Dialog[] dialogs)
+    public void Action(GameObject scanObj)
     {
-        //dialogs = Obj.GetComponent<InteractionEvent>().GetDialogs();
+        InteractionEvent interaction = scanObj.GetComponent<InteractionEvent>();
+        Debug.Log($"들어갈 대사{interaction.GetDialogues()}");
+        dialogue = interaction.GetDialogues();
+        Talks(dialogue);
 
-        
-
-        Talks(dialogs);
-
-        Debug.Log("");
+        //Talks(talkData);
         // 게임 오브젝트의 ObjectData 컴포넌트를 가져온다
         //ObjectData objData = scanObject.GetComponent<ObjectData>();
         // ObjectData의 ID와 bool값을 Talk함수에 넣는다.
         //Talk(objData.id, objData.isNpc);        
         //talkPanel.SetActive(isAction);
 
-        StartCoroutine(TypeWriter());
+        //StartCoroutine(TypeWriter());
     }
 
-    int lineCount = 0;
-    int contextCount = 0;
 
     IEnumerator TypeWriter()
     {
@@ -88,23 +89,21 @@ public class TalkManager : MonoBehaviour
         yield return null;
     }
 
-
-
-
-    void Talks(Dialog[] dialog)
+    void Talks(Dialogue[] dialogue)
     {
-        Debug.Log("토크");
-        //string talkData = dialog[lineCount].contexts[contextCount];
-        //talkData = talkData.Replace("'", ",");
+        string talkData = dialogue[lineCount].contexts[contextCount];
+        talkData = talkData.Replace("'", ",");
 
-        //if (talkData != null)
-        //{
-        //    isAction = false;
-        //    player.OnMoveController(true);
-        //    return;
-        //}
-        //player.OnMoveController(false);
-        //isAction = true;
+        if (talkData != null)
+        {
+            isAction = false;
+            player.OnMoveController(true);
+
+            talk.SetMsg(talkData);
+            return;
+        }
+        player.OnMoveController(false);
+        isAction = true;
     }
 
     //public string GetTalk(int id, int talkIndex)

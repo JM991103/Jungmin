@@ -38,7 +38,7 @@ public class TalkManager : MonoBehaviour
     /// <summary>
     /// id에 포함 되어있는 Index 번째의 대사
     /// </summary>
-    public int talkIndex;
+    public int talkIndex = 0;
 
     private void Awake()
     {
@@ -64,16 +64,12 @@ public class TalkManager : MonoBehaviour
         InteractionEvent interaction = scanObj.GetComponent<InteractionEvent>();
         Debug.Log($"들어갈 대사{interaction.GetDialogues()}");
         dialogue = interaction.GetDialogues();
-        Talks(dialogue);
 
-        //Talks(talkData);
-        // 게임 오브젝트의 ObjectData 컴포넌트를 가져온다
-        //ObjectData objData = scanObject.GetComponent<ObjectData>();
-        // ObjectData의 ID와 bool값을 Talk함수에 넣는다.
-        //Talk(objData.id, objData.isNpc);        
-        //talkPanel.SetActive(isAction);
+        isAction = true;
 
-        //StartCoroutine(TypeWriter());
+        talkPanel.SetActive(isAction);
+            
+        Talks(dialogue);        
     }
 
 
@@ -91,64 +87,36 @@ public class TalkManager : MonoBehaviour
 
     void Talks(Dialogue[] dialogue)
     {
-        string talkData = dialogue[lineCount].contexts[contextCount];
-        talkData = talkData.Replace("'", ",");
+        string talkData = GetTalk(dialogue, talkIndex);
 
-        if (talkData != null)
+        if (talkData == null)
         {
             isAction = false;
+            talkIndex = 0;
             player.OnMoveController(true);
-
-            talk.SetMsg(talkData);
+            talkPanel.SetActive(false);
             return;
         }
-        player.OnMoveController(false);
+
         isAction = true;
+
+        talkData = talkData.Replace("'", ",");
+        talk.SetMsg(talkData);
+
+        player.OnMoveController(false);
+        talkIndex++;        
     }
 
-    //public string GetTalk(int id, int talkIndex)
-    //{
-    //    if (talkIndex == talkData[id].Length)   // talkIndex가 talkData[id]의 길이와 같아지면
-    //    {
-    //        return null;                        // 대사 종료
-    //    }
-    //    else
-    //    {
-    //        talkIndex가 talkData[id]의 길이보다 작으면
-    //        return talkData[id][talkIndex];     // 다음 대사 실행
-    //    }
-    //}
-
-    /// <summary>
-    /// 해당 id와 bool 값에 맞는 
-    /// </summary>
-    /// <param name="id">오브젝트데이터의 id값</param>
-    /// <param name="isNpc">NPC인지 아닌지 확인용</param>
-    //void Talk(int id, bool isNpc)
-    //{ 
-    //    //id, talkIndex번째에 맞는 문자열을 talkData에 저장한다.
-    //    string talkData = npcTalkManager.GetTalk(id, talkIndex);
-
-    //    if (talkData == null)
-    //    {
-    //        isAction = false;
-    //        player.OnMoveController(true);
-    //        talkIndex = 0;
-    //        return;
-    //    }
-
-    //    if (isNpc)  // npc일 때
-    //    {
-    //        talk.SetMsg(talkData);
-    //    }
-    //    else        // npc가 아닐 때
-    //    {
-    //        talk.SetMsg(talkData);
-    //    }
-
-    //    player.OnMoveController(false);
-
-    //    isAction = true;
-    //    talkIndex++;
-    //}
+    public string GetTalk(Dialogue[] dialogues, int talkindex)
+    {
+        if (talkIndex == dialogues[lineCount].contexts.Length)   // talkIndex가 talkData[id]의 길이와 같아지면
+        {
+            return null;                        // 대사 종료
+        }
+        else
+        {
+            //talkIndex가 talkData[id]의 길이보다 작으면
+            return dialogues[lineCount].contexts[talkindex];     // 다음 대사 실행
+        }
+    }
 }

@@ -5042,6 +5042,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6353405158612690777, guid: 7eb4aa75ea1e9194a9b32a489d97f5ea, type: 3}
   m_PrefabInstance: {fileID: 659301547}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &389596238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5196640200578456948, guid: d7f3d81c491613445a4d4c7c0aa92ce3, type: 3}
+  m_PrefabInstance: {fileID: 5196640200667283500}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &389596244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389596238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfb89aed294d354ab7b2b7d68e46a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: "\uC5D0\uBC00\uB9AC\uC544"
+    line: {x: 4, y: 4}
+    dialogues: []
 --- !u!1001 &404875022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5956,6 +5977,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a84e4c2a5c7d84da4aea068079ea06, type: 3}
+--- !u!1 &668967846 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1171257549234570546, guid: 419b21675ffbab44ab262bdaba1f4200, type: 3}
+  m_PrefabInstance: {fileID: 1171257550208226279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &668967852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668967846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfb89aed294d354ab7b2b7d68e46a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: "\uC11D\uC0C11"
+    line: {x: 3, y: 3}
+    dialogues: []
 --- !u!1001 &673511346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17217,6 +17259,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &777819311 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5261238241801261404, guid: a729b38f4f700134483dcf68484fd0d6, type: 3}
+  m_PrefabInstance: {fileID: 5261238241670434052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &777819317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777819311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfb89aed294d354ab7b2b7d68e46a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: "\uB9C8\uC744 \uC785\uAD6C"
+    line: {x: 2, y: 2}
+    dialogues: []
 --- !u!1001 &786970694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20773,6 +20836,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a84e4c2a5c7d84da4aea068079ea06, type: 3}
+--- !u!1 &1799993633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5267974546695952435, guid: 51bcb92ff2ab8b844bca78936513342a, type: 3}
+  m_PrefabInstance: {fileID: 5267974545570240810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1799993639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799993633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfb89aed294d354ab7b2b7d68e46a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: "\uBC25"
+    line: {x: 5, y: 5}
+    dialogues: []
 --- !u!1001 &1848201667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21755,7 +21839,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1958670802169016772, guid: 63458a44c04c93f4a8bf354853047e4d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 63458a44c04c93f4a8bf354853047e4d, type: 3}
 --- !u!1001 &2194687451120953208
 PrefabInstance:

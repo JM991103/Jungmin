@@ -51,7 +51,7 @@ public class Player : MonoBehaviour, Ilogging
     public int attackPower = 1;
 
     public int AttackPower => attackPower;
-
+    
     private void Awake()
     {
         inputActions = new PlayerInputAction();
@@ -138,9 +138,9 @@ public class Player : MonoBehaviour, Ilogging
         if (scanObj != null)    // scanObj가 null이 아닐때 스페이스바를 누르면
         {
             if (scanObj == scanObj.CompareTag("Object"))
-            {                
+            {
+                // 앞에 있는 물체의 게임오브젝트를 Action에게 넘겨준다.
                 talkManager.Action(scanObj.transform.gameObject);
-                //talkManager.Action(scanObj);            // talkManager의 Action함수 실행(해당 게임 게임오브젝트를 넘겨줌)
             }
             
             if (scanObj == scanObj.CompareTag("Tree"))

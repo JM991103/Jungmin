@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1171257549234570544}
   - component: {fileID: 1171257549234570545}
   - component: {fileID: 1171257549234570558}
-  - component: {fileID: 1171257549234570557}
   m_Layer: 7
   m_Name: NPC_Alex
   m_TagString: Untagged
@@ -133,17 +132,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5886593, y: 0.92135966}
   m_EdgeRadius: 0
---- !u!114 &1171257549234570557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171257549234570546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a1f2f16fff67234c8a2c0cb16962f91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 1100
-  isNpc: 1

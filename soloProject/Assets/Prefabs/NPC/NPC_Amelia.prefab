@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5196640200578456950}
   - component: {fileID: 5196640200578456949}
   - component: {fileID: 5196640200578456944}
-  - component: {fileID: 5196640200578456945}
   m_Layer: 7
   m_Name: NPC_Amelia
   m_TagString: Untagged
@@ -133,17 +132,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5792656, y: 0.9181709}
   m_EdgeRadius: 0
---- !u!114 &5196640200578456945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5196640200578456948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a1f2f16fff67234c8a2c0cb16962f91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 1200
-  isNpc: 1

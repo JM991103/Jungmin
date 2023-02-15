@@ -20,7 +20,7 @@ public class DialogParser : MonoBehaviour
 
             Dialogue dialogue = new Dialogue();                               
 
-            dialogue.name = row[1];                                       // 쪼개진 이름을 넣어줌(row[0] ID, row[1]이름, row[2]대사) 
+            dialogue.name = row[1];                                     // 쪼개진 이름을 넣어줌(row[0] ID, row[1]이름, row[2]대사) 
             List<string> contextList = new List<string>();              // 대사를 저장할 List생성
 
             do{
@@ -35,9 +35,9 @@ public class DialogParser : MonoBehaviour
                 }
             } while (row[0].ToString() == "");                          // row[0] ID가 공백이면 반복하는 반복문
             
-            dialogue.contexts = contextList.ToArray();                    // dialog.contexts 배열에 contextList의 내용을 배열로 변환해 넣어준다
+            dialogue.contexts = contextList.ToArray();                  // dialog.contexts 배열에 contextList의 내용을 배열로 변환해 넣어준다
 
-            dialogList.Add(dialogue);                                     // dialogList에 이름과 대사를 넣어준다.
+            dialogList.Add(dialogue);                                   // dialogList에 이름과 대사를 넣어준다.
 
         }
                 

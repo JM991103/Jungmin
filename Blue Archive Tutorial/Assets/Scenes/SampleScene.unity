@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9b1f8949da6e0f2488b9f0cae7a684cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3dd22326d1653864e8d052ae71ad1784, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uBF5C\uBC24\uBF5C\uBC24 \uC57C\uC0DD\uC758 \uC544\uB9AC\uC2A4\uAC00\uB098\uD0C0\uB0AC\uB2E4!!!"
+  m_text: "\uB2E4\uC774\uC5BC\uB85C\uADF8 \uC785\uB2C8\uB2E4. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 16c0c8f569311a54797a8531d31cba62, type: 2}
   m_sharedMaterial: {fileID: -8320899865893801021, guid: 16c0c8f569311a54797a8531d31cba62, type: 2}
@@ -1221,7 +1221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Color: {r: 0.3, g: 0.3, b: 0.3, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

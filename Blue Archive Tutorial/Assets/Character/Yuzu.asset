@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38f6b3296fe3cd4883c3e9b443e3ba1, type: 3}
+  m_Name: Yuzu
+  m_EditorClassIdentifier: 
+  charName: "\uC720\uC988"
+  department: "\uAC8C\uC784\uAC1C\uBC1C\uBD80"
+  grayColor: {r: 0.3, g: 0.3, b: 0.3, a: 0}
+  whiteColor: {r: 1, g: 1, b: 1, a: 0}
+  faceSprite:
+  - {fileID: 21300000, guid: c26b5c9e4818e2948a8ec9ece77cc5d8, type: 3}
+  - {fileID: 21300000, guid: 289c976f4f2d3ff428c3f0c2a1e1f717, type: 3}
+  - {fileID: 21300000, guid: fd9a81c40de4b8442926de563ba38570, type: 3}
+  - {fileID: 21300000, guid: 814fee9c501191944a9d95050e3a2e65, type: 3}
+  - {fileID: 21300000, guid: 7ac681f71b09ad94dacdc06c4c9a7516, type: 3}
+  - {fileID: 21300000, guid: 4d4d4c52d6c63b741a7a0d29619a4e54, type: 3}
+  - {fileID: 21300000, guid: ed77ca0232b06544bb19136cb4212ebc, type: 3}
+  - {fileID: 21300000, guid: ec027ec4e7e065f4e9dcbe4e7ec5135d, type: 3}
+  - {fileID: 21300000, guid: aa6a27634bf25894a911086c465da4bf, type: 3}
+  - {fileID: 21300000, guid: 1397b48669f85454481e409ffd0251a3, type: 3}
+  - {fileID: 21300000, guid: 403163eb85647ac48a15944604b83451, type: 3}
+  - {fileID: 21300000, guid: 0b3ce766358e38b40907f5deb5b6fb78, type: 3}

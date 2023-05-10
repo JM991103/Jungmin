@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f38f6b3296fe3cd4883c3e9b443e3ba1, type: 3}
   m_Name: Yuzu
   m_EditorClassIdentifier: 
+  ID: 0
   charName: "\uC720\uC988"
   department: "\uAC8C\uC784\uAC1C\uBC1C\uBD80"
-  grayColor: {r: 0.3, g: 0.3, b: 0.3, a: 0}
-  whiteColor: {r: 1, g: 1, b: 1, a: 0}
+  grayColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  whiteColor: {r: 1, g: 1, b: 1, a: 1}
   faceSprite:
-  - {fileID: 21300000, guid: c26b5c9e4818e2948a8ec9ece77cc5d8, type: 3}
   - {fileID: 21300000, guid: 289c976f4f2d3ff428c3f0c2a1e1f717, type: 3}
   - {fileID: 21300000, guid: fd9a81c40de4b8442926de563ba38570, type: 3}
   - {fileID: 21300000, guid: 814fee9c501191944a9d95050e3a2e65, type: 3}
@@ -29,3 +29,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1397b48669f85454481e409ffd0251a3, type: 3}
   - {fileID: 21300000, guid: 403163eb85647ac48a15944604b83451, type: 3}
   - {fileID: 21300000, guid: 0b3ce766358e38b40907f5deb5b6fb78, type: 3}
+  - {fileID: 21300000, guid: c26b5c9e4818e2948a8ec9ece77cc5d8, type: 3}

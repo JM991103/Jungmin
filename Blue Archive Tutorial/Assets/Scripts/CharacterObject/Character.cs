@@ -7,6 +7,8 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "CharacterObject", fileName = "Character", order = 0)]
 public class Character : ScriptableObject
 {
+    public int ID;
+
     public string charName;
     public string department;
 

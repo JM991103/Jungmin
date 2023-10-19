@@ -14,12 +14,16 @@ public class Dongle : MonoBehaviour
     /// </summary>
     public bool isDrag;
 
+    public bool isMerge;
+
     Rigidbody2D rigid;
+    CircleCollider2D circle;
     Animator anim;
 
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
+        circle = GetComponent<CircleCollider2D>();
         anim = GetComponent<Animator>();
     }
 
@@ -68,5 +72,97 @@ public class Dongle : MonoBehaviour
     {
         isDrag = false;
         rigid.simulated = true;
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Dongle")
+        {
+            Dongle other = collision.gameObject.GetComponent<Dongle>();
+
+            if (level == other.level && !isMerge && !other.isMerge && level < 10)
+            {
+                // 동글 합치기 로직
+                // 나와 상대편 위치 가져오기
+                float meX = transform.position.x;
+                float meY = transform.position.y;
+                float otherX = other.transform.position.x;
+                float otherY = other.transform.position.y;
+
+                // 1. 내가 아래에 있을 때
+                // 2. 동일한 높이일 때, 내가 오른쪽에 있을 때
+                if (meY < otherY || (meY == otherY && meX > otherX))
+                {
+                    // 상대방은 숨기기
+                    other.Hide(transform.position);
+                    // 나는 레벨업
+                    LevelUp();
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// 동글이 2개가 만나면 만나는 쪽은 사라지는 함수
+    /// /// </summary>
+    /// <param name="targetPos"></param>
+    public void Hide(Vector3 targetPos)
+    {
+        isMerge = true;
+
+        rigid.simulated = false;
+        circle.enabled = false;
+
+        StartCoroutine(HideRoutine(targetPos));
+    }
+
+    /// <summary>
+    /// 상대 위치를 내 위치로 다가오게하는 코루틴
+    /// </summary>
+    /// <param name="targetPos"></param>
+    /// <returns></returns>
+    IEnumerator HideRoutine(Vector3 targetPos)
+    {
+        int frameCount = 0;
+
+        while (frameCount < 5)
+        {
+            frameCount++;
+            transform.position = Vector3.Lerp(transform.position, targetPos, 1.0f);
+            yield return null;
+        }
+
+        isMerge = false;
+        gameObject.SetActive(false);
+    }
+
+    /// <summary>
+    /// 레벨업 함수
+    /// </summary>
+    void LevelUp()
+    {
+        isMerge = true;
+
+        rigid.velocity = Vector2.zero; // 위치 고정
+        rigid.angularVelocity = 0f;    // 회전 고정
+
+        StartCoroutine(LevelUpRoutine());
+    }
+
+    /// <summary>
+    /// 동글이 2개가 합쳐지면 새로운 동글이가 나타나는 코루틴
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator LevelUpRoutine()
+    {
+        yield return new WaitForSeconds(0.01f);
+
+        anim.SetInteger("Level", level + 1);
+
+        yield return new WaitForSeconds(0.01f);
+
+        level++;
+
+        isMerge = false;
     }
 }

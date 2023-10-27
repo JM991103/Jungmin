@@ -16,9 +16,15 @@ public class Dongle : MonoBehaviour
 
     public bool isMerge;
 
-    Rigidbody2D rigid;
+    public bool isAttach;
+
+    public GameManager manager;
+
+    public Rigidbody2D rigid;
     CircleCollider2D circle;
     Animator anim;
+
+    float deadTime;
 
     private void Awake()
     {
@@ -30,6 +36,26 @@ public class Dongle : MonoBehaviour
     private void OnEnable()
     {
         anim.SetInteger("Level", level);
+    }
+
+    private void OnDisable()
+    {
+        // 동글 속성 초기화
+        level = 0;
+        isDrag = false;
+        isMerge = false;
+        isAttach = false;
+
+        // 동글 트랜스폼 초기화
+        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.identity;
+        transform.localScale = Vector3.zero;
+
+        // 동글 물리 초기화
+        rigid.simulated = false;
+        rigid.velocity = Vector2.zero;
+        rigid.angularVelocity = 0f;
+        circle.enabled = true;
     }
 
     void Update()
@@ -72,6 +98,27 @@ public class Dongle : MonoBehaviour
     {
         isDrag = false;
         rigid.simulated = true;
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        StartCoroutine("AttachRoutine");
+    }
+
+    IEnumerator AttachRoutine()
+    {
+        if (isAttach)
+        {
+            yield break;
+        }
+
+        isAttach = true;
+        manager.sfxPlay(GameManager.sfx.Attach);
+
+        yield return new WaitForSeconds(2.0f);
+
+        isAttach = false;
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -128,9 +175,19 @@ public class Dongle : MonoBehaviour
         while (frameCount < 5)
         {
             frameCount++;
-            transform.position = Vector3.Lerp(transform.position, targetPos, 1.0f);
+            if (targetPos != Vector3.up * 100)
+            {
+                transform.position = Vector3.Lerp(transform.position, targetPos, 1.0f);
+            }
+            else if (targetPos == Vector3.up * 100)
+            {
+                transform.localScale = Vector3.Lerp(transform.localScale, Vector3.zero, 0.2f);
+            }
+
             yield return null;
         }
+
+        manager.score += (int)Mathf.Pow(2, level);
 
         isMerge = false;
         gameObject.SetActive(false);
@@ -158,11 +215,33 @@ public class Dongle : MonoBehaviour
         yield return new WaitForSeconds(0.01f);
 
         anim.SetInteger("Level", level + 1);
+        manager.sfxPlay(GameManager.sfx.LevelUp);
 
         yield return new WaitForSeconds(0.01f);
 
         level++;
 
         isMerge = false;
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Finish")
+        {
+            deadTime += Time.deltaTime;
+
+            if (deadTime > 1)
+            {
+                manager.GameOver();
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Finish")
+        {
+            deadTime = 0;
+        }
     }
 }
